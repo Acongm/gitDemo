@@ -1,0 +1,1379 @@
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Tencent is pleased to support the open source community by making WeUI available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use this file except in compliance
+* with the License. You may obtain a copy of the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software distributed under the License is
+* distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+* either express or implied. See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+@import "../lib/font-iconfont/iconfont.css";
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  line-height: 1.6;
+  font-family: Microsoft YaHei, -apple-system-font, "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a img {
+  border: 0;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a,
+button {
+  color: #000;
+}
+body,
+.container {
+  font-size: 16px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+body,
+.container {
+  font-size: 16px;
+  margin: 0 auto;
+}
+ul,
+li {
+  list-style: none;
+}
+.container,
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.container {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.container > div,
+.container > h3,
+.container > form,
+.container > ul {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.container > div ::-webkit-scrollbar,
+.container > h3 ::-webkit-scrollbar,
+.container > form ::-webkit-scrollbar,
+.container > ul ::-webkit-scrollbar {
+  width: 0;
+}
+.has-tabNav {
+  padding-bottom: 1rem;
+}
+.ten-modal {
+  position: fixed;
+  z-index: 9999;
+  display: none;
+}
+.lifire-navbar + .weui-tab__panel > div {
+  display: none;
+}
+.lifire-navbar + .weui-tab__panel > div.active {
+  display: block;
+}
+.lifire-navbar {
+  font-size: 0.3rem;
+  color: #999;
+  background: #fff;
+}
+.lifire-navbar .weui-navbar__item.weui-bar__item_on {
+  position: relative;
+  background: #fff;
+  color: #333;
+}
+.lifire-navbar + .weui-tab__panel {
+  overflow-x: hidden;
+}
+.lifire-navbar + .weui-tab__panel > div {
+  display: none;
+}
+.lifire-navbar + .weui-tab__panel > div.active {
+  display: block;
+}
+.myicon {
+  display: inline-block;
+}
+.micon-movement {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  background-image: url("../images//myicon/movement.png");
+  background-repeat: no-repeat;
+}
+.micon-saomiaoerweima {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  background-image: url("../images//myicon/saomiaoerweima.png");
+  background-repeat: no-repeat;
+}
+.micon-movement1 {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  background-image: url("../images//myicon/movement1.png");
+  background-repeat: no-repeat;
+}
+.micon-saomiaoerweima1 {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  background-image: url("../images//myicon/saomiaoerweima1.png");
+  background-repeat: no-repeat;
+}
+.micon-picker_btn {
+  width: 12px;
+  height: 12px;
+  background-size: 12px 12px;
+  background-image: url("../images//myicon/picker_btn.png");
+  background-repeat: no-repeat;
+}
+.micon-picker_btn1 {
+  width: 12px;
+  height: 12px;
+  background-size: 12px 12px;
+  background-image: url("../images//myicon/picker_btn1.png");
+  background-repeat: no-repeat;
+}
+.micon-picker_ok {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  background-image: url("../images//myicon/picker_ok.png");
+  background-repeat: no-repeat;
+}
+.micon-none {
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  background-image: url("../images//myicon/none.png");
+  background-repeat: no-repeat;
+}
+.movement_bg {
+  background-image: url("../images//myicon/movement_bg.png");
+  background-repeat: no-repeat;
+}
+.saomiaoerweima_bg {
+  background-image: url("../images//myicon/saomiaoerweima_bg.png");
+  background-repeat: no-repeat;
+}
+/*my.html*/
+.micon-my-icon {
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+}
+.micon-myiphone {
+  background-image: url("../images//myicon/myiphone.png");
+  background-repeat: no-repeat;
+}
+.micon-performance {
+  background-image: url("../images//myicon/performance.png");
+  background-repeat: no-repeat;
+}
+.micon-course {
+  background-image: url("../images//myicon/course.png");
+  background-repeat: no-repeat;
+}
+.micon-live {
+  background-image: url("../images//myicon/live.png");
+  background-repeat: no-repeat;
+}
+.micon-code {
+  background-image: url("../images//myicon/code.png");
+  background-repeat: no-repeat;
+}
+.micon-video {
+  background-image: url("../images//myicon/video.png");
+  background-repeat: no-repeat;
+}
+.micon-friend {
+  background-image: url("../images//myicon/friend.png");
+  background-repeat: no-repeat;
+}
+.micon-money {
+  background-image: url("../images//myicon/money.png");
+  background-repeat: no-repeat;
+}
+.micon-qr {
+  background-image: url("../images//myicon/qr.png");
+  background-repeat: no-repeat;
+}
+.micon-redact {
+  background-image: url("../images//myicon/redact.png");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+.crad_bg {
+  background-image: url("../images//myicon/cradBg.png");
+  background-repeat: no-repeat;
+  width: 367px;
+  height: 134px;
+  background-size: 367px 134px;
+  background-position: center center;
+}
+/*live.html*/
+.micon-hintArrows {
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+  background-image: url("../images//myicon/hintArrows.png");
+  background-repeat: no-repeat;
+}
+.micon-shareText {
+  width: 230px;
+  height: 70px;
+  background-size: 230px 70px;
+  background-image: url("../images//myicon/shareText.png");
+  background-repeat: no-repeat;
+}
+.micon-friend_none {
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  background-image: url("../images//myicon/friend1.png");
+  background-repeat: no-repeat;
+}
+/* clearing */
+.micon-from_ok {
+  background-image: url("../images/from_ok.png");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+}
+.micon-affirm1 {
+  background-image: url("../images/affirm1.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+}
+.micon-audit {
+  background-image: url("../images/audit.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+}
+.micon-complete {
+  background-image: url("../images/complete.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+}
+.micon-refuse {
+  background-image: url("../images/refuse.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+}
+.micon-suspend {
+  background-image: url("../images/suspend.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+}
+.white_color {
+  color: #fff;
+}
+.black_color {
+  color: #333333;
+}
+.align_center {
+  text-align: center;
+}
+.dis_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.align_middle {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.justify_center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.m-b-xl {
+  margin-bottom: 30px;
+}
+.iconfont {
+  display: inline-block;
+}
+.page_bg {
+  background: #f2f2f2;
+}
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: none;
+}
+.popup.find {
+  display: block;
+}
+.popup.find .popup-box,
+.popup.find .popup-bg {
+  display: block;
+}
+.popup .popup-message-box {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.popup .popup-message {
+  margin: auto;
+  padding: 30px 24px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.popup .share-box {
+  position: relative;
+  z-index: 99;
+}
+.popup .popup-box {
+  display: none;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #FFFFFF;
+  z-index: 99;
+}
+.popup .session {
+  width: 6.22rem;
+  top: 20%;
+  margin-left: -3.11rem;
+}
+.popup .popup-title {
+  padding-top: 20px;
+  padding-bottom: 16px;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+.popup .popup-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 21px 28px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.popup .popup-footer button {
+  font-weight: normal;
+  width: 2.5rem;
+  height: 40px;
+}
+.popup-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+}
+.container,
+.weui-tabbar {
+  width: 7.2rem;
+}
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 44.44444444px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 52.08333333px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 53.33333333px;
+  }
+}
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 57.22222222px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 57.5px;
+  }
+}
+.weui-nav:before,
+.weui-tabbar:before {
+  border-color: #b0b0b0;
+}
+.weui-nav .weui-tabbar__item,
+.weui-tabbar .weui-tabbar__item {
+  padding-top: 0.15rem;
+  color: #777;
+}
+.weui-nav .weui-tabbar__item .weui-tabbar__icon,
+.weui-tabbar .weui-tabbar__item .weui-tabbar__icon {
+  width: 0.5rem;
+  height: 0.4rem;
+}
+.weui-nav .weui-tabbar__item .weui-tabbar__icon i,
+.weui-tabbar .weui-tabbar__item .weui-tabbar__icon i {
+  line-height: 1;
+}
+.weui-nav .weui-tabbar__item .weui-tabbar__icon i.iconfont,
+.weui-tabbar .weui-tabbar__item .weui-tabbar__icon i.iconfont {
+  font-size: 0.44rem;
+  line-height: 0.4rem;
+}
+.weui-nav .weui-tabbar__item .weui-tabbar__icon i.icon-shouyeshouye1,
+.weui-tabbar .weui-tabbar__item .weui-tabbar__icon i.icon-shouyeshouye1 {
+  font-size: 0.4rem;
+}
+.weui-nav .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon,
+.weui-tabbar .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon,
+.weui-nav .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon > i,
+.weui-tabbar .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon > i,
+.weui-nav .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label,
+.weui-tabbar .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
+  color: #444;
+}
+.weui-nav .weui-tabbar__label,
+.weui-tabbar .weui-tabbar__label {
+  font-size: 0.24rem;
+}
+.weui-tabbar .iconfont1 {
+  display: block;
+}
+.weui-tabbar .weui-bar__item_on .iconfont {
+  display: block;
+}
+.weui-tabbar .weui-bar__item_on .iconfont1 {
+  display: none;
+}
+.weui-tabbar .weui-tabbar__item-box {
+  position: relative;
+}
+.weui-tabbar .weui-tabbar__item-box .flbox {
+  position: absolute;
+  left: 1em;
+  bottom: 110%;
+  font-size: 16px;
+  width: 4.5em;
+  height: 0;
+  background-color: #fff;
+  border-radius: 0.15rem;
+  -webkit-transition: 0.1s all ease-in-out;
+  -moz-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+  overflow: hidden;
+  z-index: -1;
+}
+.weui-tabbar .weui-tabbar__item-box .flbox li {
+  line-height: 0.75rem;
+}
+.weui-tabbar .weui-tabbar__item-box .nav_box {
+  margin-top: -5px;
+  padding-top: 5px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.weui-tabbar .weui-active .flbox {
+  border: 1px solid #cecece;
+  padding: 4px 10px;
+  height: auto;
+}
+.weui-tabbar .weui-active .row1 {
+  height: 0.75rem;
+}
+.weui-tabbar .weui-active .row2 {
+  height: 1.5rem;
+}
+.weui-tabbar .weui-active .row3 {
+  height: 2.25rem;
+}
+.weui-tabbar .weui-active .row4 {
+  height: 3rem;
+}
+.weui-tabbar .weui-active .row5 {
+  height: 3.75rem;
+}
+.weui-tabbar .weui-active .row6 {
+  height: 4.5rem;
+}
+.weui-tabbar.weui-tabbar-wx {
+  background-color: #fafafa;
+  height: 50px;
+}
+.weui-tabbar.weui-tabbar-wx .iconfont {
+  display: none;
+}
+.weui-tabbar.weui-tabbar-wx .iconfont1 {
+  display: block;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  z-index: 11;
+  background-color: #b0b0b0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .weui-tabbar.weui-tabbar-wx .weui-tabbar__item:after {
+    -webkit-transform: scaleX(0.5);
+    -moz-transform: scaleX(0.5);
+     -ms-transform: scaleX(0.5);
+         transform: scaleX(0.5);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  .weui-tabbar.weui-tabbar-wx .weui-tabbar__item:after {
+    -webkit-transform: scaleX(0.33);
+    -moz-transform: scaleX(0.33);
+     -ms-transform: scaleX(0.33);
+         transform: scaleX(0.33);
+  }
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item:last-child:after {
+  display: none;
+}
+.weui-tabbar.weui-tabbar-wx .weui-bar__item_on .iconfont {
+  display: block;
+}
+.weui-tabbar.weui-tabbar-wx .weui-bar__item_on .iconfont1 {
+  display: block;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box {
+  position: relative;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .flbox {
+  position: absolute;
+  left: 1em;
+  bottom: 130%;
+  font-size: 0.28rem;
+  width: 4.5em;
+  background-color: #fafafa;
+  border-radius: 0.1rem;
+  -webkit-transition: 0.3s all linear;
+  -moz-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+  z-index: -1;
+  color: #444;
+  height: auto;
+  overflow: visible;
+  -webkit-transform: translateY(300%);
+     -moz-transform: translateY(300%);
+      -ms-transform: translateY(300%);
+          transform: translateY(300%);
+  display: none;
+  border: 1px solid #cecece;
+  padding: 2px 6px;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .flbox:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  left: 50%;
+  bottom: -12px;
+  margin-left: -7.5px;
+  background: url("../images/foot_sanjiao.png") no-repeat center top;
+  background-size: 10px 9px;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .flbox ul {
+  position: relative;
+  overflow: hidden;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .flbox li {
+  position: relative;
+  border-top: none !important;
+  line-height: 0.85rem;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .flbox li:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #cecece;
+  -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+   -ms-transform-origin: left bottom;
+       transform-origin: left bottom;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .flbox li:after {
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+     -ms-transform: scaleY(0.5);
+         transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  .weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .flbox li:after {
+    -webkit-transform: scaleY(0.33);
+    -moz-transform: scaleY(0.33);
+     -ms-transform: scaleY(0.33);
+         transform: scaleY(0.33);
+  }
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .flbox li a {
+  color: #444;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .flbox li:last-child:after {
+  display: none;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .nav_box1 {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 1px;
+  height: 50px;
+  background-color: #fafafa;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .nav_box {
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 10;
+  height: 50px;
+  line-height: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .nav_box p {
+  color: #4b4b4b;
+  font-size: 0.3rem;
+  text-indent: 0.3rem;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__item-box .nav_box .iconfont {
+  font-size: 0.24rem;
+  color: #bebebe;
+}
+.weui-tabbar.weui-tabbar-wx .weui-active .flbox {
+  display: block;
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.weui-tabbar.weui-tabbar-wx .weui-active .flbox:after {
+  display: block;
+}
+.weui-tabbar.weui-tabbar-wx .weui-active .flbox ul {
+  height: auto;
+}
+.weui-tabbar.weui-tabbar-wx .weui-active .row1 {
+  height: 0.85rem;
+}
+.weui-tabbar.weui-tabbar-wx .weui-active .row2 {
+  height: 1.7rem;
+}
+.weui-tabbar.weui-tabbar-wx .weui-active .row3 {
+  height: 2.55rem;
+}
+.weui-tabbar.weui-tabbar-wx .weui-active .row4 {
+  height: 3.4rem;
+}
+.weui-tabbar.weui-tabbar-wx .weui-active .row5 {
+  height: 4.25rem;
+}
+.weui-tabbar.weui-tabbar-wx .weui-active .row6 {
+  height: 5.1rem;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__one {
+  width: 50px;
+  padding-top: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+     -moz-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  top: 1px;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__one .nav_box {
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  display: block;
+  height: auto;
+}
+.weui-tabbar.weui-tabbar-wx .weui-tabbar__one .weui-tabbar__icon i.icon {
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+  color: #7f8386;
+}
+.weui-tabbar.weui-tabbar-wx .nav_box1 .weui-tabbar__icon {
+  position: absolute;
+  left: 0.45rem;
+  top: 50%;
+  margin-top: -0.2rem;
+}
+.btn_submit {
+  width: 64%;
+  height: 44px;
+  font-size: 16px;
+  margin: 0 auto;
+  display: block;
+  background: #DDDDDD;
+  box-shadow: 0 2px 6px 0 #DDDDDD;
+  border-radius: 32px;
+  color: #fff;
+  background-color: #ccc;
+  outline: none;
+  border: none;
+}
+.btn_submit.active,
+.btn_submit.affirm_btn {
+  background: #B54AB3;
+  background-image: -webkit-linear-gradient(230deg, #E04BDA 0%, #D046CB 100%);
+  background-image: -moz- oldlinear-gradient(230deg, #E04BDA 0%, #D046CB 100%);
+  background-image: linear-gradient(-140deg, #E04BDA 0%, #D046CB 100%);
+  box-shadow: 0 2px 6px 0 rgba(181, 74, 179, 0.5);
+  border-radius: 32px;
+}
+.btn_submit.cancel_btn {
+  color: #B04AB0;
+  background: #FFFFFF;
+  box-shadow: 0 2px 6px 0 rgba(181, 74, 179, 0.3);
+  border-radius: 32px;
+}
+.text_input {
+  height: 50px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 1px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: block;
+  border: none;
+  text-indent: 8px;
+  color: #333;
+  outline: none;
+  margin-bottom: 30px;
+  -moz-box-sizing: none;
+       box-sizing: none;
+  -webkit-appearance: none;
+}
+.green-color {
+  color: #4DB450 !important;
+}
+.red-color {
+  color: #FC5959 !important;
+}
+#__bs_notify__ {
+  font-size: 10px !important;
+}
+.mine_bg {
+  position: absolute;
+  width: 12rem;
+  height: 6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  margin-left: -6.1rem;
+  z-index: 1;
+}
+.mine_bg:after,
+.mine_bg:before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+.mine_bg:after {
+  width: 1.35rem;
+  height: 1.35rem;
+  background-color: #f5c378;
+  left: 50%;
+  top: 3.23rem;
+  margin-left: -4.275rem;
+}
+.mine_bg:before {
+  width: 1.42rem;
+  height: 1.42rem;
+  background-color: #f3b3ac;
+  left: 50%;
+  top: 2.1rem;
+  margin-left: 3.1rem;
+}
+.mine-box {
+  position: relative;
+  overflow: visible;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.04rem;
+  background-size: 100% 4.04rem;
+  text-align: center;
+}
+.mine-box .mine-info {
+  position: relative;
+  z-index: 10;
+}
+.mine-box .mine-info img {
+  width: 1.6rem;
+  display: block;
+  border-radius: 50%;
+  vertical-align: top;
+}
+.mine-box .mine-info .userbox {
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem;
+  left: 50%;
+  top: 0;
+  margin-left: -0.8rem;
+}
+.mine-box .mine-info .user-bor {
+  position: absolute;
+  left: -0.1rem;
+  top: -0.1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../images/user-bor.png) no-repeat;
+  background-size: 1.8rem;
+  border-radius: 50%;
+}
+.mine-box .mine-info span {
+  position: absolute;
+  width: 0.28rem;
+  height: 0.28rem;
+  left: 50%;
+  top: 50%;
+  margin-left: 0.4rem;
+  margin-top: 0.04rem;
+  line-height: 1;
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.05rem;
+}
+.mine-box .mine-info span i {
+  vertical-align: top;
+  margin-top: 0.05rem;
+  font-size: 0.22rem;
+  color: #28e0f2;
+  float: left;
+}
+.mine-box .mine-info .mine-name {
+  height: 0.35rem;
+  line-height: 0.35rem;
+  margin-top: 0.2rem;
+  font-size: 0.3rem;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  color: #333;
+}
+.mine-box .mine-info .mine-name > a {
+  display: inline-block;
+  color: #333;
+}
+.mine-box .mine-info .mine-name .th-tip {
+  display: inline-block;
+  vertical-align: top;
+  height: inherit;
+  line-height: 0.38rem;
+  margin-left: 0;
+  padding: 0 0.2rem;
+  font-size: 0.24rem;
+}
+.mine-list {
+  font-size: 0.28rem;
+  line-height: 0.5rem;
+  margin-top: 0.2rem;
+}
+.mine-list .icon {
+  width: 0.44rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  margin: 0;
+  -webkit-transition: font-size 0.25s ease-out 0s;
+  -moz-transition: font-size 0.25s ease-out 0s;
+  transition: font-size 0.25s ease-out 0s;
+  float: left;
+}
+.mine-list:nth-child(2) .weui-cell_access:nth-child(3) .icon {
+  width: 0.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+}
+.mine-list:nth-child(3) .icon {
+  width: 0.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+}
+.mine-list .mine-text {
+  color: #333;
+  font-size: 0.26rem;
+}
+.mine-list .weui-cell {
+  padding: 0.2rem 0.32rem 0.16rem 0.32rem;
+}
+.mine-list .weui-cell:before {
+  left: 0;
+}
+.mine-icon {
+  position: relative;
+  display: inline-block;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  color: #6a1c68;
+  margin-right: 0.1rem;
+}
+.mine-icon .iconfont {
+  font-size: 0.4rem;
+}
+.mine-icon.dots:after {
+  right: 0.08rem;
+}
+.dots {
+  position: relative;
+}
+.dots:after {
+  content: " ";
+  position: absolute;
+  right: -0.04rem;
+  top: -0.04rem;
+  width: 0.11rem;
+  height: 0.11rem;
+  border-radius: 50%;
+  background: red;
+}
+.mine-info-warn {
+  line-height: 0.4rem;
+  text-align: center;
+  font-size: 0.26rem;
+  background: #f2f2f2;
+  color: #333;
+}
+.mine-info-warn1 {
+  background-color: #f5eeca;
+}
+.info .weui-cell_select .weui-cell__bd:after {
+  display: none;
+}
+.info .weui-btn-area {
+  margin-top: 0.5rem;
+}
+.info .weui-cells {
+  margin-top: 0.2rem;
+}
+.info .mine-info-input lable,
+.info .mine-info-input input {
+  font-size: 0.28rem;
+}
+.myqr {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.list_none {
+  color: #CCCCCC;
+  padding-top: 100px;
+}
+.list_none h4 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.list_none p {
+  font-size: 16px;
+}
+.list_none h4,
+.list_none p {
+  text-align: center;
+}
+.bindPhone,
+.info {
+  font-size: 16px;
+}
+.bindPhone .weui-cells,
+.info .weui-cells {
+  margin-top: 0.2rem;
+}
+.bindPhone .weui-vcode-img,
+.info .weui-vcode-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.bindPhone .verify-img,
+.info .verify-img {
+  width: 108px;
+  height: 40px;
+}
+.bindPhone .identification-img,
+.info .identification-img {
+  width: 63px;
+  height: 48px;
+}
+.bindPhone .weui-cell:before,
+.info .weui-cell:before {
+  left: 0;
+}
+.bindPhone .weui-btn-area,
+.info .weui-btn-area {
+  margin-top: 30px;
+}
+.bindPhone .weui-btn-area .btn_submit,
+.info .weui-btn-area .btn_submit {
+  width: 70%;
+  height: 40px;
+}
+.bindPhone .mine-info-warn,
+.info .mine-info-warn {
+  font-size: 14px;
+  color: #C06800;
+  text-align: center;
+  line-height: 40px;
+  background: #FFF6D8;
+}
+.bindPhone .weui-vcode-btn,
+.info .weui-vcode-btn {
+  border: none;
+  font-size: 16px;
+  color: #B04AB0;
+}
+.bindPhone .weui-btn_time,
+.info .weui-btn_time {
+  display: inline-block;
+  padding: 0 40px 0;
+  background-color: #fff;
+  font-size: 16px;
+  color: #999999;
+  line-height: 44px;
+  height: 44px;
+  vertical-align: middle;
+}
+.mine-friend .weui-vcode-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.mine-friend .weui-cell__hd {
+  margin-right: 16px;
+}
+.mine-friend .weui-cell__bd p {
+  font-size: 16px;
+  color: #333;
+  line-height: 22px;
+}
+.mine-friend .weui-cell__bd .weui-media-box__info {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+  line-height: 17px;
+}
+.mine-friend.weui-cells:before {
+  display: none;
+}
+.mine-friend .weui-cell:before {
+  left: 80px;
+}
+.mine-friend .list_none h4 {
+  margin-bottom: 0;
+}

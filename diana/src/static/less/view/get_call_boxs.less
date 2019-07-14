@@ -1,0 +1,38 @@
+.get_call_boxs() {
+  .get_call_box {
+    position: fixed;
+    bottom: 0;
+    font-size: 16px;
+    display: flex;
+    padding: 11px 0;
+    justify-content: center;
+
+    .get_call {
+      width: 710/750*100%;
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        background-color: #fff;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+    }
+
+    .list_btn1 {
+      width: 480/710*100%;
+      font-weight: bold;
+
+      i {
+        padding-right: 20px;
+        transform: scale(1.4);
+      }
+    }
+
+    .list_btn2 {
+      font-size: 13px;
+      width: 218/710*100%;
+    }
+  }
+}

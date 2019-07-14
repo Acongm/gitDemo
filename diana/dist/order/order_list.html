@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/mine.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body>
+	<div class="container order_list">
+		<div class="weui-tab">
+			<div class="weui-navbar">
+				<div class="weui-navbar__item mine-select">
+					<select class="weui-select" name="select1">
+						<option selected="" value="1">全部</option>
+						<option value="2">订阅支出</option>
+						<option value="3">提现记录</option>
+						<option value="3">佣金收入</option>
+						<option value="3">版权收入</option>
+					</select>
+					<i class="myicon micon-picker_btn"></i>
+				</div>
+			</div>
+			<!-- <div class="weui-tab__panel infinite" style=""> -->
+			<div class="weui-cells mine-share">
+				<!-- 有详细数据用 a 标签，不作详细数据用 div 标签 -->
+				<a href="order_detail.html" onclick="console.log('ssss')" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img" style="background-image: url('http://file.qiniu.dianacollege.com/offline/2018/10/22/jpg/2018102217324353.jpg')">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX收入XXX收入XXX收入XXX收入XXX收入XXX收入XXX收入XXX收入XXX收入</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft">
+						<span class="weui-media-box__desc vam">
+							+ ¥10.00
+						</span>
+						<span class="media-box__lable yellow-color">
+							开票中
+						</span>
+					</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX收入</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft">
+						<span class="weui-media-box__desc vam">
+							+ ¥10.00
+						</span>
+						<span class="media-box__lable pink-color">
+							驳回
+						</span>
+					</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX支出</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft">
+						<span class="weui-media-box__desc vam">
+							+ ¥10.00
+						</span>
+						<span class="media-box__lable orange-color">
+							已开票
+						</span>
+					</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX收入</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft">
+						<span class="weui-media-box__desc vam">
+							+ ¥10.00
+						</span>
+						<span class="media-box__lable">
+							未开票
+						</span>
+					</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX支出</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft weui-media-box__desc vam f-gray">- ¥10.00</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX收入</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft weui-media-box__desc vam">+ ¥10.00</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX支出</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft weui-media-box__desc vam f-gray">- ¥10.00</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX收入</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft weui-media-box__desc vam">+ ¥10.00</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX支出</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft weui-media-box__desc vam f-gray">- ¥10.00</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX收入</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft weui-media-box__desc vam">+ ¥10.00</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX支出</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft weui-media-box__desc vam f-gray">- ¥10.00</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX收入</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft weui-media-box__desc vam">+ ¥10.00</span>
+				</a>
+				<a href="order_detail.html" class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="list-img">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<p>XXX支出</p>
+						<div class="weui-media-box__info">2017-03-13 24:00:00</div>
+					</div>
+					<span class="weui-cell__ft weui-media-box__desc vam f-gray">- ¥10.00</span>
+				</a>
+			</div>
+			<div class="weui-loadmore" id="loadStatus" style="display: none; ">
+				<i class="weui-loading"></i>
+				<span class="weui-loadmore__tips">正在加载</span>
+			</div>
+			<!-- </div> -->
+
+		</div>
+	</div>
+	<a href="./../index.html" class="back-home">
+		<i class="iconfont"></i>
+	</a>
+	<script src="../static/lib/jqueryWeui/jquery-weui.min.js"></script>
+	<!-- <script src="../static/lib/common.js"></script> -->
+	<script>
+		$(function() {
+			var num = 10
+			var str = `<div>${num}</div>`;
+			console.log(str)
+
+			function list(i) {
+				return `<a href="order_detail.html" class="weui-cell">
+						<div class="weui-cell__hd">
+							<div class="list-img" style="background-image: url('http://file.qiniu.dianacollege.com/offline/2018/10/22/jpg/2018102217324353.jpg')">
+							</div>
+						</div>
+						<div class="weui-cell__bd">
+							<p>XXX收入${i}</p>
+							<div class="weui-media-box__info">2017-03-1${i} 24:00:00</div>
+						</div>
+						<span class="weui-cell__ft">
+							<span class="weui-media-box__desc vam">
+								+ ¥${10*i}.00
+							</span>
+							<span class="media-box__lable yellow-color">
+								开票中
+							</span>
+						</span>
+					</a>`;
+			}
+
+			function isLoading(flag) {
+				if (flag) {
+					$("#loadStatus").fadeIn()
+				} else {
+					$("#loadStatus").fadeOut()
+				}
+			}
+			let infiniteFlag = true;
+			$(".container ").infinite().on("infinite", function() {
+				isLoading(infiniteFlag)
+				console.log("container");
+				if (infiniteFlag) {
+					setTimeout(() => {
+						infiniteFlag = false;
+						let Html_list = "";
+						for (let i = 0; i < 10; i++) {
+							Html_list += list(i);
+						}
+						$(".mine-share").append(Html_list);
+						infiniteFlag = true;
+					}, 10000)
+				}
+				isLoading(infiniteFlag)
+			})
+		})
+	</script>
+</body>
+
+</html>

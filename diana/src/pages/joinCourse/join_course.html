@@ -1,0 +1,166 @@
+<template src="head.html" title="戴妃学院" joincourse></template>
+<body>
+	<div class="container">
+		<div class="page navbar">
+			<div class="page__bd" style="height: 100%;">
+				<div class="weui-tab">
+					<div class="weui-navbar myui-navbars lifire-navbar">
+						<div data-panel="panel_1" class="weui-navbar__item weui-bar__item_on">
+							可使用
+						</div>
+						<div data-panel="panel_2" class="weui-navbar__item">
+							已使用
+						</div>
+					</div>
+					<div class="weui-tab__panel">
+						<div id="panel_1" class="active">
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+								</div>
+								<div class="btn-box">
+									<div class="btn_submit cancel_btn js_transmit">转发</div>
+									<a href="join_course_details.html" class="btn_submit affirm_btn">使用</a>
+								</div>
+							</div>
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+								</div>
+								<div class="btn-box">
+									<div class="btn_submit cancel_btn js_transmit">转发</div>
+									<a href="join_course_details.html" class="btn_submit affirm_btn">使用</a>
+								</div>
+							</div>
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+								</div>
+								<div class="btn-box">
+									<div class="btn_submit cancel_btn js_transmit">转发</div>
+									<a href="join_course_details.html" class="btn_submit affirm_btn">使用</a>
+								</div>
+							</div>
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+								</div>
+								<div class="btn-box">
+									<div class="btn_submit cancel_btn js_transmit">转发</div>
+									<a href="join_course_details.html" class="btn_submit affirm_btn">使用</a>
+								</div>
+							</div>
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+								</div>
+								<div class="btn-box">
+									<div class="btn_submit cancel_btn js_transmit">转发</div>
+									<a href="join_course_details.html" class="btn_submit affirm_btn">使用</a>
+								</div>
+							</div>
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+								</div>
+								<div class="btn-box">
+									<div class="btn_submit cancel_btn js_transmit">转发</div>
+									<a href="join_course_details.html" class="btn_submit affirm_btn">使用</a>
+								</div>
+							</div>
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+								</div>
+								<div class="btn-box">
+									<div class="btn_submit cancel_btn js_transmit">转发</div>
+									<a href="join_course_details.html" class="btn_submit affirm_btn">使用</a>
+								</div>
+							</div>
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+								</div>
+								<div class="btn-box">
+									<div class="btn_submit cancel_btn js_transmit">转发</div>
+									<a href="join_course_details.html" class="btn_submit affirm_btn">使用</a>
+								</div>
+							</div>
+						</div>
+						<div id="panel_2">
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+									<p>使用时间：2018-09-21 12:43</p>
+								</div>
+							</div>
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+									<p>使用时间：2018-09-21 12:43</p>
+								</div>
+							</div>
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+									<p>使用时间：2018-09-21 12:43</p>
+								</div>
+							</div>
+							<div class="join_course_list">
+								<div class="text">
+									<h4>7191 5267 3218 5410</h4>
+									<p>课程名称：悦爱悦能量</p>
+									<p>使用时间：2018-09-21 12:43</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup_hint">
+		<div class="popup-message-box">
+			<div class="popup-message">
+				参课码转发成功
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			//展开使用记录
+			$(".ticket-info").click(function() {
+				var countCardCourse = $(this).parents(".count-card").next(".count-card-course")
+				if (countCardCourse.css("display") === "none") {
+					countCardCourse.show();
+					$(this).children("span").children("i").removeClass("angle-down").addClass("angle-up")
+				} else {
+					countCardCourse.hide();
+					$(this).children("span").children("i").removeClass("angle-up").addClass("angle-down")
+				}
+			})
+			$(".js_transmit").click(function() {
+				$(".popup_hint").addClass("find");
+				var popup_time = '';
+				popup_time = setTimeout(function() {
+					$(".popup_hint").removeClass("find");
+					clearTimeout(popup_time)
+				}, 3000)
+			})
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+// 详情列表
+.management {
+  font-size: @f_l;
+  .weui-form-preview__value,
+  .weui-form-preview__bd {
+    text-align: left;
+  }
+  .weui-form-preview__label{
+      min-width: 5em;
+      text-align: justify;
+      text-align-last: justify;
+      position: relative;
+      // padding-right: .2rem;
+  }
+  .weui-form-preview__label_after{
+      padding-right: .2rem;
+  }
+  .clearing-details_after{
+    .weui-form-preview__label{
+      padding-right: .2rem;
+    }
+    .weui-form-preview__label::after{
+      content: '：';
+      display: inline-block; 
+      position: absolute;
+    }
+  }
+
+  .picker{
+    position: relative;
+    margin-right: .2rem;
+  }
+  .weui-input_data{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  
+  .headline .weui-form-preview__label{
+      color: @c-g;
+      min-width: auto;
+  }
+  .weui-form-preview__item_wrap{
+      display: flex;
+  }
+  .weui-form-preview__item_box{
+      width: 50%;
+  }
+  .weui-form-preview__item{
+      width: 100%;
+  }
+
+  .state_box {
+    &:after,
+    &:before {
+      display: none;
+    }
+
+  }
+
+  .list_box {
+    padding-top: .5rem;
+    width: 692/750*100%;
+  }
+
+  &.container {
+    width: 100%;
+  }
+
+  .font_weight {
+    font-weight: bold;
+  }
+
+  .flex_btn {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    button {
+      width: 100%;
+      height: 100%;
+      font-size: @f_l;
+      color: @white;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  .qr_box {
+    height: 5.56rem;
+    background-color: @white;
+    width: 100%;
+    padding-top: .88rem;
+    margin-bottom: 11px;
+  }
+
+  .qr_bor {
+    width: 4.06rem;
+    height: 4.06rem;
+    border: 2px solid @c-l-g-sss;
+    padding: @f_s;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .weui-cell:before {
+    left: 15px;
+    right: 15px;
+  }
+
+  .management_list {
+    width: 100%;
+
+    .weui-cell_access {
+      padding-top: 16px;
+      padding-bottom: 10px;
+      background-color: @white;
+
+      h3 {
+        font-size: @f_l;
+        font-weight: normal;
+        color: @c-d-g;
+        line-height: 27px;
+      }
+
+      p {
+        color: @c-g;
+        font-size: @f_s;
+        line-height: 30px;
+      }
+    }
+
+    .weui-cell__bd {
+      font-size: @f_l;
+      color: @c-g;
+      height: 82px;
+      text-align: right;
+    }
+  }
+
+  .weui-msg {
+    padding-bottom: 18px;
+    margin-bottom: 10px;
+  }
+
+  .get_call_box {
+    position: fixed;
+    bottom: 0;
+    font-size: @f_l;
+    padding: 11px 0;
+    justify-content: center;
+
+    p {
+      font-size: @f_l;
+      color: @c-l-g;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .item_box {
+      font-size: @f_xl;
+    }
+  }
+
+  .weui-msg__icon-area {
+    height: 93px;
+    overflow-y: hidden;
+  }
+
+  .icon-web-icon- {
+    margin-top: -50px;
+    color: @c-l-g-s;
+    font-size: 120px;
+  }
+}
+.headline {
+  font-size: @f_l;
+  color: @c-d-g;
+  .weui-form-preview__label {
+    font-size: @f_l;
+    color: @c-d-g;
+  }
+}
+.weui-form-preview__bd {
+  font-size: @f_m;
+  line-height: 1.6;
+}
+
+.management_bg {
+  background: @body_bg;
+}

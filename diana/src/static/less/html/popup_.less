@@ -1,0 +1,140 @@
+// 提现弹窗样式
+// 弹窗关闭按钮
+.close() {
+  .close {
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    left: 50%;
+    bottom: -1.57rem;
+    margin-left: -.28rem;
+    font-size: .8rem;
+    text-align: center;
+    line-height: .6;
+    color: #fff;
+    border: .03rem solid #fff;
+    border-radius: 50%;
+    font-family: 'SimSun';
+  }
+  &:after {
+    content: " ";
+    height: 1.07rem;
+    width: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -1.07rem;
+    left: 50%;
+    margin-left: -.5px;
+  }
+}
+
+// 提现弹窗
+.popup_(){
+  .popup_box{
+    padding: .33rem .74rem 0;
+    font-size: .28rem;
+    background-color: #fff;
+      width: 4.46rem;
+      // height: 5.53rem;
+      padding-bottom: .3rem;
+      position: fixed;
+      left: 50%;
+      top: 1.07rem;
+      margin-left: -2.87rem;
+      z-index: 9999;
+      border-radius: .1rem;
+    text-align: center;
+    p{
+      line-height: .5rem;
+      font-size: .26rem;
+    }
+    h3{
+      line-height: 1rem;
+      font-weight: 500;
+      font-size: .32rem;
+    }
+    .weui-btn{
+      margin-top: .32rem;
+      font-size: .34rem;
+      margin-bottom: .3rem;
+    }
+    .close();
+  }
+  .record_ok,
+  #record_ok{
+    img{
+      width: 2.3rem;
+      height: 1.68rem;
+      margin: 0 auto;
+    }
+  }
+  .bind_phone,
+  .short_message,
+  #bind_phone,
+  #short_message{
+    h3{
+      line-height: .76rem;
+    }
+    p{
+      text-align: left;
+      font-size: .22rem;
+      line-height: .4rem;
+      color: #777;
+    }
+    img{
+      .w-h(172,157);
+      margin: 0 auto;
+    }
+    .yzm{
+      height: .37rem;
+      display: flex;
+      padding: .15rem 0;
+      line-height: .37rem;
+      .border-bottom(#ccc);
+      input{
+        .w-h(116,37);
+        border: none;
+        margin: 0;
+        padding: 0;
+        font-size: .2rem;
+        flex: 1;
+      }
+      p{
+        width: 1.25rem;
+        height: .37rem;
+        font-size: .24rem;
+        padding-right: 16px;
+        line-height: .37rem;
+      }
+      button{
+        border-left: 1px solid #ccc;
+        padding-left: .30rem;
+        background-color: rgba(0,0,0,0);
+        color: #fad33c;
+        font-size: .24rem;
+        height: .37rem;
+        line-height: .37rem;
+        img{
+          .w-h(120,50);
+          margin-top: -.065rem
+        }
+      }
+
+    }
+  }
+  .record_no,
+  #record_no{
+    img{
+      width: 2.43rem;
+      height: 2.2rem;
+    }
+    .popup_box{
+      padding: .6rem .74rem 0;
+      height: 4.93rem;
+    }
+    h3{
+      margin-top: .36rem;
+    }
+  }
+}
+.popup_();

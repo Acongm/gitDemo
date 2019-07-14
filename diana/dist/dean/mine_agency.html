@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/agency.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body>
+	<div class="container agency">
+		<div class="page">
+			<div class="mine-box-ag clearfix">
+				<div class="mine-img">
+					<img src="../static/images/demoimg/img001.png" alt="">
+				</div>
+				<div class="mine-info-ag">
+					<h2>海萌生活-林铭涛</h2>
+					<div class="agency-name"><span>代理身份:</span><em><i class="iconfont  icon-zuanshi zuanshi"></i>钻石代理</em>
+					</div>
+					<p class="time">有效期至：2017-06-07</p>
+				</div>
+				<a href="#" class="mine-question"><i class="iconfont icon-meiyouxiaoxi"></i></a>
+			</div>
+			<div class="tage clearfix">
+				<div class="sum-earnings">
+					<h4>10000</h4>
+					<p>累计收入</p>
+				</div>
+				<div class="sum-order agency-btn"><a href="mine_generalize.html">
+						<h4>100</h4>
+						<p>推广订单</p>
+					</a></div>
+			</div>
+			<div class="seek">
+				<div class="sou-box clearfix">
+					<div>累计客户</div>
+					<div>
+						<span class="num-people">1000人</span>
+						<span><i class="iconfont icon-sousuo"></i></span>
+						<span><i class="iconfont icon-jiantouxiangyou"></i></span>
+					</div>
+				</div>
+				<div class="search-wrap">
+					<div class="select-box">
+						<select>
+							<option value="direct">直接邀请</option>
+							<option value="indirect">间接邀请</option>
+						</select>
+						<i class="fa fa-angle-down"></i>
+					</div>
+					<div class="search">
+						<input type="text" placeholder="搜索昵称"></div>
+					<div class="search-btn">
+						<input type="button" value="搜索"></div>
+				</div>
+			</div>
+			<div class="user-list">
+				<ul>
+					<li>
+						<a href="mine_direct.html">
+							<div class="img-box">
+								<img src="../static/images/demoimg/img001.png" alt="">
+							</div>
+							<div class="item">
+								<p class="name">季成</p>
+								<p class="time">2017-06-29</p>
+							</div>
+							<div class="invite-status">
+								<p class="num">300</p>
+								<p class="direct">直接邀请</p>
+							</div>
+							<div class="status"><i class="iconfont icon-arrowright"></i></div>
+						</a>
+					</li>
+					<li>
+						<a href="mine_direct.html" class="weui-cell_access">
+							<div class="img-box">
+								<img src="../static/images/demoimg/img001.png" alt="">
+							</div>
+							<div class="item">
+								<p class="name">季成</p>
+								<p class="time">2017-06-29</p>
+							</div>
+							<div class="invite-status">
+								<p class="num">300</p>
+								<p class="direct">直接邀请</p>
+							</div>
+							<div class="status"><i class="iconfont icon-arrowright"></i></div>
+						</a>
+					</li>
+					<li>
+						<a href="mine_direct.html">
+							<div class="img-box">
+								<img src="../static/images/demoimg/img001.png" alt="">
+							</div>
+							<div class="item">
+								<p class="name">季成</p>
+								<p class="time">2017-06-29</p>
+							</div>
+							<div class="invite-status">
+								<p class="num">300</p>
+								<p class="direct">直接邀请</p>
+							</div>
+							<div class="status"><i class="iconfont icon-arrowright"></i></div>
+						</a>
+					</li>
+					<li>
+						<a href="mine_direct.html">
+							<div class="img-box">
+								<img src="../static/images/demoimg/img001.png" alt="">
+							</div>
+							<div class="item">
+								<p class="name">季成</p>
+								<p class="time">2017-06-29</p>
+							</div>
+							<div class="invite-status">
+								<p class="num">300</p>
+								<p class="direct">直接邀请</p>
+							</div>
+							<div class="status"><i class="iconfont icon-arrowright"></i></div>
+						</a>
+					</li>
+					<li>
+						<div class="img-box">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+						<div class="item">
+							<p class="name">季成</p>
+							<p class="time">2017-06-29</p>
+						</div>
+						<div class="invite-status">
+							<p class="indirect">间接邀请</p>
+						</div>
+					</li>
+					<li>
+						<div class="img-box">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+						<div class="item">
+							<p class="name">季成</p>
+							<p class="time">2017-06-29</p>
+						</div>
+						<div class="invite-status">
+							<p class="indirect">间接邀请</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".sou-box .icon-sousuo").on('click', function() {
+				if ($(".icon-jiantouxiangyou").hasClass('jiantouxiangyou')) {
+					$(".search-wrap").hide();
+					$(".icon-jiantouxiangyou").removeClass("jiantouxiangyou");
+				} else {
+					$(".search-wrap").show();
+					$(".icon-jiantouxiangyou").addClass("jiantouxiangyou");
+				}
+			})
+		})
+	</script>
+</body>
+
+</html>

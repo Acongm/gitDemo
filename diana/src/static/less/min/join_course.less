@@ -1,0 +1,56 @@
+/* 自定义less插件 */
+@import "styl/styl.less";
+/* 自定义icon样式 */
+@import "common/myicon.less";
+/* 公用样式class */
+@import "common/style.less";
+/* 公共模块样式 */
+@import "common/models.less";
+@import "common/reset.less";
+/* tab选项卡样式一 */
+@import "view/myui-navbars.less";
+/* btn样式 */
+@import "view/btn.less";
+/* 我的参课码列表样式 */
+@import "view/join_course_list.less";
+/* 优惠卡样式 */
+@import "view/callimg_box.less";
+@import "view/none.less";
+
+.weui-navbars();
+.join_course_lists();
+.callimg_boxs();
+.list_none();
+
+
+.join_course_details {
+  .callimg_box_top {
+    top: 32px;
+  }
+
+  .mine-share {
+    width: 6.22rem;
+    margin-left: -3.11rem;
+  }
+
+  .item_box_p {
+    height: auto;
+  }
+
+
+}
+
+.popup_join_course_details {
+  .text_input {
+    border: 0.5px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #999999;
+    border-radius: 2px;
+    height: 40px;
+  }
+
+  .hint {
+    display: none;
+  }
+}

@@ -1,0 +1,194 @@
+<template src="head.html" title="戴妃学院" live swiper master></template>
+<body>
+	<div class="page live_detaill">
+		<div class="page__bd" style="height: 100%;">
+			<div class="weui-tab">
+				<div class="weui-tab__video">
+					<div class="video">
+						<video id="video" src="http://style.hq88.com/v5/../static/video/video.mp4" width="100%" height="" controls="controls" poster="" webkit-playsinline="" playsinline="" style="height: 233px;">
+						</video>
+					</div>
+				</div>
+				<div class="weui-tab__panel">
+					<div class="weui-tab">
+						<div class="weui-tab__table ">
+							<div class="weui-navbar lifire-navbar datalist">
+								<div data-panel="panel_1" class="weui-navbar__item">
+									直播详情
+								</div>
+								<div data-panel="panel_2" class="weui-navbar__item weui-bar__item_on">
+									聊天互动
+								</div>
+								<i class="icon iconfont icon-share1"></i>
+							</div>
+						</div>
+						<div class="weui-tab__msg">
+							<div id="panel_1" class="weui_tab_bd_item">
+								<div class="weui-tab__msg_t">
+									<div class="live-header">
+										<div class="live-title">
+											<h3>职场倦怠OR华丽蜕变？</h3><em class="active">进行中</em>
+										</div>
+										<div class="live-text">
+											<p><i class="icon iconfont icon-shijian"></i><span>时间：2018/02/03 16:30</span></p>
+										</div>
+									</div>
+									<div class="center">
+										<div class="title"><span>直播简介</span></div>
+										<div class="text-center">
+											<p>课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程容课程简介内容课程简介内容课程简介内容课程简介内容课。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="panel_2" class="weui_tab_bd_item active">
+								<div class="weui-tab__msg_t_b">
+									<section class="chat-box">
+										<div class="bubbleDiv">
+											<div class="bubbleItem">
+												<div class="doctor-head">
+													<img src="../static/images/demoimg/img001.png" alt="doctor">
+												</div>
+												<span class="bubble leftBubble">
+													您好，欢迎关注博客：http://write.blog.csdn.net/postlist
+													<span class="topLevel"></span>
+												</span>
+											</div>
+											<div class="bubbleItem">
+												<div class="doctor-head">
+													<img src="../static/images/demoimg/img001.png" alt="doctor">
+												</div>
+												<span class="bubble leftBubble">
+													您好，欢迎关注博客：http://write.blog.csdn.net/postlist
+													<span class="topLevel"></span>
+												</span>
+											</div>
+											<div class="bubbleItem">
+												<div class="doctor-head">
+													<img src="../static/images/demoimg/img001.png" alt="doctor">
+												</div>
+												<span class="bubble leftBubble">
+													nmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmm
+													<span class="topLevel"></span>
+												</span>
+											</div>
+											<div class="bubbleItem">
+												<div class="doctor-head">
+													<img src="../static/images/demoimg/img001.png" alt="doctor">
+												</div>
+												<span class="bubble leftBubble">
+													您好，欢迎关注博客：http://write.blog.csdn.net/postlist
+													<span class="topLevel"></span>
+												</span>
+											</div>
+											<div class="bubbleItem">
+												<span class="bubble centerBubble">
+													欢迎雷老板加入直播间
+												</span>
+											</div>
+											<div class="bubbleItem">
+												<span class="bubble centerBubble">
+													欢迎雷开富贵没老板加入直播间
+												</span>
+											</div>
+
+											<div class="bubbleItem">
+												<span class="bubble centerBubble timeBubble ">
+													2017-11-23 12:00:00
+												</span>
+											</div>
+
+											<div class="bubbleItem clearfix">
+												<!-- <div class="doctor-head fr" style="position: relative;">
+                                                    <img src="../static/images/demoimg/img001.png" alt="doctor">
+                                                </div> -->
+												<span class="bubble rightBubble">
+													ghv
+													<span class="topLevel"></span>
+												</span>
+											</div>
+											<div class="bubbleItem clearfix">
+												<!-- <div class="doctor-head fr" style="position: relative;">
+                                                    <img src="../static/images/demoimg/img001.png" alt="doctor">
+                                                </div> -->
+												<span class="bubble rightBubble">
+													nmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmmnmm
+													<span class="topLevel"></span>
+												</span>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="weui-tab__footer">
+									<footer class="chat-edit clearfix">
+										<p class="chat-info" placeholder="想咨询他什么内容..." contenteditable="true"></p>
+										<!-- <span class="uploadImg fl"><input type="file" name="uploadfile" class="uploadfile"></span> -->
+										<button class="send-btn fr">发送</button>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			var $w = $(window).width();
+			var $h = $(window).height();
+			var $video_bar = 9 / 16;
+			var $max_w = 520
+			if ($w > $max_w) {
+				$w = $max_w;
+			}
+			var $weui_top = $w * $video_bar + 20;
+			$(".video").css({
+				"height": $weui_top
+			})
+			$(".weui-tab__panel").css({
+				"padding-top": $weui_top
+			})
+			/*
+			 左侧 接收别人信息 调用，三个参数：leftBubble，头像路径，内容
+			 chat(element,imgSrc,doctextContent)
+			 */
+			chat("leftBubble", "../static/images/demoimg/img001.png", "您好，欢迎关注博客：dddd");
+			chat("centerBubble", '', "欢迎雷老板加入直播间");
+			chat("timeBubble", '', "2017-11-23 12:00:00");
+			$(".send-btn").click(function() {
+				//右侧 自己发 调用，只需填一个参数"rightBubble"
+				chat("rightBubble");
+				//清空输入框
+				$('.chat-info').html('');
+			})
+			var u = navigator.userAgent;
+			if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) { //安卓手机
+				//  拿到获取焦点的input
+				// let input = document.querySelector('input')
+				var input = document.getElementsByClassName("chat-info")[0];
+				input.addEventListener('focus', function() {
+					console.log(1)
+					$(".weui-tab__video").css({
+						"top": -$weui_top
+					})
+					$(".weui-tab__panel").css({
+						"padding-top": 0
+					})
+				})
+				input.addEventListener('blur', function() {
+					$(".weui-tab__video").css({
+						"top": 0
+					})
+					$(".weui-tab__panel").css({
+						"padding-top": $weui_top
+					})
+				})
+			}
+		})
+	</script>
+</body>
+
+</html>

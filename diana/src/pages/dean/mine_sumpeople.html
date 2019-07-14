@@ -1,0 +1,65 @@
+<template src="head.html" title="戴妃学院" dean></template>
+<body class="">
+	<div class="container agency ">
+		<div class="page m-bgcolor">
+			<div class="user-list">
+				<ul>
+					<li>
+						<div class="img-box fl">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+						<div class="item fl">
+							<p class="name">季成</p>
+							<p class="time">2017-06-29</p>
+						</div>
+					</li>
+					<li>
+						<div class="img-box fl">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+						<div class="item fl">
+							<p class="name">季成</p>
+							<p class="time">2017-06-29</p>
+						</div>
+					</li>
+					<li>
+						<div class="img-box fl">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+						<div class="item fl">
+							<p class="name">季成</p>
+							<p class="time">2017-06-29</p>
+						</div>
+					</li>
+					<li>
+						<div class="img-box fl">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+						<div class="item fl">
+							<p class="name">季成</p>
+							<p class="time">2017-06-29</p>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(document).live('click', ".sou-box .active", function() {
+				if ($(this).hasClass('fa-angle-up')) {
+					$(".search-wrap").hide();
+					$(this).removeClass("active");
+					$(".fa-angle-down").addClass("active");
+				} else {
+					$(".search-wrap").show();
+					$(this).removeClass("active");
+					$(".fa-angle-up").addClass("active");
+				}
+			})
+		})
+	</script>
+</body>
+
+</html>

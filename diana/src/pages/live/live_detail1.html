@@ -1,0 +1,93 @@
+<template src="head.html" title="戴妃学院" live swiper></template>
+<body class="page_bg">
+	<div class="container video_detaill1">
+		<div class="home-banner">
+			<img src="../static/images/demoimg/banner.jpg" />
+		</div>
+		<div class="page_bd courlist_tit">
+			<div class="spread-title">
+				<h3>《智慧母亲》和谐家庭、亲子教育</h3>
+				<p class="price1"><em>￥</em><span>3980</span><b>优惠价</b><b>国庆回馈</b></p>
+				<p class="price">价格 ￥6880</p>
+			</div>
+		</div>
+		<div class="page_bd courlist_cen">
+			<div class="courlist_center">
+				<div class="course-list home-title">
+					<div class="weui-cell__bd">课件介绍</div>
+				</div>
+				<div class="text-center">
+					<p>
+						课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程容课程简介内容课程简介内容课程简介内容课程简介内容课。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-bg buy_popup_bg" style="display: none;z-index: 9;"></div>
+	<div class="weui-tabbar flex-wrap">
+		<div class="pay-info">
+			<p>应付：199.00元</p>
+			<p>请选择优惠券：
+				<select name="select1">
+					<option selected="" value="1">100元 有效期限至2017-05-10</option>
+					<option value="2">50元 有效期限至2017-05-10</option>
+					<option value="3">10元 有效期限至2017-05-10</option>
+				</select>
+			</p>
+			<p>实付：149.00元</p>
+		</div>
+		<div class="buy-bar">
+			<div class="share-btn">分享：赚￥88.0</div>
+			<div class="buy-btn">
+				<a id="buy" href="javascript:;">订阅专栏：¥199.00</a>
+				<a id="buy2" style="display: none;" href="javascript:;">确认支付(付款成功弹窗)</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup_share">
+		<div class="popup-bg"></div>
+		<div class="share-box">
+			<i class="myicon micon-hintArrows"></i>
+			<i class="myicon micon-shareText"></i>
+		</div>
+	</div>
+	<template src="back.html" top home></template>
+	<script>
+		$(function() {
+			//播放器高度
+			var w = $(".container").width();
+			var video = $('#video');
+			var videoH = Math.round(9 * w / 16);
+			video.height(videoH);
+			$('.video,.grade-box').height(videoH);
+			// $('body').css('padding-top',videoH+'px');
+			$('.page').css('top', videoH + 'px'); //决绝滚动定位问题
+			$(".share-btn").click(function() {
+				$(".popup_share").addClass("find")
+			})
+			$(".popup_share .popup-bg").click(function() {
+				$(".popup_share").removeClass("find")
+			})
+			$(".buy_popup_bg").click(function() {
+				$("#buy").show().siblings().hide();
+				$(".pay-info").hide();
+				$(".tipbg").remove();
+				$('.share-btn').show();
+				$('.buy-btn').css('width', '');
+				$(".buy_popup_bg").hide()
+			})
+			//订阅支付流程
+			$("#buy").click(function() {
+				$(this).hide().siblings().show();
+				$(".pay-info").show();
+				$("body").append("<div class='tipbg'></div>");
+				$('.share-btn').hide();
+				$('.buy-btn').css('width', '100%');
+				$(".buy_popup_bg").show()
+			})
+		})
+	</script>
+</body>
+
+</html>

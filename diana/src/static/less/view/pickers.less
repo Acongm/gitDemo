@@ -1,0 +1,106 @@
+.pickers() {
+  .pickers-box {
+    &.picker_fixed {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 999;
+
+      .picker-box {
+        position: fixed;
+        background-color: #fff;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        .border-bottom(#ccc);
+      }
+    }
+
+    &.active {
+      .popup-bg {
+        display: block;
+      }
+    }
+
+  }
+  .popup-bg {
+    display: none;
+  }
+  .pickers {
+    // height: 48px;
+    position: relative;
+    z-index: 999;
+  }
+  .picker-box {
+    background-color: #fff;
+    display: flex;
+  }
+  .picker {
+    min-width: 60px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+
+    .micon-picker_btn {
+      margin-left: 4px;
+    }
+
+    span {
+      color: #333;
+    }
+
+    &.active {
+      span {
+        color: #B54AB3;;
+      }
+
+      .micon-picker_btn {
+        .bg-myicon-png('picker_btn1');
+      }
+    }
+  }
+  .picker_ {
+    width: 100%;
+    max-height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: absolute;
+    left: 0;
+    top: 42px;
+    background-color: #fff;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #333;
+      padding: 10px 15px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      .border-top(#ccc);
+
+      i {
+        display: none;
+      }
+
+      &.active {
+        i {
+          display: block;
+        }
+
+        span {
+          color: #B54AB3;;
+        }
+      }
+    }
+  }
+  .picker_padding {
+    padding-top: 50px;
+  }
+}

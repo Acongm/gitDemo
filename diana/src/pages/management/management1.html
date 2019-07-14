@@ -1,0 +1,23 @@
+<template src="head.html" title="戴妃学院" management></template>
+<body class="management_bg">
+	<div class="container has-tabNav management " id="">
+		<div class="list_box">
+			<input type="tel" class="text_input js_input" placeholder="请输入参课码">
+			<button class="btn_submit">确认</button>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".js_input").keyup(function() {
+				console.log($(this).val())
+				if ($(this).val() != '') {
+					$(this).next("button").addClass("active")
+				} else {
+					$(this).next("button").removeClass("active")
+				}
+			})
+		})
+	</script>
+</body>
+
+</html>

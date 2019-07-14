@@ -1,0 +1,52 @@
+// 业绩申报数据显示块
+.state_box {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-around;
+
+  .item_box {
+    .bg-image-size(3.36rem, 1.6rem);
+    border-radius: @radius-m;
+    h3 {
+      color: @c-d-g;
+      font-size: @f_xxxl;
+      line-height: 33px;
+      color: @white;
+      padding: 10px 10px 0;
+    }
+
+    p {
+      font-size: 14px;
+      color: fade(@white, 90);
+      padding: 5px 10px 0;
+    }
+  }
+  .entering {
+    background-image: linear-gradient(@background-image-entering);
+    box-shadow: @box-shadow-entering;
+  }
+  .affirm {
+    background-image: linear-gradient(@background-image-affirm);
+    box-shadow: @box-shadow-affirm;
+  }
+  .white_color{
+    display:flex;
+    align-items:center;/*垂直居中*/
+    justify-content: center;/*水平居中*/
+    span{
+      padding-left: 5px;
+    }
+  }
+}
+.state_title {
+  height: 2.24rem;
+  transition-property: height;
+  transition-duration: .5s;
+  background-color: @white;
+}
+
+.dis_flex_cen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

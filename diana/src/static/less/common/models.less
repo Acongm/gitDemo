@@ -1,0 +1,159 @@
+/* 公共样式组件 */
+//选项切换
+.lifire-navbar {
+  & + .weui-tab__panel {
+    & > div {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+
+//选项切换
+.lifire-navbar {
+  font-size: .3rem;
+  color: @c-l-g;
+  background: @white;
+
+  .weui-navbar__item {
+    &.weui-bar__item_on {
+      position: relative;
+      background: @white;
+      color: @c-d-g;
+    }
+  }
+
+  & + .weui-tab__panel {
+    overflow-x: hidden;
+
+    & > div {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+.tipbg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: fade(@black, 75);
+    z-index: 600;
+}
+
+
+// 数据未空时显示
+.nonedata {
+  padding: 2.3rem 0 3rem;
+  margin-bottom: 1.2rem;
+  font-size: @f_l !important;
+  color: @c-l-g !important;
+  text-align: center;
+  &.nonedata_inline{
+    padding: .3rem 0 .3rem;
+  }
+  p{
+    text-indent: -1em;
+    font-size: @f_l !important;
+    color: @c-l-g !important;
+    max-width: 100%!important;
+    width: 100%!important;
+    text-align: center !important;
+  }
+
+  i {
+    font-size: 1.6rem;
+    text-align: center;
+    color: @c-l-g;
+  }
+}
+
+// 首页立即关注模块
+.header-attention(){
+  .header-attention{
+    // position: fixed;
+    padding:.07rem 0 .06rem .2rem;
+    margin-bottom: .2rem;
+    font-size:.24rem;
+    line-height:1;
+    color:#777;
+    display:flex;
+    align-items:center;
+    background:#fff;
+    .logo{
+      margin-right: .2rem;
+      img{
+        width:.73rem;
+        height:.73rem;
+      }
+    }
+    strong{
+      margin-bottom: .13rem;
+      display:block;
+      font-size:.28rem;
+      color:#333;
+    }
+    .slogan{
+      width:3.4rem;
+      flex: 1;
+    }
+    .attention {
+        width:1.42rem;
+        height:.61rem;
+        padding-right: .05rem;
+        color: #000;
+        background:url(../images/attention.png) no-repeat;
+        background-size: 1.42rem .61rem;
+
+    }
+    .close{
+      padding:.1rem .12rem;
+      margin-right: .08rem;
+      font-size:.32rem;
+      color: #333;
+    }
+  }
+  .handoright{
+    font-size: .41rem;
+    margin-right: .22rem;
+    color: #333;
+  }
+}
+.header-attention();
+
+
+/*
+ * 查看大图样式
+ */
+.img_magnify{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    z-index: 999;
+  }
+  .modal-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.7);
+    display: block;
+    z-index: 999;
+  }
+}

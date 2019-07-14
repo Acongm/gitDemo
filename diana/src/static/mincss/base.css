@@ -1,0 +1,6 @@
+/*!
+ * base.css v ()
+ * Copyright 2018 Tencent, Inc.
+ * Licensed under the  license
+ */
+body{font-family:Microsoft YaHei,-apple-system-font,Helvetica Neue,Helvetica,sans-serif;-webkit-tap-highlight-color:transparent}#__bs_notify__{font-size:10px!important}.container,body{font-size:16px}li,ul{list-style:none}.container>div,.container>form,.container>h3,.container>ul{width:7.2rem;margin:0 auto}.container>div ::-webkit-scrollbar,.container>form ::-webkit-scrollbar,.container>h3 ::-webkit-scrollbar,.container>ul ::-webkit-scrollbar{width:0}.weui-tabbar{width:7.2rem;left:50%;margin-left:-3.6rem}.iconfont-dianhua,.iconfont-dizhi,.iconfont-emall,.iconfont-wangzhi,.iconfont-youbian{width:.48rem;height:.44rem}@media screen and (min-width:720px){.weui-tabbar{margin-left:-3.68rem}}.clearfix:after,.clearfix:before{display:table;line-height:0;content:""}.clearfix:after{clear:both}.iconfont-dianhua{background:url(../images/iconfont/dianhua.jpg) no-repeat}.iconfont-dizhi{background:url(../images/iconfont/dizhi.jpg) no-repeat}.iconfont-emall{background:url(../images/iconfont/emall.jpg) no-repeat}.iconfont-wangzhi{background:url(../images/iconfont/wangzhi.jpg) no-repeat}.iconfont-youbian{background:url(../images/iconfont/youbian.jpg) no-repeat}

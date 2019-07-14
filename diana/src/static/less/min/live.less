@@ -1,0 +1,122 @@
+/* 自定义less插件 */
+@import "styl/styl.less";
+/* 自定义icon样式 */
+@import "common/myicon.less";
+/* 公用样式class */
+@import "common/style.less";
+/* 公共模块样式 */
+@import "common/models.less";
+@import "common/reset.less";
+@import "view/tabbar.less";
+@import "view/myui-navbars.less";
+@import "view/none.less";
+@import "live/home.less";
+
+.weui-navbars();
+.list_none();
+
+
+.weui-tabbar .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon,
+.weui-tabbar .weui-tabbar__item.weui-bar__item_on p.weui-tabbar__label,
+.weui-tabbar .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon i {
+  color: #ea303b;
+}
+
+
+.share-box {
+  width: 100%;
+
+  .myicon {
+    position: absolute;
+  }
+
+  .micon-hintArrows {
+    left: 283*2/100rem;
+    top: 32*2/100rem;
+  }
+
+  .micon-shareText {
+    left: 105*2/100rem;
+    top: 119*2/100rem;
+  }
+}
+
+
+.home-banner {
+  img {
+    width: 100%;
+  }
+}
+
+.video_detaill1,
+.video_detaill {
+  .courlist_tit {
+    // border-bottom: 10px solid #efefef;
+    margin-bottom: 10px;
+  }
+
+  .text-center {
+    padding: 16px;
+  }
+
+  .home-title {
+    padding: 13px 0;
+    .border-bottom(#efefef);
+
+    .weui-cell__bd {
+      // border-left: 3px solid #B54AB3;
+      padding: 0;
+      padding-left: 16px;
+      line-height: 22px;
+      font-size: 16px;
+      position: relative;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -8px;
+        width: 3px;
+        height: 16px;
+        background: #B54AB3;
+        background-image: linear-gradient(-140deg, #E04BDA 0%, #D046CB 100%);
+        border-radius: 7px;
+      }
+    }
+  }
+
+  .price1 {
+    line-height: 33px;
+    height: 33px;
+    color: #FF2A45;
+
+    em {
+      font-size: 16px;
+      font-style: normal;
+    }
+
+    span {
+      font-size: 24px;
+    }
+
+    b {
+      font-style: normal;
+      background: #FFE3E3;
+      border-radius: 21px;
+      font-size: 12px;
+      font-size: 10px;
+      color: #FF2A45;
+      font-weight: normal;
+    }
+  }
+
+  .price {
+    font-size: 12px;
+    color: #999999;
+  }
+
+  .page_bd {
+    background-color: #fff;
+  }
+}

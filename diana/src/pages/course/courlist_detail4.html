@@ -1,0 +1,163 @@
+<template src="head.html" title="戴妃学院" course swiper></template>
+<body>
+	<div class="container has-tabNav video-detail courlist_detail4" id="courlist_detail4">
+		<div class="swiper-container home-banner" style="height: auto;">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="###">
+						<img src="http://file.qiniu.dianacollege.com/offline/2018/07/17/jpg/2018071715475126.jpg" />
+					</a>
+					<div class="text">
+						<p>人生就是一个字：读就是一个字，怎么读？</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<a href="###">
+						<img src="../static/images/demoimg/banner2.jpg" />
+					</a>
+					<div class="text">
+						<p>人生就是一个字：读</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<a href="###">
+						<img src="../static/images/demoimg/banner3.jpg" />
+					</a>
+					<div class="text">
+						<p>3</p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="page_bd courlist_tit">
+			<div class="spread-title">
+				<h3>悦爱悦美</h3>
+				<p class="price1"><em>价 格<span></span></em><span>¥20000.0</span></p>
+				<p class="price"><em>优惠价</em><span>¥9888.0</span></p>
+			</div>
+		</div>
+		<div class="page_bd courlist_cen">
+			<div class="courlist_center">
+				<div class="course-list home-title">
+					<div class="weui-cell__bd">课件简介内容</div>
+				</div>
+				<div class="text-center">
+					<p>
+						课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程简介内容课程容课程简介内容课程简介内容课程简介内容课程简介内容课。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="weui-tabbar flex-wrap">
+		<div class="pay-info">
+			<p>应付：199.00元</p>
+			<p>请选择优惠券：
+				<select name="select1">
+					<option selected="" value="1">100元 有效期限至2017-05-10</option>
+					<option value="2">50元 有效期限至2017-05-10</option>
+					<option value="3">10元 有效期限至2017-05-10</option>
+				</select>
+			</p>
+			<p>实付：149.00元</p>
+		</div>
+		<div class="buy-bar">
+			<div class="share-btn">分享：赚￥88.0</div>
+			<div class="buy-btn">
+				<a id="buy" href="javascript:;">订阅专栏：¥199.00</a>
+				<a id="buy2" style="display: none;" href="javascript:;">确认支付(付款成功弹窗)</a>
+			</div>
+		</div>
+	</div>
+	
+	<template src="back.html" top home></template>
+	<template src="modal.html" attention shareWX buyModal buyBind share agree></template>
+	<script>
+		$(function() {
+			// $(".session_lists .session_list").click(function() {
+			// 	$(this).addClass("active").siblings().removeClass("active");
+			// })
+			
+			// $(".popup .cancel_btn").click(function() {
+			// 	$(this).parents(".popup").removeClass("find");
+			// })
+			// $(".popup .affirm_btn").click(function() {
+			// 	$(this).parents(".popup").removeClass("find");
+			// })
+			//定义是否已经关注
+			attention(true);
+			//轮播
+			// window.onload = function() {
+			//   var mySwiper = new Swiper('.swiper-container', {
+			//     autoplay: 5000,
+			//     loop:true,
+			//     speed:500,
+			//     pagination: '.swiper-pagination'
+			//   })
+			// }
+		})
+		$(function() {
+			
+			$("#buy").click(function() {
+				$(".popup_session").addClass("find");
+				$(".cancel_btn").click(function() {
+					$(".popup_session").removeClass("find");
+				})
+			})
+			//播放器高度
+			var w = $(window).width();
+			var video = $('#video');
+			var videoH = Math.round(9 * w / 16);
+			video.height(videoH);
+			$('.video,.grade-box').height(videoH);
+			$('body').css('padding-top', videoH + 'px');
+			$('.page').css('top', videoH + 'px'); //决绝滚动定位问题
+			attention(false);
+			$('.weui-navbar__item').on('click', function() {
+				//选项内容切换
+				var panelActive = $(this).attr("data-panel");
+				if (panelActive == 'panel_1') {
+					$(".weui-tab__panel>div").addClass("active");
+				}
+			});
+			//订阅支付流程
+			// $("#buy").click(function() {
+			$(".affirm_btn").click(function() {
+				$(".popup_session").removeClass("find");
+				$("#buy").hide();
+				$("#buy2").show();
+				// $(this).hide().siblings().show();
+				$(".pay-info").show();
+				$("body").append("<div class='tipbg'></div>");
+				$('.share-btn').hide();
+				$('.buy-btn').css('width', '100%');
+			})
+			// modal_fn('.share-btn','.share-modal');
+			// modal_fn('.share-btn', '#backstage_play', ".tip-arrow");
+			modal_fn('.share-btn', '#shareWXModal', ".tip-arrow");
+			modal_fn('#share_WX', '#shareWXModal,.tip-arrow');
+			var h = $(window).height();
+			var w = $(window).width();
+			var _r = 100 * (w / 720);
+			var _c_h = h - _r * .98;
+			// $(".center").css({"height":_c_h})
+			// console.log(_c_h)
+			$(".datalist>div").click(function() {
+				var _id = $(this).attr("data-panel");
+				// $("#"+_id).css({"padding-top":"50px"}).siblings().css({"padding-top":"0px"});
+			})
+			//  $(".center").scroll(function() {
+			//     $(".center div").css({"padding-top":"0px"});
+			// })
+			// 选择内容定位
+			$(".weui-navbar__item").click(function() {
+				var _ind = $(this).index();
+				$(".container").scrollTop($(".container").scrollTop() + $(".weui_tab_bd_item").eq(_ind).offset().top)
+			})
+			// 调用函数计算内容区以上高度，并且做选择栏固定操作
+			scrollFn(".video", ".page_bd>.spread-title", ".page_bd>.subscibe", ".weui-navbar");
+		})
+	</script>
+</body>
+
+</html>

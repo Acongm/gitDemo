@@ -1,0 +1,77 @@
+body {
+  font-family: Microsoft YaHei, -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+#__bs_notify__ {
+  font-size: 10px !important;
+}
+body,
+.container {
+  font-size: 16px;
+}
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+ul,
+li {
+  list-style: none;
+}
+.container > div,
+.container > h3,
+.container > form,
+.container > ul {
+  width: 7.2rem;
+  margin: 0 auto;
+}
+.container > div ::-webkit-scrollbar,
+.container > h3 ::-webkit-scrollbar,
+.container > form ::-webkit-scrollbar,
+.container > ul ::-webkit-scrollbar {
+  width: 0;
+}
+.weui-tabbar {
+  width: 7.2rem;
+  left: 50%;
+  margin-left: -3.6rem;
+}
+@media screen and (min-width: 720px) {
+  .weui-tabbar {
+    margin-left: -3.68rem;
+  }
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.iconfont-dianhua {
+  background: url("../images/iconfont/dianhua.jpg") no-repeat;
+  width: 0.48rem;
+  height: 0.44rem;
+}
+.iconfont-dizhi {
+  background: url("../images/iconfont/dizhi.jpg") no-repeat;
+  width: 0.48rem;
+  height: 0.44rem;
+}
+.iconfont-emall {
+  background: url("../images/iconfont/emall.jpg") no-repeat;
+  width: 0.48rem;
+  height: 0.44rem;
+}
+.iconfont-wangzhi {
+  background: url("../images/iconfont/wangzhi.jpg") no-repeat;
+  width: 0.48rem;
+  height: 0.44rem;
+}
+.iconfont-youbian {
+  background: url("../images/iconfont/youbian.jpg") no-repeat;
+  width: 0.48rem;
+  height: 0.44rem;
+}

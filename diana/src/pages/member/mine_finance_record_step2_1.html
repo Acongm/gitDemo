@@ -1,0 +1,77 @@
+<template src="head.html" title="戴妃学院" link="mine"></template>
+<body>
+	<div class="container">
+		<div class="withdraw">
+			<div class="withdraw-th">
+				<span>提现到微信钱包</span>
+			</div>
+			<div class="withdraw-bd">
+				<p>提现金额</p>
+				<div class="record-input">
+					<input class="weui-input" type="number" pattern="[0-9]*" value="weui input" placeholder="">
+				</div>
+				<p class="record-info">我的可用余额：¥66.66</p>
+				<!-- <p class="record-info red">输入金额超过可提现额度</p> -->
+				<a href="javascript:;" id="showRecordDialog" class="weui-btn">提现</a>
+				<div class="record-info"><a href="mine_info.html">完善个人信息</a>后才能提现</div>
+			</div>
+		</div>
+
+		<div class="center-list">
+			<div class="title">
+				<p>
+					<span>提现金额（元）</span>
+					<span>申请时间</span>
+					<span>申请状态</span>
+				</p>
+			</div>
+			<ul>
+				<li>
+					<p>
+						<span>100.00</span>
+						<span>2017-03-05</span>
+						<span>审核状态</span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span>100.00</span>
+						<span>2017-03-05</span>
+						<span>审核中</span>
+					</p>
+				</li>
+				<li>
+					<a href="">
+						<p>
+							<span>100.00</span>
+							<span>2017-03-05</span>
+							<span>不通过<i class="iconfont icon-jiantouxiangyou1"></i></span>
+						</p>
+					</a>
+				</li>
+				<li>
+					<p>
+						<span>100.00</span>
+						<span>2017-03-05</span>
+						<span>审核中</span>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<template src="popup.html"></template>
+	<script>
+		$(function() {
+			$("#showRecordDialog").on('click', function() {
+				// $("#record_ok").fadeIn(200);
+				$("#record_no").fadeIn(200);
+				// $("#bind_phone").fadeIn(200);
+			})
+			$(".close").on('click', function() {
+				$(this).parents('.js_dialog').fadeOut(200);
+			})
+		})
+	</script>
+</body>
+
+</html>

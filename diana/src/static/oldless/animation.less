@@ -1,0 +1,72 @@
+.handoright{
+	animation: handoright .4s infinite;
+}
+@keyframes handoright
+{
+0%   {transform:translate(0, 0);}
+50%  {transform:translate(.2rem, 0);}
+100% {transform:translate(0, 0);}
+}
+.circle(){
+	-webkit-animation:circle 30s infinite linear;/*匀速 循环*/
+}
+@-webkit-keyframes circle{
+0%{ transform:rotate(0deg); }
+25%{ transform:rotate(-90deg) scale(4/7.2); }
+50%{ transform:rotate(-180deg) scale(1); }
+75%{ transform:rotate(-270deg) scale(4/7.2); }
+100%{ transform:rotate(-360deg) scale(1); }
+}
+
+.mine_bg(){
+	-webkit-animation:minebg 3s infinite linear;/*匀速 循环*/
+}
+@-webkit-keyframes minebg{
+0%{ transform:rotate(0deg); }
+100%{ transform:rotate(-360deg); }
+}
+
+
+
+@cub_w: 60px;
+.lodingbg{
+	background-color: rgba(255,255,255,1);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9998;
+	.spinner {
+	  margin: 200px auto;
+	  width: @cub_w;
+	  height: @cub_w;
+	  position: relative;
+	}
+	.cube1, .cube2 {
+	  background-color: #67CF22;
+	  width: 12px;
+	  height: 12px;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  animation: cubemove 1.8s infinite ease-in-out;
+	}
+	.cube2 {
+	  animation-delay: -0.9s;
+	}
+}
+ 
+@keyframes cubemove {
+  25% {
+    transform: translateX(@cub_w) rotate(-90deg) scale(0.5);
+  } 50% {
+    transform: translateX(@cub_w) translateY(@cub_w) rotate(-179deg);
+  } 50.1% {
+    transform: translateX(@cub_w) translateY(@cub_w) rotate(-180deg);
+  } 75% {
+    transform: translateX(0px) translateY(@cub_w) rotate(-270deg) scale(0.5);
+  } 100% {
+    transform: rotate(-360deg);
+  }
+}

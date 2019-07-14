@@ -1,0 +1,58 @@
+<template src="head.html" title="戴妃学院" course management></template>
+<body>
+	<div class="container has-tabNav management" id="class_management">
+		<div class="page">
+			<div class="page__bd clearing-details_after">
+				<div class="weui-form-preview">
+					<div class="weui-form-preview__hd">
+						<div class="weui-form-preview__item">
+							<em class="weui-form-preview__value">《唤醒最美好的自己》</em>
+						</div>
+					</div>
+					<div class="weui-form-preview__bd">
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">日期</label>
+							<span class="weui-form-preview__value">6月2日</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">期数</label>
+							<span class="weui-form-preview__value">467</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">时间</label>
+							<span class="weui-form-preview__value">半天 / 下午</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">主办分院</label>
+							<span class="weui-form-preview__value">深圳</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">主办院长</label>
+							<span class="weui-form-preview__value">总部</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">讲师</label>
+							<span class="weui-form-preview__value">全国院长</span>
+						</div>
+					</div>
+					<!-- <div class="weui-form-preview__ft">
+                    <a class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:">操作</a>
+                </div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > $(".state_title").height()) {
+					$(".pickers-box").addClass("picker_fixed")
+				} else {
+					$(".pickers-box").removeClass("picker_fixed")
+				}
+			});
+		})
+	</script>
+</body>
+
+</html>

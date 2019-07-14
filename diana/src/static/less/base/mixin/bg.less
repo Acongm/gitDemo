@@ -1,0 +1,21 @@
+.bg-image(@url, @ext: "png"){
+  background-image: url("../images/icon/@{url}@2x.@{ext}");
+  	@media (min-resolution: 3dppx){
+		background-image: url("../images/icon/@{url}@3x.@{ext}");
+	}
+}
+.bg-image-size(@w, @h) {
+  width: @w;
+  height: @h;
+  background-size: @w @h;
+}
+
+.bg-image-png(@url) {
+  background-image: url("../images/@{url}.png");
+  background-repeat: no-repeat;
+}
+
+.bg-image-jpg(@url) {
+  background-image: url("../images/@{url}.jpg");
+  background-repeat: no-repeat;
+}

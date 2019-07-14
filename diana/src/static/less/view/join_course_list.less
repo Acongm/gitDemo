@@ -1,0 +1,49 @@
+.join_course_lists() {
+  .join_course_list {
+    display: flex;
+    position: relative;
+    .border-bottom(@c-l-g-s);
+    background-color: @white;
+    padding: 14px 16px 16px;
+
+    .btn_submit {
+      width: 56px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: normal;
+    }
+
+    .text {
+      flex: 1;
+
+      h4 {
+        font-size: @f_l;
+        color: @c-d-g;
+        font-weight: normal;
+        line-height: 22px;
+        margin-bottom: 6px;
+      }
+
+      p {
+        font-size: @f_s;
+        line-height: 17px;
+        color: @c-l-g;
+      }
+
+    }
+
+    .btn-box {
+      display: flex;
+      align-items: center;
+
+      .btn_submit {
+        font-size: @f_s;
+      }
+
+      .cancel_btn {
+        margin-right: 20px;
+      }
+    }
+  }
+}

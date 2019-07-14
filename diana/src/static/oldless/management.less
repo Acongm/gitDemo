@@ -1,0 +1,47 @@
+@import "styl/styl.less";
+@import "common/myicon.less";
+@import "common/style.less";
+@import "view/state_box.less";
+@import "view/pickers.less";
+@import "view/none.less";
+@import "base.less";
+
+.container > div, .container > h3, .container > form, .container > ul {
+    width: 7.5rem;
+    margin: 0 auto;
+}
+
+.state_boxs();
+.pickers();
+.list_none();
+
+.dis_flex_cen{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.management{
+	.weui-form-preview__value,
+	.weui-form-preview__bd{
+		text-align: left;
+	}
+	.state_box{
+		&:after,
+		&:before{
+			display: none;
+		}
+	}
+
+}
+.headline{
+	font-size: 16px;
+	color: #333;
+	.weui-form-preview__label{
+		font-size: 16px;
+		color: #333;
+	}
+}
+.weui-form-preview__bd{
+	font-size: 12px;
+}

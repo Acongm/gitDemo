@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>录入业绩</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/clearing.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body>
+	<div class="container management management" id="class_management">
+		<div class="callimg_box">
+			<img src="./../static/images/demoimg/class1.png" alt="">
+			<div class="mine-share ">
+				<!-- 有详细数据用 a 标签，不作详细数据用 div 标签 -->
+				<div class="item_box_p split-line ">
+					<div class="item_p">
+						<p class="p_property">产品名称</p>
+						<p class="p_details">《幸福生活》</p>
+					</div>
+					<div class="item_p">
+						<p class="p_property">产品金额</p>
+						<p class="p_details">3980 元</p>
+					</div>
+					<div class="item_p">
+						<p class="p_property">付款时间</p>
+						<p class="p_details">2019 / 05 / 30</p>
+					</div>
+				</div>
+				<button class="btn_submit affirm_btn show_agree">签订协议</button>
+			</div>
+		</div>
+	</div>
+	<!-- 分享提示箭头 -->
+	<div class="tip-arrow"></div>
+	<!-- 弹窗背景层 -->
+	<div class="modal-bg"></div>
+
+	<!-- 购买协议 -->
+	<div class="popup popup_session agree">
+		<div class="popup-bg"></div>
+		<div class="popup-box session" style="top: 5%">
+			<div class="popup-title">戴妃学院客户服务协议</div>
+			<div class="popup-center agreement" style="padding: 0 .2rem;max-height: 70vh;overflow-y: auto;">
+				<h5>本协议甲方系指客户，乙方系指戴妃（深圳）文化教育有限公司，由乙方授权代理商代为签订。根据国家有关法律法规，双方达成以下协议：</h5>
+				<h3>一、服务内容及服务承诺</h3>
+				<p>1、甲方自愿报名参加乙方组织的课程学习，乙方愿意整合优秀师资，营造舒适的环境，为甲方提供高品质的课程及产品服务。</p>
+				<p>2、甲方可以自主选择是否订购乙方提供的后续产品和服务，具体产品服务内容及费用标准由乙方提供。</p>
+				<p>2、甲方可以自主选择是否订购乙方提供的后续产品和服务，具体产品服务内容及费用标准由乙方提供。</p>
+				<p>4、乙方将通过微信公众号、门户网站、400热线等渠道提供产品内容、课程项目、课程时长、收费标准等内容，具体以甲方报名交费时双方确认的信息为准。</p>
+				<p>5、乙方向甲方提供便捷的课程咨询及投诉受理渠道，乙方客户服务部门应在接到客户投诉之日起2个工作日内处理。</p>
+				<h3>二、客户信息登记</h3>
+				<p>1、甲方报名时需登记真实有效的个人信息，包括但不限于姓名、电话、微信等。</p>
+				<p>2、甲方报名成功后即获得相应的产品服务及参课资格，产品服务及参课资格仅限甲方本人使用。如因甲方登记信息有误影响到甲方参课，相关责任和损失由甲方自行承担。</p>
+				<p>3、甲方后续享受乙方的客户服务、课程优惠，乙方需根据甲方登记信息、过往报名课程信息予以确认。</p>
+				<h3>三、费用缴纳及参课</h3>
+				<p>1、甲方需在报名时一次性缴纳产品及课程费用，乙方收取的费用应当符合法律法规的规定和甲乙双方的约定。</p>
+				<p>2、乙方需提前公示课程安排计划，方便甲方协调时间参课。</p>
+				<p>3、乙方需通过电话、邮件、微信等方式通知甲方参课，确保甲方接收到开课信息。乙方确认联系方式如下：</p>
+				<p>电话：_________________________ ；</p>
+				<p>邮件：_________________________ ；</p>
+				<p>微信：_________________________ 。</p>
+				<p>4、甲方参加课程产生的差旅食宿费用，以及课程未包含的服装道具等费用，由甲方自行承担。</p>
+				<p>5、在下列情况下，乙方不再保证通知甲方参课，由此给甲方造成的损失，乙方不承担责任：</p>
+				<p>（1）乙方通知甲方参课，甲方收到参课信息但因个人原因未能参课。</p>
+				<p>（2）甲方变更联系方式未通知乙方，导致乙方无法联系到甲方。</p>
+				<p>（3）甲方因个人原因拒绝参加已经报名的课程。</p>
+				<p>（4）甲方自行将课程转让给其他客户，未得到乙方认可。</p>
+				<p>6、退款约定：自成功报名之日起甲方若未参课，7天内申请退款，须扣除相应税费及手续费；15天内申请退款，须扣除报名费10%的违约金以及相应税费及手续费。甲方一经参课或未参课但超过15天，无论何种情况均不予退款。</p>
+				<h3>四、争议解决</h3>
+				<p>本协议项下发生的争议，由甲乙双方协商解决，也可由当地有关部门调解，协商或调解不成的，依法向乙方所在地人民法院起诉。</p>
+				<h3>五、其他</h3>
+				<p>1、甲方报名课程时签署的确认单、收据等为本协议的补充协议。</p>
+				<p>2、本协议一式两份，双方各执一份，具有同等法律效力。本协议经加盖乙方公司的合同专用章，甲方盖章或签字后生效。</p>
+				<p>甲方签名： _________________________ </p>
+				<p>乙 方： 戴妃（深圳）文化教育有限公司</p>
+				<p>盖 章： __________________________________</p>
+				<p>时 间： __________________________________</p>
+				<p>时 间： __________________________________</p>
+			</div>
+			<div class="popup-footer">
+				<button class="btn_submit cancel_btn weui-col-5">取消</button>
+				<button class="btn_submit affirm_btn">确定</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".weui-select").change(function() {
+				$(this).removeClass("hint");
+				console.log($(this).val())
+			})
+			$(".show_agree").click(function() {
+				$(".popup_session").addClass("find");
+				$(".popup .cancel_btn").click(function() {
+					$(this).parents(".popup").removeClass("find");
+				})
+				$(".popup .affirm_btn").click(function() {
+					$(this).parents(".popup").removeClass("find");
+					window.location.href = "clearing_state.html"
+				})
+			})
+		})
+	</script>
+</body>
+
+</html>

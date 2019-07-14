@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/mine.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body>
+	<strong>这是原图</strong>
+	<p><img src="../static/images/demoimg/img001.png" width="110" height="110"></p>
+	<strong>这是Canvas实现</strong>
+	<p>圆角大小：<span class="range-txt"> 0 <input id="radiusInput" type="range" min="0" max="1000" value="256"> 92</span></p>
+	<canvas id="canvas" width="256" height="256"></canvas>
+	<script>
+		//圆角矩形
+		CanvasRenderingContext2D.prototype.roundRect = function(x, y, w, h, r) {
+			var min_size = Math.min(w, h);
+			if (r > min_size / 2) r = min_size / 2;
+			// 开始绘制
+			this.beginPath();
+			this.moveTo(x + r, y);
+			this.arcTo(x + w, y, x + w, y + h, r);
+			this.arcTo(x + w, y + h, x, y + h, r);
+			this.arcTo(x, y + h, x, y, r);
+			this.arcTo(x, y, x + w, y, r);
+			this.closePath();
+			return this;
+		}
+		// canvas元素, 图片元素
+		var canvas = document.querySelector("#canvas"),
+			image = new Image(),
+			input = document.getElementById("radiusInput");
+		var context = canvas.getContext("2d");
+		var draw = function(obj) {
+			// 创建图片纹理
+			var pattern = context.createPattern(obj, "no-repeat");
+			// 如果要绘制一个圆，使用下面代码
+			// context.arc(obj.width / 2, obj.height / 2, Math.max(obj.width, obj.height) / 2, 0, 2 * Math.PI);
+			// 这里使用圆角矩形
+			context.roundRect(0, 0, obj.width, obj.height, input.value * 1 || 0);
+			// 填充绘制的圆
+			context.fillStyle = pattern;
+			context.fill();
+		}
+		image.onload = function() {
+			draw(this);
+		};
+		image.src = "../static/images/demoimg/img001.png";
+		input.addEventListener("change", function() {
+			context.clearRect(0, 0, canvas.width, canvas.height);
+			draw(image);
+		});
+	</script>
+</body>
+
+</html>

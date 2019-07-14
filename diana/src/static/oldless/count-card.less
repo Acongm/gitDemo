@@ -1,0 +1,216 @@
+@import "../lib/font-iconfont/iconfont.css";
+@import "base.less";
+@import "modules.less";
+//计次卡
+.count-card{
+	position: relative;
+	width:5.57rem;
+	height:2.95rem;
+	padding:.3rem .2rem;
+	margin:.7rem auto 1.2rem;
+	font-size:.26rem;
+	background:#77c9b3 url(../images/cardbook.png) no-repeat 5.04rem .64rem;
+	background-size:1.28rem 1.32rem;
+	color:#fff;
+	border-radius:.2rem;
+	font-family: 'Microsoft YaHei';
+	box-shadow:0 .05rem .3rem #77c9b3;
+	&:before{
+		content:"";
+		width:1.04rem;
+		height:.68rem;
+		position: absolute;
+		left:.23rem;
+		top:1.62rem;
+		background: url(../images/cardstart.png) no-repeat;
+		background-size:cover;
+	}
+	.title{
+		height:.52rem;
+		padding-top: .18rem;
+		margin-left: .32rem;
+		background:url(../images/cardNamebg.png) no-repeat;
+		background-size:auto 100%;
+		font-size:.3rem;
+		line-height:1;
+		text-indent:-.14rem;
+	}
+	.price{
+		text-align: center;
+		font-family: 'hkytw7';
+		font-size:.36rem;
+		font-weight:500;
+		letter-spacing: .03em;
+		line-height:1.7;
+		span{
+			font-family: 'hkytw9';
+			font-size:.85rem;
+			font-weight:normal;
+		}
+	}
+	.info{
+		overflow: hidden;
+		.lc{
+			float: left;
+		}
+		.rc{
+			float: right;
+		}
+	}
+}
+.count-card-list{
+	width:6.13rem;
+	height:3.23rem;
+	margin:.25rem auto .3rem;
+	padding:.35rem .24rem;
+	background-position:5.68rem .71rem;
+	.price{
+		font-family: 'hkytw9';
+		line-height:3.7;
+		span{
+			font-family: 'hkytw7';
+			font-size:.5rem;
+		}
+	}
+}
+.count-card-blue{
+	background-color:#73a6ef;
+	background-image: url(../images/cardbook_2n.png);
+	box-shadow:0 .05rem .3rem #73a6ef;
+	&:before{
+	background-image: url(../images/cardstart_2n.png);
+	}
+	.title{
+		background-image:url(../images/cardNamebg_2n.png);
+	}
+}
+.count-card-gray{
+	background-color:#f1f0f0;
+	background-image: url(../images/cardbook_3n.png);
+	box-shadow:0 .05rem .3rem #bbb;
+	color:#999;
+	&:before{
+	background-image: url(../images/cardstart_3n.png);
+	}
+	.title{
+		background-image:url(../images/cardNamebg_3n.png);
+	}
+}
+.card-expired{
+	&:after{
+		content:"";
+		width:1.42rem;
+		height:1.46rem;
+		position: absolute;
+		right:0;
+		top:0;
+		background:url(../images/cardexpired.png) no-repeat;
+		background-size:cover;
+	}
+}
+.count-card-course{
+	display:none;
+	font-size:.2rem;
+	width:6.4rem;
+	margin:-.3rem auto 0;
+	background:url(../images/cardcoursebg.png);
+	box-shadow:0 .05rem .3rem #dbdada;
+	ul{
+		padding:0 .14rem;
+		overflow: hidden;
+	}
+	li{
+		padding:.15rem 0;
+		list-style:none;
+		border-bottom:1px dotted #8e8e8e;
+		margin-bottom: -1px;
+		.lc{
+			.text-overflow(4.8rem);
+			float: left;
+		}
+		.rc{
+			float: right;
+		}
+	}
+}
+
+.action-box{
+	text-align: center;
+	margin-bottom: 1.3rem;
+}
+.btn-count-card{
+	font-family: 'Microsoft YaHei';
+	display:inline-block;
+	padding:.22rem .6rem;
+	border-radius:.1rem;
+	font-size:.28rem;
+	background:#77c9b1;
+	color:#fff;
+}
+
+.c-cyanogen{
+	color:#77c9b1;
+}
+.rule.cyanogen{
+	h3{
+		&:before{
+			border-bottom-color:#77c9b1;
+		}
+		span{
+			background-color:#77c9b1;
+		}
+	}
+}
+.card-password{
+	position: relative;
+	width:5.90rem;
+	height:.62rem;
+	clear: both;
+	margin:0 auto;
+	border:3px solid #77c9b1;
+	input{
+		position: absolute;
+		width:100%;
+		height:100%;
+		border:none;
+		text-align: center;
+		left:0;
+		top:0;
+		font-size:.24rem;
+	}
+}
+.rule{
+	padding:0 .6rem .9rem;
+	font-size:.22rem;
+	h3{
+		position: relative;
+		margin:.36rem .1rem;
+		text-align: center;
+		font-weight:normal;
+		font-size:.22rem;
+		font-family: 'Microsoft YaHei';
+		color:#fff;
+		&:before{
+			content:"";
+			position: absolute;
+			left:0;
+			right:0;
+			top:49%;
+			border-bottom:1px solid #ffa312;
+		}
+		span{
+			position: relative;
+			padding:.08rem .58rem;
+			border-radius:.04rem;
+			background:#ffa312;
+		}
+	}
+	p{
+		color:#777777;
+		line-height:1.9
+	}
+}
+
+// 弹窗状态
+.ten-modals();
+

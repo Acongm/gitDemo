@@ -1,0 +1,138 @@
+<template src="head.html" title="产品列表" clearing swiper></template>
+<body>
+	
+	<div class="container has-tabNav clearing">
+		<div class="page preview js_show">
+			<!-- <div class="weui-cells m-t-n state_box after_none">
+				<a href="#" class="item_box entering">
+					<h3>234300</h3>
+					<p>已录入</p>
+				</a>
+				<a href="#" class="item_box affirm">
+					<h3>234300</h3>
+					<p>已确认</p>
+				</a>
+			</div> -->
+			<div class="weui-cells m-t-n state_box after_none" style="text-align: center;padding-top: 4px;">
+	            <div class="item_box affirm" style="width: 31%;border-radius:5px;float: left;margin-right: 5px;margin-left: 8px;">
+	            	<h3 id="wrap_h3">120000.000</h3>
+	            	<p>确认业绩</p>
+	            </div>
+                <div class="item_box entering" style="width: 31%;border-radius:5px;float: left;margin-right: 5px;">
+                    <a href="http://wx.dianacollege.com/wx/orderOutline/amountDetail">
+                        <h3>23072.000</h3>
+                        <p>我的奖励</p>
+                    </a>
+                </div>
+                <div class="item_box " style="width: 30%;border-radius:5px;float: left;background-color: #607fa6;">
+                    <a href="http://wx.dianacollege.com/wx/orderOutline/achieveWaterBillsList">
+                        <h3 style="font-size: 20px;">月/年</h3>
+                        <p>返佣明细</p>
+                    </a>
+                </div>
+	        </div>
+			<div class="weui-nav-box">
+				<div class="weui-tabbar__item">
+					<span class="weui-tabbar__icon">
+						<i class="myicon micon-affirm1"></i>
+					</span>
+					<p class="weui-tabbar__label">全部</p>
+				</div>
+				<div class="weui-tabbar__item">
+					<span class="weui-tabbar__icon">
+						<i class="myicon micon-audit"></i>
+					</span>
+					<p class="weui-tabbar__label">已确认</p>
+				</div>
+				<div class="weui-tabbar__item">
+					<span class="weui-tabbar__icon">
+						<i class="myicon micon-complete"></i>
+					</span>
+					<p class="weui-tabbar__label">未审核</p>
+				</div>
+				<div class="weui-tabbar__item">
+					<span class="weui-tabbar__icon">
+						<i class="myicon micon-refuse"></i>
+					</span>
+					<p class="weui-tabbar__label">已拒绝</p>
+				</div>
+			</div>
+			<div class="page__bd clearing_list">
+				<div class="weui-cells">
+					<div class="weui-cell clearing_item">
+						<a href="clearing_details.html">
+							<div class="weui-cell__bd">
+								<div class="weui-form-preview__item headline">
+									<label class="weui-form-preview__label">招商：首席院长</label>
+									<span class="weui-form-preview__value text-align-right">100,000</span>
+								</div>
+								<div class="weui-form-preview__item subhead">
+									<label class="weui-form-preview__label">录入时间：2018-05-20 12:45</label>
+									<span class="weui-form-preview__value text-align-right green-color">已确认</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="weui-cell clearing_item">
+						<a href="clearing_details.html">
+							<div class="weui-cell__bd">
+								<div class="weui-form-preview__item headline">
+									<label class="weui-form-preview__label">招商：首席院长</label>
+									<span class="weui-form-preview__value text-align-right">100,000</span>
+								</div>
+								<div class="weui-form-preview__item subhead">
+									<label class="weui-form-preview__label">录入时间：2018-05-20 12:45</label>
+									<span class="weui-form-preview__value text-align-right red-color">已拒绝</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="weui-cell clearing_item">
+						<a href="clearing_details.html">
+							<div class="weui-cell__bd">
+								<div class="weui-form-preview__item headline">
+									<label class="weui-form-preview__label">招商：首席院长</label>
+									<span class="weui-form-preview__value text-align-right">100,000</span>
+								</div>
+								<div class="weui-form-preview__item subhead">
+									<label class="weui-form-preview__label">录入时间：2018-05-20 12:45</label>
+									<span class="weui-form-preview__value text-align-right green-color">已确认</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="weui-cell clearing_item">
+						<a href="clearing_details.html">
+							<div class="weui-cell__bd">
+								<div class="weui-form-preview__item headline">
+									<label class="weui-form-preview__label">招商：首席院长</label>
+									<span class="weui-form-preview__value text-align-right">100,000</span>
+								</div>
+								<div class="weui-form-preview__item subhead">
+									<label class="weui-form-preview__label">录入时间：2018-05-20 12:45</label>
+									<span class="weui-form-preview__value text-align-right">未审核</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="add_list"><a href="clearing_from1.html">
+					<div class="myicon micon-suspend"></div>
+				</a></div>
+		</div>
+	</div>
+	<script>
+		let item_wrap = document.querySelectorAll('.item_box');
+		item_wrap.forEach((item, index) => {
+			let wrap_h3 = item.querySelector('h3');
+			let h3_len  = wrap_h3.innerHTML.length;
+			let f_s = h3_len>7?(35/(wrap_h3.innerHTML.length-1)/.84 + 'vw'):"";
+			f_s===''?'':wrap_h3.style.fontSize = f_s;
+		})
+		
+			
+	</script>
+</body>
+
+</html>

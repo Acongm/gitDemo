@@ -1,0 +1,46 @@
+.state_boxs() {
+  .state_box {
+    display: flex;
+    width: 100%;
+    padding: 16px 0;
+    justify-content: space-around;
+    .item_box {
+      background-color: #fff;
+      .bg-image-size(3.3rem, 1.6rem);
+      border-radius: 6px;
+
+      span, i {
+        vertical-align: middle;
+      }
+
+      h3 {
+        font-size: 24px;
+        line-height: 33px;
+        color: @white;
+        padding: 10px 10px 0;
+      }
+      p {
+        opacity: 0.8;
+        font-size: 14px;
+        color: @white;
+        padding: 5px 10px 0;
+      }
+    }
+
+    .entering {
+      background-image: linear-gradient(53deg, #FFE06D 0%, #FF7D34 100%);
+      box-shadow: 0 2px 4px 0 rgba(255, 139, 52, 0.30);
+    }
+
+    .affirm {
+      background-image: linear-gradient(46deg, #58EC5D 0%, #4CB25F 100%);
+      box-shadow: 0 2px 4px 0 rgba(58, 181, 89, 0.30);
+    }
+  }
+  .state_title {
+    height: 2.24rem;
+    transition-property: height;
+    transition-duration: .5s;
+    background-color: #fff;
+  }
+}

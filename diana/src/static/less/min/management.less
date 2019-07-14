@@ -1,0 +1,238 @@
+@import "styl/styl.less";
+@import "common/myicon.less";
+@import "common/style.less";
+@import "common/models.less";
+@import "common/reset.less";
+@import "view/state_box.less";
+@import "view/pickers.less";
+@import "view/callimg_box.less";
+@import "view/get_call_boxs.less";
+@import "view/btn.less";
+@import "view/none.less";
+
+.container {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.container > div, .container > h3, .container > form, .container > ul {
+  width: 7.5rem;
+  margin: 0 auto;
+}
+
+.state_boxs();
+.pickers();
+.list_none();
+.callimg_boxs();
+// .get_call_boxs();
+
+.dis_flex_cen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.management {
+  font-size: 15px;
+  
+  .weui-form-preview__value,
+  .weui-form-preview__bd {
+    text-align: left;
+  }
+  .weui-form-preview__label{
+      min-width: 5em;
+      text-align: justify;
+      text-align-last: justify;
+      position: relative;
+      // padding-right: .2rem;
+  }
+  .weui-form-preview__label_after{
+      padding-right: .2rem;
+  }
+  .clearing-details_after{
+    .weui-form-preview__label{
+      padding-right: .2rem;
+    }
+    .weui-form-preview__label::after{
+      content: '：';
+      display: inline-block; 
+      position: absolute;
+    }
+  }
+
+  .picker{
+    position: relative;
+    margin-right: .2rem;
+  }
+  .weui-input_data{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  
+  .headline .weui-form-preview__label{
+      color: rgba(0,0,0,0.5);
+      min-width: auto;
+  }
+  .weui-form-preview__item_wrap{
+      display: flex;
+  }
+  .weui-form-preview__item_box{
+      width: 50%;
+  }
+  .weui-form-preview__item{
+      width: 100%;
+  }
+
+  .state_box {
+    &:after,
+    &:before {
+      display: none;
+    }
+
+  }
+
+  .list_box {
+    padding-top: .5rem;
+    width: 692/750*100%;
+  }
+
+  &.container {
+    width: 100%;
+  }
+
+  .font_weight {
+    font-weight: bold;
+  }
+
+  .flex_btn {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    button {
+      width: 100%;
+      height: 100%;
+      font-size: 15px;
+      color: #fff;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  .qr_box {
+    height: 5.56rem;
+    background-color: #fff;
+    width: 100%;
+    padding-top: .88rem;
+    margin-bottom: 11px;
+  }
+
+  .qr_bor {
+    width: 4.06rem;
+    height: 4.06rem;
+    border: 2px solid #f2f2f2;
+    padding: .24rem;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .weui-cell:before {
+    left: 15px;
+    right: 15px;
+  }
+
+  .management_list {
+    width: 100%;
+
+    .weui-cell_access {
+      padding-top: 16px;
+      padding-bottom: 10px;
+      background-color: #fff;
+
+      h3 {
+        font-size: 15px;
+        font-weight: normal;
+        color: #333;
+        line-height: 27px;
+      }
+
+      p {
+        color: #777;
+        font-size: 13px;
+        line-height: 30px;
+      }
+    }
+
+    .weui-cell__bd {
+      font-size: 15px;
+      color: #612364;
+      height: 82px;
+      text-align: right;
+    }
+  }
+
+  .weui-msg {
+    padding-bottom: 18px;
+    margin-bottom: 10px;
+  }
+
+  .get_call_box {
+    position: fixed;
+    bottom: 0;
+    font-size: 16px;
+    padding: 11px 0;
+    justify-content: center;
+
+    p {
+      font-size: 16px;
+      color: #999999;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .item_box {
+      font-size: 18px;
+    }
+  }
+
+  .weui-msg__icon-area {
+    height: 93px;
+    overflow-y: hidden;
+  }
+
+  .icon-web-icon- {
+    margin-top: -50px;
+    color: #ccc;
+    font-size: 120px;
+  }
+}
+
+.headline {
+  font-size: 16px;
+  color: #333;
+
+  .weui-form-preview__label {
+    font-size: 16px;
+    color: #333;
+  }
+}
+
+.weui-form-preview__bd {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.management_bg {
+  background: #f2f2f2;
+}

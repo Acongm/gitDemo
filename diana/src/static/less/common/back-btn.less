@@ -1,0 +1,79 @@
+// 回到首页等按钮样式
+.back-btn-box() {
+  .back-b() {
+    padding: .12rem .1rem .13rem .6rem;
+    position: fixed;
+    line-height: 1;
+    color: @c-d-g;
+    background: fade(@c-l-g-s, 60);
+    font-size: @f_s;
+    z-index: 510;
+    i {
+      position: absolute;
+      top: .13rem;
+      width: .32rem;
+      height: .32rem;
+    }
+  }
+  .posi(@posi) when (@posi="left") {
+    border-radius: 0 .3rem .3rem 0;
+    padding-left: .12rem;
+    padding-right: .6rem;
+    left: 0;
+    &:before {
+      line-height: .32rem;
+      content: @txt;
+    }
+    i {
+      right: .2rem;
+
+      &:after {
+        content: @icon;
+      }
+    }
+  }
+  .posi(@posi) when (@posi="right") {
+    border-radius: .3rem 0 0 .3rem;
+    right: 0;
+    &:after {
+      line-height: .32rem;
+      content: @txt;
+    }
+    i {
+      left: .2rem;
+
+      &:before {
+        content: @icon;
+      }
+    }
+  }
+  .back-btn(@posi,@bottom,@txt,@icon) {
+    bottom: @bottom;
+    .posi(@posi);
+  }
+
+
+  .back-home,
+  .back-top,
+  .back-share,
+  .back-play {
+    .back-b();
+  }
+  // 回到首页
+  .back-home {
+    .back-btn("right", 2.04rem, "回到首页", "\e608");
+  }
+  // 回到顶部
+  .back-top {
+    .back-btn("right", 2.74rem, "回到顶部", "\e687");
+  }
+  // 分享收益
+  .back-share {
+    .back-btn("left", 2.74rem, "", "\e60d");
+  }
+  // 后台播放
+  .back-play {
+    .back-btn("left", 2.04rem, "后台播放", "\e635");
+  }
+}
+.back-btn-box();

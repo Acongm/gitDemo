@@ -1,0 +1,38 @@
+/* tab切换样式一 */
+.weui-navbars() {
+  .myui-navbars {
+    .weui-navbar {
+      &:after {
+        border-color: @c-l-g-s;
+      }
+    }
+
+    .weui-navbar__item {
+      font-size: @f_m;
+
+      &:after {
+        display: none;
+      }
+
+      &.weui-bar__item_on {
+        background-color: fade(@white, 0);
+        position: relative;
+        color: @item-color1;
+
+        &:before {
+          content: " ";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          margin-left: -12px;
+          height: 3px;
+          width: 24px;
+          background: @item-color1;
+          background-image: linear-gradient(@bimage);
+          border-radius: @radius-l;
+        }
+      }
+    }
+  }
+}
+.weui-navbars();

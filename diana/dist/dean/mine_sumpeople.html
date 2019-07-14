@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/agency.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body class="">
+	<div class="container agency ">
+		<div class="page m-bgcolor">
+			<div class="user-list">
+				<ul>
+					<li>
+						<div class="img-box fl">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+						<div class="item fl">
+							<p class="name">季成</p>
+							<p class="time">2017-06-29</p>
+						</div>
+					</li>
+					<li>
+						<div class="img-box fl">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+						<div class="item fl">
+							<p class="name">季成</p>
+							<p class="time">2017-06-29</p>
+						</div>
+					</li>
+					<li>
+						<div class="img-box fl">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+						<div class="item fl">
+							<p class="name">季成</p>
+							<p class="time">2017-06-29</p>
+						</div>
+					</li>
+					<li>
+						<div class="img-box fl">
+							<img src="../static/images/demoimg/img001.png" alt="">
+						</div>
+						<div class="item fl">
+							<p class="name">季成</p>
+							<p class="time">2017-06-29</p>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(document).live('click', ".sou-box .active", function() {
+				if ($(this).hasClass('fa-angle-up')) {
+					$(".search-wrap").hide();
+					$(this).removeClass("active");
+					$(".fa-angle-down").addClass("active");
+				} else {
+					$(".search-wrap").show();
+					$(this).removeClass("active");
+					$(".fa-angle-up").addClass("active");
+				}
+			})
+		})
+	</script>
+</body>
+
+</html>

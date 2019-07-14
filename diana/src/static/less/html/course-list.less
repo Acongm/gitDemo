@@ -1,0 +1,408 @@
+// 商城列表
+// .mall(){
+  .home-title {
+    padding-top: .3rem;
+    padding-bottom: .2rem;
+  }
+  .mall_items {
+    @item_w_r: 0.3;
+    @item_m_r: 0.2;
+    background-color: #fff;
+    font-size: .28rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 @item_w_r*1rem;
+    margin-bottom: .2rem;
+    .mall_item {
+      width: (@psW_ - @item_w_r*2 - @item_m_r - 0.02)/2*1rem;
+      box-shadow: @color-radius;
+      border-radius: @radius-l;
+      overflow: hidden;
+      margin-bottom: .27rem;
+      .g-img {
+        width: 100%;
+        min-height: 1.23rem;
+      }
+      img {
+        width: 100%;
+      }
+      h4 {
+        padding: 0 .12rem;
+        font-size: @f_l;
+        line-height: .42rem;
+        font-weight: normal;
+        color: #313131;
+      }
+      &:nth-child(2n+1) {
+        margin-right: @item_m_r*1rem;
+      }
+      .fl {
+        font-size: @f_m;
+        padding-top: .02rem;
+        text-decoration: line-through;
+        color: @oldprice;
+      }
+      .fr {
+        color: @price;
+      }
+      p {
+        padding: 0 .16rem .16rem;
+      }
+    }
+  }
+  .course-list {
+    h3 {
+      .ellipsisLn(2);
+    }
+    .course-list-tip {
+      font-size: @f_s;
+      position: relative;
+    }
+    .price {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: @f_m;
+      font-weight: bold;
+      color: @price;
+    }
+
+    .price1 {
+      position: absolute;
+      right: 0;
+      top: -90%;
+      color: @oldprice;
+      font-size: @f_xs;
+      text-decoration: line-through;
+    }
+
+    .price2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: @price;
+      font-size: @f_xs;
+    }
+  }
+// }
+// .mall();
+
+.mall .course-list .weui-cell{
+  &:first-child{
+      padding-top: 0;
+    }
+}
+// 课程列表
+.course-list {
+  margin-top: 0;
+  margin-bottom: .2rem;
+  &.home-title {
+    margin-bottom: 0;
+    background-color: @white;
+    padding-left: .28rem;
+
+    .weui-cell {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .home-title-b {
+      padding-left: 0;
+
+      .weui-more {
+        line-height: .46rem;
+        font-size: @f_s;
+      }
+    }
+
+    .weui-cell__bd {
+      .border-left(0.34rem, @item-color);
+      text-indent: 10px;
+      font-size: @f_l;
+      line-height: .46rem;
+      height: .46rem;
+    }
+  }
+
+  &:before {
+    border: none;
+  }
+
+  .weui-cell {
+    padding: .2rem .2rem .18rem;
+    align-items: stretch;
+    font-size: @f_m;
+    
+    &:before {
+      left: .28rem;
+      right: .28rem;
+      display: none;
+    }
+
+    .weui-cell__hd {
+      position: relative;
+      margin-right: .2rem;
+
+      img {
+        width: 1.88rem;
+        display: block;
+        border-radius: @radius-m;
+      }
+    }
+
+    .weui-cell__bd {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3{
+        -webkit-line-clamp: 1;
+      }
+      p {
+        .text-overflow(3.8rem);
+      }
+
+      h3 {
+        color: @c-d-g;
+        font-size: @f_l;
+        font-weight: normal;
+        line-height: .46rem;
+        .weui-badge {
+          vertical-align: top;
+          line-height: .26rem;
+          padding: .08rem;
+          margin-left: .05rem;
+          background: #1AAD19;
+        }
+      }
+
+      p {
+        font-size: @f_m;
+        color: #777;
+        padding-top: .04rem;
+        line-height: .4rem;
+      }
+
+      // .course-list-tip,
+      .course-list-info {
+        font-size: .22rem;
+        color: #888;
+      }
+
+      .course-list-tip1 {
+        color: #888;
+        font-size: @fn_s24;
+        padding-top: .03rem;
+        line-height: .46rem;
+
+        div {
+          display: inline-block;
+        }
+
+        span {
+          position: absolute;
+          right: 0;
+          top: .03rem;
+          color: #888888;
+          font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+        }
+
+        .weui-badge {
+          background: #1AAD19;
+        }
+      }
+
+      .course-list-tip {
+        padding-top: .03rem;
+        line-height: .46rem;
+        // width: 5.1rem;
+        display: flex;
+        font-size: @f_s;
+        position: relative;
+        color: @text-color;
+        justify-content: space-between;
+        em {
+          font-style: normal;
+          display: inline-block;
+          .text-overflow(3.3rem);
+          color: @text-color;
+          padding-right: .2rem;
+
+          i {
+            padding-right: .1rem;
+          }
+        }
+        span {
+          font-size: @f_m;
+        }
+
+        .badge {
+          color: #777;
+          font-size: @f_s;
+        }
+
+        .original {
+          position: absolute;
+          right: 0;
+          top: -.3rem;
+          font-size: @f_s;
+          color: #777;
+          text-decoration: line-through;
+        }
+      }
+
+      .course-list-info {
+        span {
+          margin-right: .28rem;
+        }
+
+        .info-time {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &.kuai1_list,
+  &.kuai2_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .2rem;
+    font-size: @f_xs;
+
+    .weui-cell {
+      padding: 0;
+
+      &:nth-child(2n+1) {
+        margin-right: .2rem;
+      }
+    }
+
+    .weui-cell:before {
+      border: none;
+    }
+
+    dl {
+      color: #333;
+      font-size: .22rem;
+      box-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
+      border-radius: .2rem;
+      margin-bottom: .3rem;
+      padding-bottom: .2rem;
+      overflow: hidden;
+
+      dt {
+        .wh(330, 245);
+        overflow: hidden;
+        // position: relative;
+        margin-bottom: .1rem;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+
+        .diantai_bq {
+          position: absolute;
+          left: .16rem;
+          top: 0;
+          line-height: .3rem;
+          text-align: center;
+
+          span {
+            padding: .04rem .06rem;
+            margin-right: .2rem;
+            background-color: @bcolor;
+            color: @bfcolor;
+          }
+        }
+      }
+
+      dd {
+        text-indent: .2rem;
+
+        p {
+          .text-overflow(3.3rem);
+          line-height: .46rem;
+          font-size: .3rem;
+
+        }
+
+        span {
+          line-height: .28rem;
+          padding-bottom: .17rem;
+          font-size: .24rem;
+          color: #777;
+        }
+
+        i {
+          font-size: .26rem;
+          margin-right: .1rem;
+        }
+      }
+    }
+  }
+
+  &.kuai1_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .2rem;
+
+    .weui-cell {
+      padding: 0;
+    }
+
+    a {
+    }
+
+    dl {
+      width: 6.8rem;
+
+      dt {
+        width: 100%;
+        height: 2.36rem;
+      }
+
+      dd {
+        p {
+          .text-overflow(6.6rem);
+        }
+      }
+    }
+
+    .weui-cell:before {
+      border: none;
+    }
+
+    .mr20 {
+      margin-right: .2rem;
+    }
+
+    .weui-cell_access {
+      .border-top(#e6e4e4);
+
+      &:first-child {
+        &:before {
+          border-top: none;
+        }
+      }
+    }
+  }
+}
+
+.book-list{
+  .weui-cell{
+    .columnCountData1{
+      h3{
+        .ellipsisLn(3);
+      }
+      p{
+        .ellipsisLn(2);
+        max-width: 4.5rem;
+        white-space: initial;
+
+      }
+    }
+  }
+}

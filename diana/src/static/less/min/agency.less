@@ -1,0 +1,279 @@
+@import "../lib/font-iconfont/iconfont.css";
+@import "modules.less";
+@import "base.less";
+.home-title();
+// 回到首页等模块
+.back-btn-box();
+body{
+	font-family:Microsoft YaHei, -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.clearfix{
+	.clearfix();
+}
+//用户身份等信息
+.userbox(){
+	.mine-box-ag{
+		padding: 13px .2rem 0;
+	}
+	.mine-img{
+		width: 78.5px;
+		height: 82.5px;
+		float: left;
+		border-radius: .2rem;
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
+	.mine-info-ag{
+		float: left;
+		padding: 05px .42rem 0;
+		h2{
+			font-size: @t2;
+			line-height: 1.5em;
+			font-weight: 700;
+			color: #000;
+			padding-bottom: 5px;
+		}
+		.agency-name{
+			display: flex;
+			line-height: 1.5em;
+			font-size: @t3;
+			padding-bottom: 5px;
+			em{
+				font-style: normal;
+			}
+		}
+		.zuanshi{
+			color: #dcdffb;
+			font-size: @fn_s36;
+			width: 18px;
+			height: 18px;
+			display: inline-block;
+			padding: 0 .1rem;
+		}
+		.time{
+			line-height: 1.5em;
+			color: #c6c5c5;
+			font-size: @t4;
+		}
+	}
+	.mine-question{
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 10px .2rem;
+		color: #999;
+	}
+}
+
+//显示总数据块
+.sumTage(){
+	.tage{
+		padding-top: 10px;
+		padding-bottom: 20px;
+		&>div{
+			width: 50%;
+			height: 42px;
+			padding: 15px 0;
+			display: inline-block;
+			float: left;
+			text-align: center;
+			h4{
+				font-size: @t1;
+			}
+			p{
+				font-size: @t3;
+				color: #999;
+			}
+			a{
+				color: #000;
+			}
+		}
+	}
+	.agency-btn{
+		box-shadow: -.03rem .03rem .1rem .03rem #f1f0f0;
+	}
+}
+
+//代理搜索模块
+.seek(){
+	.seek{
+		.border-top(#ccc);
+	}
+	.sou-box{
+		height: 37px;
+		line-height: 37px;
+		margin-left: .2rem;
+		padding-right: .2rem;
+		display: flex;
+		font-size: @t3;
+		&>div:first-child{
+		    flex: 1;
+		}
+		.fa-search,
+		.fa-angle-up,
+		.fa-angle-down{
+			padding: 5px 0.1rem;
+		}
+		.fa-angle-down,.fa-angle-up{
+			display: none;
+		}
+		.active{
+			display: inline-block;
+		}
+	}
+	.icon-sousuo{
+		font-size: @fn_s36;
+		padding-left: .2rem;
+	}
+	.icon-jiantouxiangyou{
+		font-size: @fn_s36;
+		transform:rotate(-90deg);
+	}
+	.jiantouxiangyou{
+		transform:rotate(90deg);
+	}
+	.search-wrap{
+		display: none;
+		padding-left: .2rem;
+		padding-top: 10px;
+		height: 31px;
+		background-color: #f8f8f8;
+		select{
+			width: 100%;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+			font-size: @fn_s22;
+			text-align: center;
+			padding-right: .3rem;
+			background-color: #f8f8f8;
+			border-radius: 0;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			-khtml-border-radius: 0;
+			border: 1px solid #000;
+			-webkit-appearance: none;
+			display: block;
+		}
+		.select-box{
+			width: 1.30rem;
+			height: 20px;
+			position: relative;
+			display: inline-block;
+			float: left;
+		}
+		.fa-angle-down{
+			position: absolute;
+			right: 0;
+			top: 0;
+			display: inline-block;
+			height: 20px;
+			width: .22rem;
+			line-height: 20px;
+		}
+
+		.search{
+			width: 4.08rem;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+			font-size: @fn_s22;
+			float: left;
+			line-height: 1;
+			margin-left: .19rem;
+			input{
+				width: 3.98rem;
+				height: 19px;
+				padding-left: .1rem;
+				border: 1px solid #333;
+				background-color: #f8f8f8;
+				border-radius: 0;
+			}
+		}
+		input{
+			margin: 0;
+			padding: 0;
+			border: none;
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		.search-btn{
+			margin-left: .19rem;
+			width: .9rem;
+			height: 20px;
+			border: none;
+			font-size: @fn_s24;
+			display: block;
+			float: left;
+			input{
+				background-color: #f5d451;
+				border-radius: 0;
+			}
+		}
+	}
+}
+
+
+.icon-my-rili{
+	font-size: @fn_s48;
+	padding: 0 .1rem;
+	width: .6rem;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	input{
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+	}
+}
+.iconfont{
+	display: inline-block;
+}
+.agency{
+	font-size: @fn_s26;
+	
+	.page{
+		background-color: #fff;
+		::-webkit-scrollbar {
+			width: 0;
+		}
+	}
+	.m-bgcolor{
+		background-color: #f8f8f8;
+		.direct-list:first-child{
+			padding-top: 0;
+		}
+	}
+	.userbox();	
+	.sumTage();
+	.seek();
+}
+.user-list();
+
+.weui-cell{
+	.weui-cell__bd{
+		p{
+			font-size: @t2;
+		}
+		.weui-media-box__info{
+			font-size: @t3;
+		}
+	}
+}
+
+html {font-size: 50px;}
+// .media(320px);
+// .media(360px);
+// .media(375px);
+// .media(384px);
+// .media(412px);
+// .media(414px);
+// .media(600px);
+// .media(800px);

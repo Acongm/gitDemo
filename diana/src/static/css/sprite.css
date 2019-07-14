@@ -1,0 +1,174 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-cardimg {
+  background-image: url(../images/sprite.png);
+  background-position: -240px -144px;
+  width: 64px;
+  height: 48px;
+}
+.icon-code {
+  background-image: url(../images/sprite.png);
+  background-position: -372px -314px;
+  width: 24px;
+  height: 24px;
+}
+.icon-course {
+  background-image: url(../images/sprite.png);
+  background-position: -202px -314px;
+  width: 24px;
+  height: 24px;
+}
+.icon-cradBg {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 367px;
+  height: 134px;
+}
+.icon-friend {
+  background-image: url(../images/sprite.png);
+  background-position: -304px -314px;
+  width: 24px;
+  height: 24px;
+}
+.icon-friend1 {
+  background-image: url(../images/sprite.png);
+  background-position: -377px -110px;
+  width: 100px;
+  height: 100px;
+}
+.icon-hintArrows {
+  background-image: url(../images/sprite.png);
+  background-position: -377px -220px;
+  width: 60px;
+  height: 60px;
+}
+.icon-live {
+  background-image: url(../images/sprite.png);
+  background-position: -236px -314px;
+  width: 24px;
+  height: 24px;
+}
+.icon-money {
+  background-image: url(../images/sprite.png);
+  background-position: -447px -220px;
+  width: 24px;
+  height: 24px;
+}
+.icon-movement {
+  background-image: url(../images/sprite.png);
+  background-position: -42px -314px;
+  width: 32px;
+  height: 32px;
+}
+.icon-movement1 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -314px;
+  width: 32px;
+  height: 32px;
+}
+.icon-movement_bg {
+  background-image: url(../images/sprite.png);
+  background-position: -175px -224px;
+  width: 165px;
+  height: 80px;
+}
+.icon-myiphone {
+  background-image: url(../images/sprite.png);
+  background-position: -338px -314px;
+  width: 24px;
+  height: 24px;
+}
+.icon-none {
+  background-image: url(../images/sprite.png);
+  background-position: -377px 0px;
+  width: 100px;
+  height: 100px;
+}
+.icon-performance {
+  background-image: url(../images/sprite.png);
+  background-position: -447px -254px;
+  width: 24px;
+  height: 24px;
+}
+.icon-picker_btn {
+  background-image: url(../images/sprite.png);
+  background-position: -399px -290px;
+  width: 12px;
+  height: 12px;
+}
+.icon-picker_btn1 {
+  background-image: url(../images/sprite.png);
+  background-position: -377px -290px;
+  width: 12px;
+  height: 12px;
+}
+.icon-picker_ok {
+  background-image: url(../images/sprite.png);
+  background-position: -350px -250px;
+  width: 16px;
+  height: 16px;
+}
+.icon-qr {
+  background-image: url(../images/sprite.png);
+  background-position: -270px -314px;
+  width: 24px;
+  height: 24px;
+}
+.icon-redact {
+  background-image: url(../images/sprite.png);
+  background-position: -350px -224px;
+  width: 16px;
+  height: 16px;
+}
+.icon-saomiaoerweima {
+  background-image: url(../images/sprite.png);
+  background-position: -84px -314px;
+  width: 32px;
+  height: 32px;
+}
+.icon-saomiaoerweima1 {
+  background-image: url(../images/sprite.png);
+  background-position: -126px -314px;
+  width: 32px;
+  height: 32px;
+}
+.icon-saomiaoerweima_bg {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -224px;
+  width: 165px;
+  height: 80px;
+}
+.icon-shareText {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -144px;
+  width: 230px;
+  height: 70px;
+}
+.icon-userimg {
+  background-image: url(../images/sprite.png);
+  background-position: -314px -144px;
+  width: 48px;
+  height: 48px;
+}
+.icon-video {
+  background-image: url(../images/sprite.png);
+  background-position: -168px -314px;
+  width: 24px;
+  height: 24px;
+}

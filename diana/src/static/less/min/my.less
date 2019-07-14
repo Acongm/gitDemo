@@ -1,0 +1,89 @@
+/* 自定义less插件 */
+@import "styl/styl.less";
+/* 自定义icon样式 */
+@import "common/myicon.less";
+/* 公用样式class */
+@import "common/style.less";
+/* 公共模块样式 */
+@import "common/models.less";
+@import "common/reset.less";
+@import "view/tabbar.less";
+/* tab选项卡样式一 */
+.my-box {
+  padding: 6px 0;
+  margin: 0 auto;
+}
+
+.my-info {
+  display: flex;
+  width: 303px;
+  height: 110px;
+  padding: 0 20px;
+  margin: 10px auto 0;
+  align-items: center;
+
+  .userbox {
+    width: 70px;
+    height: 70px;
+    margin-right: 16px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .usertext {
+    flex: 1;
+
+    span {
+      font-size: 20px;
+      color: #FFFFFF;
+      font-weight: normal;
+      margin-right: 4px;
+    }
+
+    .lable {
+      display: inline-block;
+      font-size: 10px;
+      color: #B04AB0;
+      padding: 0 5px;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+  }
+}
+
+.weui-cell__bd {
+  i, span {
+    vertical-align: middle;
+  }
+}
+
+.my {
+  .p-t {
+    padding-top: 15px;
+  }
+
+  .weui-cells {
+    margin-top: 0;
+
+    &:after {
+      left: 20px;
+      border-width: 2px;
+      border-color: #F5F5F5;
+    }
+  }
+
+  .weui-cells,
+  .weui-cell {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+
+

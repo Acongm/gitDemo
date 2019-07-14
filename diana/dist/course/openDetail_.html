@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/management.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body>
+	<div class="container has-tabNav management" id="class_management">
+		<div class="page">
+			<div class="page__bd clearing-details_after">
+				<div class="weui-form-preview">
+					<div class="weui-form-preview__hd">
+						<div class="weui-form-preview__item">
+							<em class="weui-form-preview__value">《唤醒最美好的自己》</em>
+						</div>
+					</div>
+					<div class="weui-form-preview__bd">
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">日期</label>
+							<span class="weui-form-preview__value">6月2日</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">期数</label>
+							<span class="weui-form-preview__value">467</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">时间</label>
+							<span class="weui-form-preview__value">半天 / 下午</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">主办分院</label>
+							<span class="weui-form-preview__value">深圳</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">主办院长</label>
+							<span class="weui-form-preview__value">总部</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">讲师</label>
+							<span class="weui-form-preview__value">全国院长</span>
+						</div>
+					</div>
+					<!-- <div class="weui-form-preview__ft">
+                    <a class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:">操作</a>
+                </div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > $(".state_title").height()) {
+					$(".pickers-box").addClass("picker_fixed")
+				} else {
+					$(".pickers-box").removeClass("picker_fixed")
+				}
+			});
+		})
+	</script>
+</body>
+
+</html>

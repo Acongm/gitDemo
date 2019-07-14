@@ -1,0 +1,160 @@
+//代理用户列表(提现用户列表)
+.user-list() {
+  //列表基本外包裹层
+  .user-li,
+  .user-list {
+    ul {
+      padding-left: .2rem;
+      padding-bottom: 15.5px;
+      background-color: @white;
+      list-style-type: none;
+    }
+
+    li {
+      list-style-type: none;
+      padding-top: 9.5px;
+      padding-right: .2rem;
+      padding-bottom: .1rem;
+      display: flex;
+      .border-bottom(@c-l-g);
+
+      & > .fr {
+        padding-right: .2rem;
+      }
+
+      & > a {
+        width: 100%;
+        display: flex;
+      }
+    }
+
+    //用户头像
+    .img-box {
+      width: 54px;
+      height: 54px;
+      margin-bottom: 10px;
+      border-radius: @radius;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    //中间内容
+    .item {
+      padding-top: 0rem;
+      flex: 1;
+      padding-left: .23rem;
+      padding-top: 7px;
+      padding-right: .4rem;
+      width: 3.5rem;
+    }
+
+    .addmoney {
+      padding-top: .5rem;
+      line-height: 2em;
+      font-size: @f_m;
+      color: @item-color;
+    }
+
+    //有跳转图标
+    .status {
+      line-height: 63.5px;
+      text-align: right;
+      width: .32rem;
+      color: @black;
+      padding-right: .2rem;
+
+      .fa-angle-right {
+        font-size: @f_l;
+      }
+    }
+
+    .invite-status {
+      padding-top: 7px;
+      text-align: right;
+    }
+
+    .addmoney {
+      padding-top: 20px;
+      line-height: 2em;
+      font-size: @f_l;
+      color: @item-color;
+    }
+
+    .name {
+      font-size: @f_l;
+    }
+
+    .product {
+      line-height: 15px;
+      font-size: @f_m;
+      color: @c-g;
+    }
+
+    .direct {
+      font-size: @f_s;
+    }
+
+    .time, .num {
+      line-height: 21px;
+      color: @c-l-g;
+      font-size: @f_s;
+    }
+
+    .name, .direct {
+      line-height: 1.5em;
+      color: @black;
+    }
+
+    .indirect {
+      line-height: 40.5px;
+      color: @black;
+      font-size: @f_m;
+    }
+  }
+  //按日期显示列表多加的外包裹层
+  .direct-list {
+    background-color: @c-l-g-sss;
+    padding-top: 10px;
+
+    .img-box {
+      margin-top: 3px;
+    }
+
+    .item {
+      padding-top: 0rem;
+    }
+
+    .name {
+      font-size: @f_m;
+    }
+
+    .product {
+      font-size: @f_s;
+    }
+
+    & > h3 {
+      font-size: @f_l;
+      background-color: @white;
+      .border-bottom(@c-l-g-s);
+      font-weight: normal;
+      .height(34.5px);
+      padding: 0 .2rem;
+      display: flex;
+
+      span:first-child {
+        flex: 1;
+      }
+
+      i {
+        height: 30px;
+        line-height: 30px;
+        color: @c-l-g;
+        padding-right: .1rem;
+      }
+    }
+  }
+}
+.user-list();

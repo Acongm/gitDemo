@@ -1,0 +1,85 @@
+// 课程体系列表
+// kecheng.html
+.kecheng {
+  .logo1 {
+    background-color: #fff;
+  }
+
+  .weui-cell {
+    padding: .2rem;
+    padding-bottom: .4rem;
+    // border-bottom: .2rem solid #f2f2f2;
+    &:before {
+      display: none;
+    }
+  }
+
+  .page_bd {
+    &:last-child {
+      .kecheng_list {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .kecheng_list {
+    margin-bottom: .2rem;
+    background-color: #fff;
+    margin-top: 0;
+
+    &:after, &:before {
+      display: none;
+    }
+
+    dt {
+      // .wh(709,399);
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+
+    dd {
+      h4 {
+        // font-weight: normal;
+        line-height: .46rem;
+        padding-top: .2rem;
+        font-size: .3rem;
+      }
+
+      p {
+        line-height: .46rem;
+        font-size: .26rem;
+        color: #989898;
+      }
+
+      h4, p {
+        text-indent: .32rem;
+      }
+    }
+  }
+}
+.logo1 {
+  height: .61rem;
+  padding: .3rem 0 .24rem .3rem;
+  font-size: .3rem;
+
+  img {
+    height: .61rem;
+    display: block;
+    float: left;
+  }
+
+  span {
+    display: block;
+    float: left;
+    .wh(195, 45);
+    background-color: #602464;
+    color: #fff;
+    line-height: .45rem;
+    margin-top: .1rem;
+    margin-left: .12rem;
+    text-align: center;
+  }
+}

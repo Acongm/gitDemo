@@ -1,0 +1,55 @@
+// 新按钮统一样式
+.btn_submit {
+  width: 240/3.75%;
+  height: 44px;
+  font-size: @f_l;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 2px 6px 0 @c-l-g-ss;
+  border-radius: 32px;
+  color: @white;
+  background-color: fade(@c-l-g, 80);
+  outline: none;
+  border: none;
+  text-align: center;
+  line-height: 44px;
+
+  &.active, &.affirm_btn {
+    background: @item-color1;
+    background-image: linear-gradient(@bimage);
+    box-shadow: @bshadow;
+    border-radius: 32px;
+  }
+
+  &.cancel_btn {
+    color: @item-color1;;
+    background: @white;
+    box-shadow: @bshadow;
+    border-radius: 32px;
+  }
+}
+
+.text_input {
+  height: 50px;
+  width: 100%;
+  background: @white;
+  border-radius: @radius-s;
+  margin-bottom: 10px;
+  font-size: @f_l;
+  display: block;
+  border: none;
+  text-indent: 8px;
+  color: @c-d-g;
+  outline: none;
+  margin-bottom: 30px;
+  box-sizing: none;
+  -webkit-appearance: none;
+}
+.btn-bg-green {
+    background-color: #59B2EA!important;
+    border-radius: 4px;
+}
+.btn-bg-red {
+    background-color: red!important;
+    border-radius: 4px;
+}

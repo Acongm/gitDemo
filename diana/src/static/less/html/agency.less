@@ -1,0 +1,241 @@
+//用户身份等信息
+.userbox(){
+  .mine-box-ag{
+    padding: 13px .2rem 0;
+  }
+  .mine-img{
+    width: 78.5px;
+    height: 82.5px;
+    float: left;
+    border-radius: @radius-l;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  .mine-info-ag{
+    float: left;
+    padding: 05px .42rem 0;
+    h2{
+      font-size: @f_m;
+      line-height: 1.5em;
+      font-weight: 700;
+      color: @black;
+      padding-bottom: 5px;
+    }
+    .agency-name{
+      display: flex;
+      line-height: 1.5em;
+      font-size: @f_s;
+      padding-bottom: 5px;
+      em{
+        font-style: normal;
+      }
+    }
+    .zuanshi{
+      color: #dcdffb;
+      font-size: @f_xl;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      padding: 0 .1rem;
+    }
+    .time{
+      line-height: 1.5em;
+      color: @c-l-g-s;
+      font-size: @f_s;
+    }
+  }
+  .mine-question{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px .2rem;
+    color: @c-l-g;
+  }
+}
+//显示总数据块
+.sumTage(){
+  .tage{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    &>div{
+      width: 50%;
+      height: 42px;
+      padding: 15px 0;
+      display: inline-block;
+      float: left;
+      text-align: center;
+      h4{
+        font-size: @f_l;
+      }
+      p{
+        font-size: @f_m;
+        color: #999;
+      }
+      a{
+        color: #000;
+      }
+    }
+  }
+  .agency-btn{
+    box-shadow: -.03rem .03rem .1rem .03rem #f1f0f0;
+  }
+}
+
+//代理搜索模块
+.seek(){
+  .seek{
+    .border-top(@c-l-g-s);
+  }
+  .sou-box{
+    height: 37px;
+    line-height: 37px;
+    margin-left: .2rem;
+    padding-right: .2rem;
+    display: flex;
+    font-size: @f_s;
+    &>div:first-child{
+        flex: 1;
+    }
+    .fa-search,
+    .fa-angle-up,
+    .fa-angle-down{
+      padding: 5px 0.1rem;
+    }
+    .fa-angle-down,.fa-angle-up{
+      display: none;
+    }
+    .active{
+      display: inline-block;
+    }
+  }
+  .icon-sousuo{
+    font-size: @f_xl;
+    padding-left: .2rem;
+  }
+  .icon-jiantouxiangyou{
+    font-size: @f_xl;
+    transform:rotate(-90deg);
+  }
+  .jiantouxiangyou{
+    transform:rotate(90deg);
+  }
+  .search-wrap{
+    display: none;
+    padding-left: .2rem;
+    padding-top: 10px;
+    height: 31px;
+    background-color: @c-l-g-sss;
+    select{
+      width: 100%;
+      height: 20px;
+      margin: 0;
+      padding: 0;
+      font-size: @f_s;
+      text-align: center;
+      padding-right: .3rem;
+      background-color: @c-l-g-sss;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -khtml-border-radius: 0;
+      border: 1px solid @black;
+      -webkit-appearance: none;
+      display: block;
+    }
+    .select-box{
+      width: 1.30rem;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      float: left;
+    }
+    .fa-angle-down{
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: inline-block;
+      height: 20px;
+      width: .22rem;
+      line-height: 20px;
+    }
+
+    .search{
+      width: 4.08rem;
+      height: 20px;
+      margin: 0;
+      padding: 0;
+      font-size: @fn_s22;
+      float: left;
+      line-height: 1;
+      margin-left: .19rem;
+      input{
+        width: 3.98rem;
+        height: 19px;
+        padding-left: .1rem;
+        border: 1px solid @c-d-g;
+        background-color: @c-l-g-sss;
+        border-radius: 0;
+      }
+    }
+    input{
+      margin: 0;
+      padding: 0;
+      border: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .search-btn{
+      margin-left: .19rem;
+      width: .9rem;
+      height: 20px;
+      border: none;
+      font-size: @f_s;
+      display: block;
+      float: left;
+      input{
+        background-color: @item-color;
+        color: @white;
+        border-radius: 0;
+      }
+    }
+  }
+}
+.agency{
+  font-size: @f_m;
+  
+  .page{
+    background-color: @white;
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  .m-bgcolor{
+    background-color: @c-l-g-sss;
+    .direct-list:first-child{
+      padding-top: 0;
+    }
+  }
+  .userbox(); 
+  .sumTage();
+  .seek();
+}
+.icon-my-rili{
+  font-size: @f_xxxl;
+  padding: 0 .1rem;
+  width: .6rem;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+}
+

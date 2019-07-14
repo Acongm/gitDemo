@@ -1,0 +1,277 @@
+@import "../lib/font-iconfont/iconfont.css";
+@import "modules.less";
+.common();
+
+@import "base.less";
+
+// .share-modal();
+
+
+//单个海报图
+.poster{
+	height:100%;
+	.swiper-slide{
+		height:100%;
+		display:flex;
+		align-items:center;
+	}
+	img{
+		width:100%;
+		max-height: 100%;
+	}
+	&.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+		margin:.05rem .06rem;
+	}
+	.swiper-pagination{
+		font-size:.24rem;
+		line-height:1;
+		bottom:.2rem;
+	}
+	.swiper-pagination-bullet{
+		background:#333333;
+		opacity:1;
+		border-radius:0;
+		width:.04rem;
+		height:.07rem;
+	}
+	&.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active{
+		height:.17rem;
+		margin:0 .06rem;
+	}
+}
+//推广中心海报
+.promotion{
+	overflow: hidden;
+	padding-top: .54rem;
+	margin-bottom: .3rem;
+	height:7.54rem;
+	// margin-top: -.5rem;
+	.swiper-slide{
+		height:100%;
+		display:flex;
+		align-items:center;
+	}
+	img{
+		width:100%;
+		box-shadow:0 .05rem .2rem #a4afcf;
+	}
+	&.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+		margin:.05rem .06rem;
+	}
+	.swiper-pagination{
+		font-size:.24rem;
+		line-height:1;
+		bottom: 0rem;
+	}
+	.swiper-pagination-bullet{
+		background:#333333;
+		opacity:1;
+		border-radius:0;
+		width:.04rem;
+		height:.07rem;
+	}
+	&.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active{
+		height:.17rem;
+		margin:0 .06rem;
+	}
+}
+.courlist2{
+	position: static;
+	height: auto;
+	padding-bottom: 0;
+	overflow: inherit;
+	.page_bd{
+		position: fixed;
+		width: calc(100vw);
+		max-width: 7.2rem;
+		height: calc(100vh);
+		left: 50%;
+		top: 0;
+		margin-left: -3.6rem;
+		overflow: hidden;
+		background-color: #fff;
+	}
+	.promotion-ticket{
+		padding-bottom: 1rem;
+	}
+}
+.promotion-info{
+	width: 100%;
+	font-size:.24rem;
+	position: absolute;
+	left: 0;
+	top: 54px;
+	line-height: .5rem;
+	text-align: center;
+	p{
+		// width:2.2rem;
+		text-align: center;
+		padding-right: .1rem;
+	}
+	span{
+		color:#f5d247;
+	}
+	img{
+		width:1.37rem;
+		height:1.5rem;
+	}
+}
+
+//推广中心可分享二维码
+.promotion-ticket{
+	.ticket-box {
+		position: relative;
+		width:6.81/7.2*100%;
+		height:2.14rem;
+		margin:.3rem .2rem;
+		background:url(../images/ticketbg.png) no-repeat;
+		background-size:cover;
+		display:flex;
+		&:after{
+			content:"";
+			height:1px;
+			position: absolute;
+			left:.2rem;
+			right:.2rem;
+			bottom:0;
+			box-shadow: 0 2px 15px rgba(0,0,0,.1);
+		}
+		&.ticket-expired {
+			// background-image: url(../images/ticketbg2.png);
+			&:before{
+				content:"";
+				position:absolute;
+				left:3.1rem;
+				top:.55rem;
+				width:1.63rem;
+				height:1.3rem;
+				background:url(../images/expired.png) no-repeat;
+				background-size:cover;
+			}
+			.ticket-price,.text-green{
+				color:#999;
+			}
+		}
+		.lc {
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			width:3.36/7.2*100%;
+			padding:.35rem .25rem .35rem .45rem;
+			color:#333;
+		}
+		.rc {
+			color:#333;
+			width:2.74rem;
+			margin:0 auto;
+			padding:.48rem 0 .2rem;
+			font-size:.26rem;
+			text-align: center;
+			.btn-ticket {
+				display:inline-block;
+				padding:.01rem .28rem .01rem;
+				color:#333;
+				background:#f1f0f0;
+				border:1px solid #333;
+				border-radius:.05rem;
+			}
+			i{
+				font-size:.38rem;
+				margin-top: .01rem;
+			}
+		}
+		.ticket-title {
+			height:.68rem;
+			font-size:.26rem;
+			line-height:1.2
+		}
+		.ticket-price {
+			font-size:.3rem;
+			line-height:1;
+			color:#333;
+			margin-bottom: .2rem;
+			strong {
+				color:#f6d347;
+				font-size:.72rem;
+				font-family:Microsoft YaHei, -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+			}
+		}
+		.ticket-info {
+			font-size:.22rem;
+			color:#999;
+			i{
+				position: absolute;
+				margin-left: .05rem;
+				font-size:.4rem;
+			}
+		}
+		.ticket-time {
+			color:#333;
+			font-size:.22rem;
+		}
+	}
+}
+
+.mine-finance {
+	.weui-btn_default{
+		border:1px solid #ccc;
+		&:after {
+			border:none;
+		}
+	}
+}
+.weui-tab>.weui-tab__panel{
+	// padding-top: 60px;
+}
+//选项切换
+.lifire-navbar{
+	font-size:.3rem;
+	color:#999;
+	background:#fff;
+	.weui-navbar__item{
+		&:after {
+			content:none;
+		}
+		&.weui-bar__item_on{
+			background:#fff;
+			border-bottom:2px solid #333;
+			color:#333;
+		}
+	}
+	&+.weui-tab__panel{
+		&>div {
+			display:none;
+			&.active{
+				display:block;
+			}
+		}
+	}
+}
+
+// 海报文案
+.courlist_text_sw{
+	// display: none;
+	width: 7.2rem;
+	overflow: hidden;
+	margin-top: -10px;
+	height: .7rem;
+}
+.courlist_text{
+	width: 7.2rem;
+	height: .6rem;
+	font-size: .24rem;
+	.clearfix();
+	p{
+		width: 4.8rem;
+		padding-left: .6rem;
+		float: left;
+		padding-right: .1rem;
+		line-height: .3rem;
+		height: .58rem;
+		.text-overflow-l(2);
+	}
+	.jscopy();
+}
+
+
+.share-modals();

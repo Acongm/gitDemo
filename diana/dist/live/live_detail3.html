@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- live -->
+	<!-- <link rel="stylesheet" href="../static/css/master.css"> -->
+	<script src="../static/js/chat.js"></script>
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body>
+	<div class="page live_detaill">
+		<div class="page__bd" style="height: 100%;">
+			<div class="weui-tab">
+				<div class="weui-tab__video">
+					<div class="video">
+						<video id="video" src="http://style.hq88.com/v5/../static/video/video.mp4" width="100%" height="" controls="controls" poster="" webkit-playsinline="" playsinline="" style="height: 233px;">
+						</video>
+					</div>
+				</div>
+				<div class="weui-tab__panel">
+					<div class="weui-tab">
+						<div class="weui-tab__msg_b">
+							<section class="chat-box">
+								<div class="bubbleDiv">
+									<div class="bubbleItem">
+										<div class="doctor-head">
+											<img src="../static/images/demoimg/img001.png" alt="doctor">
+										</div>
+										<span class="bubble leftBubble">
+											您好，欢迎关注博客：http://write.blog.csdn.net/postlist
+											<span class="topLevel"></span>
+										</span>
+									</div>
+									<div class="bubbleItem">
+										<div class="doctor-head">
+											<img src="../static/images/demoimg/img001.png" alt="doctor">
+										</div>
+										<span class="bubble leftBubble">
+											您好，欢迎关注博客：http://write.blog.csdn.net/postlist
+											<span class="topLevel"></span>
+										</span>
+									</div>
+									<div class="bubbleItem">
+										<div class="doctor-head">
+											<img src="../static/images/demoimg/img001.png" alt="doctor">
+										</div>
+										<span class="bubble leftBubble">
+											您好，欢迎关注博客：http://write.blog.csdn.net/postlist
+											<span class="topLevel"></span>
+										</span>
+									</div>
+									<div class="bubbleItem">
+										<div class="doctor-head">
+											<img src="../static/images/demoimg/img001.png" alt="doctor">
+										</div>
+										<span class="bubble leftBubble">
+											您好，欢迎关注博客：http://write.blog.csdn.net/postlist
+											<span class="topLevel"></span>
+										</span>
+									</div>
+
+									<div class="bubbleItem clearfix">
+										<!-- <div class="doctor-head fr" style="position: relative;">
+                                        <img src="../static/images/demoimg/img001.png" alt="doctor">
+                                    </div> -->
+										<span class="bubble rightBubble">
+											ghv
+											<span class="topLevel"></span>
+										</span>
+									</div>
+									<div class="bubbleItem clearfix">
+										<!-- <div class="doctor-head fr" style="position: relative;">
+                                        <img src="../static/images/demoimg/img001.png" alt="doctor">
+                                    </div> -->
+										<span class="bubble rightBubble">
+											nmm
+											<span class="topLevel"></span>
+										</span>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="weui-tab__footer">
+							<footer class="chat-edit clearfix">
+								<p class="chat-info" placeholder="想咨询他什么内容..." contenteditable="true"></p>
+								<!-- <span class="uploadImg fl"><input type="file" name="uploadfile" class="uploadfile"></span> -->
+								<button class="send-btn fr">发送</button>
+							</footer>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			var $w = $(window).width();
+			var $h = $(window).height();
+			var $video_bar = 9 / 16;
+			var $max_w = 520
+			if ($w > $max_w) {
+				$w = $max_w;
+			}
+			var $weui_top = $w * $video_bar + 20;
+			$(".video").css({
+				"height": $weui_top
+			})
+			$(".weui-tab__panel").css({
+				"padding-top": $weui_top
+			})
+			/*
+			 左侧 接收别人信息 调用，三个参数：leftBubble，头像路径，内容
+			 chat(element,imgSrc,doctextContent)
+			 */
+			chat("leftBubble", "../static/images/demoimg/img001.png", "您好，欢迎关注博客：dddd");
+			chat("centerBubble", '', "欢迎雷老板加入直播间");
+			chat("timeBubble", '', "2017-11-23 12:00:00");
+			$(".send-btn").click(function() {
+				//右侧 自己发 调用，只需填一个参数"rightBubble"
+				chat("rightBubble");
+				//清空输入框
+				$('.chat-info').html('');
+			})
+			var u = navigator.userAgent;
+			if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) { //安卓手机
+				//  拿到获取焦点的input
+				// let input = document.querySelector('input')
+				var input = document.getElementsByClassName("chat-info")[0];
+				input.addEventListener('focus', function() {
+					console.log(1)
+					$(".weui-tab__video").css({
+						"top": -$weui_top
+					})
+					$(".weui-tab__panel").css({
+						"padding-top": 0
+					})
+				})
+				input.addEventListener('blur', function() {
+					$(".weui-tab__video").css({
+						"top": 0
+					})
+					$(".weui-tab__panel").css({
+						"padding-top": $weui_top
+					})
+				})
+			}
+		})
+	</script>
+</body>
+
+</html>

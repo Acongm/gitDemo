@@ -1,0 +1,152 @@
+// 参课券样式
+.callimg_box {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  img {
+    width: 100%;
+    display: block;
+  }
+  .mine-share {
+    position: absolute;
+    left: 50%;
+    // top: 0.4rem;
+    bottom: 1rem;
+    width: 6.86rem;
+    margin-left: -3.43rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 8px;
+  }
+
+  .item_box_p {
+    padding: 18px 0;
+  }
+  .item_p {
+    padding: 10px 24px;
+    .p_property {
+      font-size: 14px;
+      color: #999999;
+      line-height: 20px;
+    }
+
+    .p_details {
+      font-size: 24px;
+      color: #000000;
+      line-height: 33px;
+    }
+  }
+
+  .join_name {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  button {
+    margin: 28px auto;
+  }
+
+  .qr_box {
+    width: 140px;
+    height: 140px;
+    border: 0.5px solid #DDDDDD;
+    margin: 12px auto 20px;
+
+    img {
+      width: 124px;
+      margin: 13px;
+    }
+  }
+}
+.popup {
+  .session_lists {
+    padding: 0 .24rem;
+    max-height: 180px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    .hint {
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: #D0021B;
+      text-indent: 10px;
+    }
+    .session_list {
+      padding: 10px 11px 8px;
+      border: 1px solid #fff;
+      line-height: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        margin-right: .24rem;
+        font-size: 14px;
+        color: #333333;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .session_p {
+      .text-overflow(4.98rem);
+    }
+
+    .myicon {
+      display: none;
+    }
+
+    .active {
+      background: #FEF1FE;
+      border: 1px solid #B54AB3;
+      border-radius: 4px;
+
+      .myicon {
+        display: block;
+      }
+    }
+  }
+}
+
+.code_box{
+    display: flex;
+    text-align: center;
+    img{
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      display: block;
+    }
+}
+.split-line {
+  @w_: 8px;
+  position: relative;
+  flex: 0 0 0;
+  border-bottom: 2px dashed #f2f2f2;
+  background: #fff;
+
+  &:before,
+  &:after {
+
+    content: '';
+    position: absolute;
+    width: @w_;
+    height: @w_*2;
+    background: #f2f2f2;
+    bottom: -@w_;
+    z-index: 1;
+  }
+
+  &:before {
+    border-radius: 0 @w_ @w_ 0;
+    left: 0;
+  }
+
+  &:after {
+    border-radius: @w_ 0 0 @w_;
+    right: 0;
+  }
+}

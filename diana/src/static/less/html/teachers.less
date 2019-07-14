@@ -1,0 +1,147 @@
+// 讲师详情
+// teachers.html
+.teachers {
+  background-color: @white;
+  font-size: @f_l;
+
+  .teachers1_list {
+    dt {
+      img {
+        border-radius: 0;
+      }
+    }
+  }
+
+  .list_t {
+    font-family: Microsoft YaHei;
+    padding: 0 1.15rem;
+
+    dl {
+      padding-top: 1rem;
+      padding-bottom: .4rem;
+      margin-top: 0;
+      margin-bottom: .1rem;
+      background: url("../images/teacher_bg.png") no-repeat right bottom;
+      background-size: 2.74rem 3.74rem;
+    }
+
+    dt {
+      @br: 860/688;
+      position: relative;
+      margin: 0 auto .5rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      .t-name {
+        position: absolute;
+        min-width: 2em;
+        max-width: 4em;
+        text-align: justify;
+        height: 1.12rem;
+        padding-right: .2rem;
+        padding-left: .2rem;
+        background-color: @item-color;
+        left: .27rem;
+        bottom: -.28rem;
+        line-height: 1.12rem;
+        color: @white;
+        font-size: .68rem;
+        text-justify: inter-ideograph;
+        &.em2 {
+          width: 3em;
+        }
+        &.em2:after {
+          content: " ";
+          display: inline-block;
+          padding-left: 100%;
+        }
+      }
+    }
+
+    dd {
+      &.t-name {
+        font-size: @f_xxl;
+        line-height: .6rem;
+      }
+
+      color: @c-d-g;
+      margin-left: 0;
+      line-height: .5rem;
+      font-size: @f_xl;
+    }
+  }
+
+  .list_t_detail {
+    background-color: @white;
+    dl {
+      padding-bottom: .2rem;
+      background-image: none;
+    }
+    dt {
+      margin-bottom: .2rem;
+    }
+    dd {
+      width: 6.3rem;
+      margin: 0 auto;
+      text-indent: 0;
+    }
+
+    .teacher-text {
+      width: 6.3rem;
+      text-indent: 2em;
+      line-height: .5rem;
+      color: @c-g;
+      font-size: .24rem;
+      margin: 0 auto .4rem;
+    }
+
+    button {
+      color: @white;
+      .wh(205, 81);
+      border-radius: .5rem;
+      font-size: @f_l;
+      cursor: pointer;
+    }
+  }
+
+  .nav_t {
+    padding-top: .6rem;
+    height: .78rem;
+    border-bottom: 1px solid @c-l-g-s;
+    span {
+      background-color: @c-l-g-ss;
+      border: 1px solid @c-l-g-s;
+      margin-top: -1px;
+      display: inline-block;
+      line-height: .78rem;
+      padding: 0 .3rem;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: @white;
+      border-bottom: 1px solid @white;
+      border-top: 1px solid #f5ba20;
+    }
+  }
+
+  .center_t {
+    background-color: @white;
+    padding: .4rem .3rem;
+
+    .home-title {
+      padding-top: .1rem;
+      padding-bottom: .2rem;
+      padding-left: 0;
+    }
+
+    .cen_list_t {
+      padding: 0 .36rem;
+    }
+
+  }
+}

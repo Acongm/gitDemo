@@ -1,0 +1,432 @@
+// 视屏详情通用
+.video() {
+  .video {
+    position: relative;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+    z-index: 666;
+  }
+  .spread-title {
+    position: relative;
+    padding: .1rem .2rem;
+    margin-bottom: .2rem;
+    font-size: @f_s;
+    line-height: 1.8;
+    background: @white;
+
+    h3, h4 {
+      font-weight: normal;
+    }
+
+    h3 {
+      font-size: @f_l;
+      line-height: 1.4;
+      color: @title-color;
+      font-weight: 500;
+    }
+
+    h4 {
+      color: @text-color;
+      margin-bottom: .22rem;
+    }
+
+    p {
+      color: @text-color;
+      span {
+        margin-right: .28rem;
+      }
+    }
+
+    .weui-btn_primary {
+      background: @item-color;
+      color: @title-color;
+
+      &:active {
+        background: @item-color;;
+        color: @title-color;
+      }
+    }
+  }
+  .spread-video, .spread-list {
+    font-size: @f_s;
+
+    p {
+      margin-bottom: .1rem;
+      text-align: center;
+      line-height: 1.8
+    }
+
+    p.first {
+      position: relative;
+      padding-left: .2rem;
+      color: @title-color;
+      &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        margin: .12rem 0 0 -.26rem;
+        border-left: .1rem solid transparent;
+        border-right: .1rem solid transparent;
+        border-top: .15rem solid #233660;
+      }
+    }
+  }
+  .spread-video {
+    padding: .22rem .3rem;
+  }
+  .subscibe {
+    margin-bottom: .2rem;
+    background-color: @white;
+
+    .header-attention {
+      margin-bottom: 0;
+    }
+
+    .user {
+      padding: .2rem;
+      display: flex;
+      justify-content: space-between;
+      line-height: .6rem;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      width: .6rem;
+      height: .6rem;
+      border-radius: @radius;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      margin-right: .17rem;
+
+      img {
+        width: .6rem;
+        float: left;
+      }
+    }
+
+    .moreicon {
+      line-height: .6rem;
+      font-size: @f_xxxl;
+      border: 1px solid #777;
+      text-align: center;
+      color: #777;
+    }
+  }
+  .weui-nav .weui-bar__item_on {
+    &:before {
+      display: none;
+    }
+  }
+  .video-detail {
+    .weui-navbar__item.weui-bar__item_on {
+      border-bottom: none;
+    }
+
+    .weui-bar__item_on:before {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      transform-origin: 50% 0;
+      content: "";
+      height: 1px;
+      width: 100%;
+      overflow: hidden;
+      background-color: @item-border-color;
+      transform: scaleX(.356);
+      margin-top: -2px;
+    }
+
+    .weui-navbar__item:after {
+      border-right: none;
+    }
+
+    .weui_tab_bd_item {
+      margin-bottom: .2rem;
+      background-color: @white;
+      min-height: 3rem;
+    }
+
+    .center > div:first-child {
+      padding-top: 50px;
+    }
+
+    .title {
+      @top: .38rem;
+      position: relative;
+      padding-top: @top;
+      height: .46rem;
+
+      & > span {
+        width: 1.5rem;
+        height: .44rem;
+        line-height: .44rem;
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        text-align: left;
+        margin-left: .2rem;
+        padding-left: .2rem;
+        .border-left(0.34rem, @item-color);
+        border-left: none;
+      }
+    }
+
+    .text-center {
+      padding: .1rem .2rem .3rem;
+      text-align: left;
+      text-indent: 2em;
+
+      p {
+        line-height: .46rem;
+        font-size: .26rem;
+      }
+    }
+
+    .video-list {
+      padding: 0 .2rem .42rem;
+
+      li,li>a {
+        display: flex;
+      }
+      li{
+        height: .44rem;
+        line-height: .44rem;
+        .svgicon(.44rem, .44rem);
+        padding: .14rem 0;
+        .border-bottom(#ccc);
+
+        a {
+          width: 100%;
+          display: flex;
+        }
+      }
+
+      .no_permission ,
+      .no_permission > a{
+        color: #999;
+      }
+
+      .icon {
+        font-size: .44rem;
+        padding-right: .24rem;
+        color: #999;
+      }
+
+      .list-name {
+        .text-overflow(6rem);
+        flex: 1;
+      }
+
+      .audition {
+        width: .76rem;
+        .height(.38rem);
+        font-size: .24rem;
+        border: 1px solid #fd3f3f;
+        color: #fd3f3f;
+        text-align: center;
+        border-radius: .1rem;
+      }
+    }
+
+    .center > div {
+      margin-top: -60px;
+      padding-top: 50px;
+    }
+
+    .center > div:first-child {
+      margin-top: 0;
+    }
+
+    .center .weui_tab_bd_item > .title {
+      border-top: .2rem solid #f2f2f2;
+    }
+
+    .center > div:first-child .title {
+      border: none;
+    }
+  }
+  // video-detail的js交互样式
+  .weui-navbar_ .weui-navbar__item:after {
+    border-right: none;
+  }
+  .weui-navbar_ {
+    width: @psW/100*1rem;
+    left: 50%;
+    margin-left: -@psW/100*0.5rem;
+  }
+  @media screen and (min-width: @psW*1px) {
+    .weui-navbar_ {
+      margin-left: -@psW/100*0.5rem;
+    }
+  }
+  .weui-navbar_ .weui-bar__item_on:before {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    content: "";
+    height: 1px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    -webkit-transform: scaleX(0.356);
+    -moz-transform: scaleX(0.356);
+    -ms-transform: scaleX(0.356);
+    transform: scaleX(0.356);
+    margin-top: -2px;
+  }
+  .buy-bar {
+    display: flex;
+    width: 100%;
+    height: .98rem;
+    line-height: .98rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: .3rem;
+  }
+  .share-btn {
+    width: 3.2/7.2*100%;
+    background: #f7f7fa;
+    color: @fcolor;
+  }
+  .share-btn1 {
+    color: @fcolor;
+    display: flex;
+    justify-content: center;
+    padding: .32rem 0 .26rem;
+    text-align: center;
+
+    a {
+      padding: .12rem .4rem .12rem .2rem;
+      margin: 0;
+      border-radius: .34rem;
+      border: 1px solid #6ccb7a;
+      font-size: .28rem;
+      color: #6ccb7a;
+
+      i {
+        position: absolute;
+        margin: 0 .1rem;
+        font-size: .42rem;
+      }
+    }
+  }
+  .buy-btn {
+    width: 4/7.2*100%;
+    background: @fcolor;
+
+    a {
+      color: @bfcolor;
+    }
+  }
+  .share-btn-only {
+    width: 100%;
+    background: @fcolor;
+    color: @bfcolor;
+  }
+  .pay-info {
+    display: none;
+    width: 6.3rem;
+    font-size: .3rem;
+    padding: .4rem .45rem;
+
+    p {
+      margin-bottom: .15rem;
+
+      select {
+        position: relative;
+        padding: .08rem .38rem .08rem .08rem;
+        background: url(../images/selectDown.png) no-repeat center right;
+        background-size: auto 100%;
+      }
+    }
+  }
+  #video {
+    position: relative;
+  }
+}
+
+.video();
+
+.video_detaill1,
+.video_detaill {
+  .courlist_tit {
+    // border-bottom: 10px solid #efefef;
+    margin-bottom: 10px;
+  }
+
+  .text-center {
+    padding: 16px;
+  }
+
+  .home-title {
+    padding: 13px 0;
+    .border-bottom(#efefef);
+
+    .weui-cell__bd {
+      // border-left: 3px solid #B54AB3;
+      padding: 0;
+      padding-left: 16px;
+      line-height: 22px;
+      font-size: 16px;
+      position: relative;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -8px;
+        width: 3px;
+        height: 16px;
+        background: #B54AB3;
+        background-image: linear-gradient(-140deg, #E04BDA 0%, #D046CB 100%);
+        border-radius: 7px;
+      }
+    }
+  }
+
+  .price1 {
+    line-height: 33px;
+    height: 33px;
+    color: #FF2A45;
+
+    em {
+      font-size: 16px;
+      font-style: normal;
+    }
+
+    span {
+      font-size: 24px;
+    }
+
+    b {
+      font-style: normal;
+      background: #FFE3E3;
+      border-radius: 21px;
+      font-size: 12px;
+      font-size: 10px;
+      color: #FF2A45;
+      font-weight: normal;
+    }
+  }
+
+  .price {
+    font-size: 12px;
+    color: #999999;
+  }
+
+  .page_bd {
+    background-color: #fff;
+  }
+}

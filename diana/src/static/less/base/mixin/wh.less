@@ -1,0 +1,26 @@
+.height(@h) {
+  height: @h;
+  line-height: @h;
+}
+
+.w-h(@w,@h) {
+  width: @w/100rem;
+  height: @h/100rem;
+}
+
+.wh(@w,@h) {
+  width: @w/100rem;
+  height: @h/100rem;
+}
+
+.clearfix() {
+  *zoom: 1;
+  &:before, &:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}

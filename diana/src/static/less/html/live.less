@@ -1,0 +1,306 @@
+// 直播列表&直播详情
+.live {
+  .refreshtip {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    color: @c-l-g;
+  }
+
+  .swiper-container {
+    overflow: visible;
+  }
+
+  .loadtip {
+    display: block;
+    font-size: @f_m;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    color: @c-l-g;
+  }
+
+  .swiper-container, .w {
+    height: calc(~"100vh - 130px");
+    font-size: @f_xxl;
+  }
+
+  .swiper-slide {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: @white;
+  }
+
+  .list-group-item:first-child {
+    border-top-left-radius: @radius-m;
+    border-top-right-radius: @radius-m;
+  }
+
+  // .ticket();
+  .weui-tab__panel > div {
+    padding-bottom: 40px;
+  }
+
+  .course-list-tip p .icon-shijian {
+    margin-right: .1rem;
+  }
+
+  .label-1,
+  .label-2,
+  .label-3 {
+    min-width: .7rem;
+    height: 15.5px;
+    font-size: @f_xs;
+    line-height: 15.5px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: @white;
+    border-radius: .1rem 0 .1rem 0;
+  }
+
+  .label-1 {
+    background-color: @label1;
+  }
+
+  .label-2 {
+    background-color: @label2;
+  }
+
+  .label-3 {
+    background-color: @label3;
+    color: @c-l-g;
+  }
+}
+.live_detaill {
+  .weui-navbar {
+    position: static;
+    .border-bottom(@c-l-g);
+  }
+
+  .lifire-navbar {
+    padding-left: .4rem;
+    width: auto;
+    position: relative;
+  }
+
+  .weui-navbar__item:after {
+    display: none;
+  }
+
+  .icon-share1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15.5px .31rem;
+  }
+
+  .weui-navbar__item {
+    margin: 0 .3rem;
+    flex: none;
+    width: 5em;
+
+    &.weui-bar__item_on {
+      border-bottom: 2px solid @c-g;
+    }
+  }
+
+  .weui_tab_bd_item {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .weui_tab_bd_item {
+  }
+
+  .live-title {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+
+    h3 {
+      width: 5.4rem;
+      font-weight: normal;
+      font-size: @f_l;
+    }
+
+    em {
+      width: 3.2em;
+      height: 23px;
+      line-height: 23px;
+      font-size: @f_s;
+      display: inline-block;
+      font-style: normal;
+      padding: 2.5px .1rem;
+      border-radius: .1rem;
+      background-color: @c-l-g-ss;
+      color: @c-l-g;
+
+      &.active {
+        background-color: @label2;
+        color: @white;
+      }
+    }
+  }
+
+  .live-text {
+    text-align: left;
+    padding-bottom: 10px;
+
+    i {
+      margin-right: .1rem;
+      font-size: @f_s;
+    }
+
+    p {
+      font-size: @f_s;
+    }
+  }
+
+  .live-header {
+    padding: 0 .2rem;
+    margin-bottom: 10px;
+    background-color: @white;
+
+    .live-text {
+      & > p {
+        text-indent: 0;
+      }
+    }
+  }
+
+  .weui_tab_bd_item .center {
+    padding: 0 .15rem;
+    min-height: 250px;
+    background-color: @white;
+
+    .title {
+      padding-top: 20px;
+      padding-bottom: 17.5px;
+
+      span {
+        font-size: @f_l;
+        border-left: 3px solid @item-color;
+        padding-left: .1rem;
+      }
+    }
+
+    p {
+      text-align: left;
+      text-indent: 2em;
+    }
+  }
+
+  .discuss-box {
+    position: fixed;
+    height: 50px;
+    display: flex;
+  }
+}
+
+
+// detail
+.weui-tab {
+  position: relative;
+  height: 100%;
+}
+
+.weui-tab__msg,
+.weui-tab__msg_t,
+.weui-tab__msg_b,
+.weui-tab__msg_t_b,
+.weui-tab__panel {
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.weui-tab__msg {
+  .weui_tab_bd_item {
+    height: 100%;
+  }
+}
+
+.weui-tab__video {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.weui-tab__msg_t_b {
+  padding-top: 5*@rem;
+  padding-bottom: 5.5*@rem;
+}
+
+.weui-tab__msg_t {
+  padding-top: 5*@rem;
+}
+
+.weui-tab__msg_b {
+  padding-bottom: 5.5*@rem;
+}
+
+.weui-tab {
+  position: relative;
+}
+.weui-tab__table {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5*@rem;
+  z-index: 99;
+  background-color: @white;
+}
+
+.live_detaill {
+  .lifire-navbar {
+    height: 5*@rem;
+    box-sizing: border-box;
+  }
+
+  .weui-navbar__item {
+    height: 5*@rem;
+    width: 6em;
+    box-sizing: border-box;
+  }
+}
+
+.weui-tab__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.bubble {
+  word-wrap: break-word;
+  max-width: 70%;
+}

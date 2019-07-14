@@ -1,0 +1,51 @@
+<template src="head.html" title="提交成功" clearing swiper></template>
+
+<body>
+	<div class="container has-tabNav clearing">
+		<div class="page msg_warn js_show">
+			<div class="weui-msg ">
+				<div class="weui-msg__icon-area">
+					<i class="myicon micon-from_ok"></i>
+				</div>
+				<div class="weui-msg__text-area">
+					<h2 class="weui-msg__title">操作成功</h2>
+					<!-- <p class="weui-msg__desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现<a href="javascript:void(0);">文字链接</a></p> -->
+				</div>
+				<div class="weui-msg__opr-area">
+					<p class="weui-btn-area mean_">
+						<a href="clearing_list.html" class="weui-btn weui-btn_default">查看订单</a>
+						<a href="clearing_from.html" class="weui-btn weui-btn_default">继续录入</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="weui-msg hide">
+				<div class="weui-msg__icon-area"><i class="weui-icon-warn weui-icon_msg"></i></div>
+				<div class="weui-msg__text-area">
+					<h2 class="weui-msg__title">操作失败</h2>
+					<!-- <p class="weui-msg__desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现<a href="javascript:void(0);">文字链接</a></p> -->
+				</div>
+				<div class="weui-msg__opr-area">
+					<p class="weui-btn-area mean_">
+						<a href="clearing_list.html" class="weui-btn weui-btn_default">查看订单</a>
+						<a href="clearing_from.html" class="weui-btn weui-btn_default">继续录入</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <script>
+		$(function() {
+			$(".show_QR").click(function() {
+				$(".popup_session").addClass("find");
+				$(".popup .cancel_btn").click(function() {
+					$(this).parents(".popup").removeClass("find");
+				})
+				$(".popup .affirm_btn").click(function() {
+					$(this).parents(".popup").removeClass("find");
+				})
+			})
+		})
+	</script> -->
+</body>
+</html>

@@ -1,0 +1,53 @@
+// 提现钱包列表
+.mine_finance_record_step2_1(){
+  .withdraw {
+    margin:.36rem;
+    // padding:.36rem;
+    border-radius: @radius-m;
+    background: @white;
+    .withdraw-th {
+      padding: .22rem .36rem;
+      font-size: @f_l;
+      background: @c-l-g-ss;
+    }
+    .withdraw-bd {
+      padding: .36rem;
+      font-size: @f_s;
+      color: @c-d-g;
+      .record-input {
+        position: relative;
+        &:before{
+          content: "¥";
+          position: absolute;
+          left: 0;
+          top: .28rem;
+          font-size: @f_xxxl;
+        }
+        .weui-input {
+          height: 1.2rem;
+          line-height: 1.2rem;
+          font-size: @f_xxxxl;
+          text-indent: .8em;
+          border-bottom: 1px solid @c-l-g-ss;
+          margin-bottom: .22rem;
+        }
+      }
+      .record-info {
+        font-size: @f_m;
+        color: @c-l-g;
+      }
+      div.record-info {
+        text-align: center;
+        a {
+          color: @item-color;
+        }
+      }
+      .weui-btn {
+        margin: .36rem 0;
+        background-color: @item-color;
+        color: @white;
+      }
+    }
+  }
+}
+.mine_finance_record_step2_1();

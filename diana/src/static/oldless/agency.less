@@ -1,0 +1,265 @@
+@import "../lib/font-iconfont/iconfont.css";
+@import "base.less";
+body{
+	font-family: Microsoft YaHei, -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.clearfix{
+	.clearfix();
+}
+//用户身份等信息
+.userbox(){
+	.mine-box-ag{
+		padding: .26rem .2rem 0;
+	}
+	.mine-img{
+		width: 1.57rem;
+		height: 1.65rem;
+		float: left;
+		border-radius: .2rem;
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
+	.mine-info-ag{
+		float: left;
+		padding: 0.1rem .42rem 0;
+		h2{
+			font-size: .3rem;
+			line-height: 1.5em;
+			font-weight: 700;
+			color: #000;
+			padding-bottom: .1rem;
+		}
+		.agency-name{
+				display: flex;
+			line-height: 1.5em;
+			font-size: .24rem;
+			padding-bottom: .1rem;
+			em{
+				font-style: normal;
+			}
+		}
+		.zuanshi{
+			color: #dcdffb;
+			font-size: .36rem;
+			width: .36rem;
+			height: .36rem;
+			display: inline-block;
+			padding: 0 .1rem;
+		}
+		.time{
+			line-height: 1.5em;
+			color: #c6c5c5;
+			font-size: .22rem;
+		}
+	}
+	.mine-question{
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: .2rem;
+		color: #999;
+	}
+}
+
+//显示总数据块
+.sumTage(){
+	.tage{
+		padding-top: .2rem;
+		padding-bottom: .39rem;
+		&>div{
+			width: 50%;
+			height: .84rem;
+			padding: .3rem 0;
+			display: inline-block;
+			float: left;
+			text-align: center;
+			h4{
+				font-size: .36rem;
+			}
+			p{
+				font-size: .24rem;
+				color: #999;
+			}
+			a{
+				color: #000;
+			}
+		}
+	}
+	.agency-btn{
+		box-shadow: -.03rem .03rem .1rem .03rem #f1f0f0;
+	}
+}
+
+//代理搜索模块
+.seek(){
+	.seek{
+		.border-top(#ccc);
+	}
+	.sou-box{
+		height: .74rem;
+		line-height: .74rem;
+		margin-left: .2rem;
+		padding-right: .2rem;
+		display: flex;
+		&>div:first-child{
+		    flex: 1;
+		}
+		.fa-search,
+		.fa-angle-up,
+		.fa-angle-down{
+			padding: 0.1rem;
+		}
+		.fa-angle-down,.fa-angle-up{
+			display: none;
+		}
+		.active{
+			display: inline-block;
+		}
+	}
+	.icon-sousuo{
+		font-size: .36rem;
+		padding-left: .2rem;
+	}
+	.icon-jiantouxiangyou{
+		font-size: .36rem;
+		transform:rotate(-90deg);
+	}
+	.jiantouxiangyou{
+		transform:rotate(90deg);
+	}
+	.search-wrap{
+		display: none;
+		padding-left: .2rem;
+		padding-top: .2rem;
+		height: .62rem;
+		background-color: #f8f8f8;
+		select{
+			width: 100%;
+			height: 100%;
+			height: .4rem;
+			margin: 0;
+			padding: 0;
+			font-size: .22rem;
+			text-align: center;
+			padding-right: .3rem;
+			background-color: #f8f8f8;
+			border-radius: 0;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			-khtml-border-radius: 0;
+			border: 1px solid #000;
+			-webkit-appearance: none;
+			display: block;
+		}
+		.select-box{
+			width: 1.30rem;
+			height: .4rem;
+			position: relative;
+			display: inline-block;
+			float: left;
+		}
+		.fa-angle-down{
+			position: absolute;
+			right: 0;
+			top: 0;
+			display: inline-block;
+			height: .4rem;
+			width: .22rem;
+			line-height: .4rem;
+		}
+
+		.search{
+			width: 4.08rem;
+			height: .4rem;
+			margin: 0;
+			padding: 0;
+			font-size: .22rem;
+			float: left;
+			line-height: 1;
+			margin-left: .19rem;
+			input{
+				width: 3.98rem;
+				height: .38rem;
+				padding-left: .1rem;
+				border: 1px solid #333;
+				background-color: #f8f8f8;
+				border-radius: 0;
+			}
+		}
+		input{
+			margin: 0;
+			padding: 0;
+			border: none;
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		.search-btn{
+			margin-left: .19rem;
+			width: .9rem;
+			height: .4rem;
+			border: none;
+			font-size: .24rem;
+			display: block;
+			float: left;
+			input{
+				background-color: #f5d451;
+				border-radius: 0;
+			}
+		}
+	}
+}
+
+
+.icon-my-rili{
+	font-size: .48rem;
+	padding: 0 .1rem;
+	width: .6rem;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	input{
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+	}
+}
+.iconfont{
+	display: inline-block;
+}
+.agency{
+	font-size: .26rem;
+	
+	.page{
+		background-color: #fff;
+		::-webkit-scrollbar {
+			width: 0;
+		}
+	}
+	.m-bgcolor{
+		background-color: #f8f8f8;
+		.direct-list:first-child{
+			padding-top: 0;
+		}
+	}
+	.userbox();	
+	.sumTage();
+	.seek();
+}
+.user-list();
+
+
+html {font-size: 50px;}
+.media(320px);
+.media(360px);
+.media(375px);
+.media(384px);
+.media(412px);
+.media(414px);
+.media(600px);
+.media(800px);

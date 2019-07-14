@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/mine.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="withdraw">
+			<div class="withdraw-th">
+				<span>提现到微信钱包</span>
+			</div>
+			<div class="withdraw-bd">
+				<p>提现金额</p>
+				<div class="record-input">
+					<input class="weui-input" type="number" pattern="[0-9]*" value="weui input" placeholder="">
+				</div>
+				<p class="record-info">我的可用余额：¥66.66</p>
+				<!-- <p class="record-info red">输入金额超过可提现额度</p> -->
+				<a href="javascript:;" id="showRecordDialog" class="weui-btn">提现</a>
+				<div class="record-info"><a href="mine_info.html">完善个人信息</a>后才能提现</div>
+			</div>
+		</div>
+
+		<div class="center-list">
+			<div class="title">
+				<p>
+					<span>提现金额（元）</span>
+					<span>申请时间</span>
+					<span>申请状态</span>
+				</p>
+			</div>
+			<ul>
+				<li>
+					<p>
+						<span>100.00</span>
+						<span>2017-03-05</span>
+						<span>审核状态</span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span>100.00</span>
+						<span>2017-03-05</span>
+						<span>审核中</span>
+					</p>
+				</li>
+				<li>
+					<a href="">
+						<p>
+							<span>100.00</span>
+							<span>2017-03-05</span>
+							<span>不通过<i class="iconfont icon-jiantouxiangyou1"></i></span>
+						</p>
+					</a>
+				</li>
+				<li>
+					<p>
+						<span>100.00</span>
+						<span>2017-03-05</span>
+						<span>审核中</span>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- end 提现弹出层 -->
+	<div class="popup" style="display: block;display: block;position: static;width: auto;height: auto;">
+		<div class="js_dialog" id="short_message" style="opacity: 0; display: none;">
+			<div class="weui-mask"></div>
+			<div class="popup_box">
+				<img src="../static/images/short-message.jpg" alt="手机验证">
+				<h3>验证手机号</h3>
+				<div class="from">
+					<div class="yzm">
+						<p>短信验证码</p><input type="text" placeholder="6位验证码">
+						<button class="">获取验证码</button>
+					</div>
+					<div class="yzm">
+						<p>图形验证码</p><input type="text" placeholder="6位验证码">
+						<button class=""><img src="../static/images/vcode.jpg" alt=""></button>
+					</div>
+				</div>
+				<a href="javascript:;" class="weui-btn weui-btn_primary">确定</a>
+				<div class="close">×</div>
+			</div>
+		</div>
+		<div class="js_dialog" id="bind_phone" style="opacity: 0; display: none;">
+			<div class="weui-mask"></div>
+			<div class="popup_box">
+				<img src="../static/images/short-message.jpg" alt="手机验证">
+				<h3>完善手机号</h3>
+				<p>根据网络安全法规定，为了您的账户安全，以及跨平台使用，请完善手机号</p>
+				<div class="from">
+					<div class="yzm">
+						<p>手机号</p><input type="text" placeholder="11位手机号">
+					</div>
+					<div class="yzm">
+						<p>短信验证码</p><input type="text" placeholder="6位验证码">
+						<button class="">获取验证码</button>
+					</div>
+					<div class="yzm">
+						<p>图形验证码</p><input type="text" placeholder="6位验证码">
+						<button class=""><img src="../static/images/vcode.jpg" alt=""></button>
+					</div>
+				</div>
+				<a href="javascript:;" class="weui-btn weui-btn_primary">确定</a>
+				<div class="close">×</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" style="display: block;display: block;position: static;width: auto;height: auto;">
+		<div class="js_dialog" id="record_ok" style="opacity: 0; display: none;">
+			<div class="weui-mask"></div>
+			<div class="popup_box">
+				<img src="../static/images/record_ok.jpg" alt="提交成功">
+				<h3>提交成功</h3>
+				<p>提现申请已提交审核，三个工作日内将转账至您的微信零钱包</p>
+				<a href="javascript:;" class="weui-btn weui-btn_primary">我知道了</a>
+				<div class="close">×</div>
+			</div>
+		</div>
+		<div class="js_dialog" id="record_no" style="opacity: 0; display: none;">
+			<div class="weui-mask"></div>
+			<div class="popup_box">
+				<img src="../static/images/record_no.jpg" alt="提交成功">
+				<h3>审核不通过</h3>
+				<p>当前账号涉嫌违规，请重新提交！</p>
+				<div class="close">×</div>
+			</div>
+
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$("#showRecordDialog").on('click', function() {
+				// $("#record_ok").fadeIn(200);
+				$("#record_no").fadeIn(200);
+				// $("#bind_phone").fadeIn(200);
+			})
+			$(".close").on('click', function() {
+				$(this).parents('.js_dialog').fadeOut(200);
+			})
+		})
+	</script>
+</body>
+
+</html>

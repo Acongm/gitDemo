@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/management.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body class="management_bg">
+	<div class="container management management" id="class_management">
+		<div class="callimg_box" style="">
+			<img src="./../static/images/demoimg/class1.png" alt="">
+			<div class="mine-share ">
+				<!-- 有详细数据用 a 标签，不作详细数据用 div 标签 -->
+				<div class="item_box_p split-line ">
+					<div class="item_p">
+						<p class="p_property">课程</p>
+						<p class="p_details">幸福生活</p>
+					</div>
+					<div class="item_p">
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">开课日期</label>
+							<span class="weui-form-preview__value">2019 年 6 月 2 日</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">开课期数</label>
+							<span class="weui-form-preview__value">第467期</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">开课时间</label>
+							<span class="weui-form-preview__value">半天 / 下午</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">主办分院</label>
+							<span class="weui-form-preview__value">深圳</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">主办院长</label>
+							<span class="weui-form-preview__value">张曼玉</span>
+						</div>
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">讲师</label>
+							<span class="weui-form-preview__value">一恩老师</span>
+						</div>
+					</div>
+				</div>
+				<button class="btn_submit affirm_btn">使用</button>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup_session">
+		<div class="popup-bg"></div>
+		<div class="popup-box session">
+			<div class="popup-title">保存二维码分享参课</div>
+			<div class="popup-center">
+				<div class="code_box">
+					<img src="../static/images/code.png" alt="">
+				</div>
+			</div>
+			<div class="popup-footer">
+				<a href=""><button class="btn_submit affirm_btn">扫码</button></a>
+				<button class="btn_submit affirm_btn">关闭</button>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup_hint">
+		<div class="popup-message-box">
+			<div class="popup-message">
+				使用成功
+			</div>
+		</div>
+	</div>
+	<script>
+		$(".session_lists .session_list").click(function() {
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+		$(".mine-share .btn_submit").click(function() {
+			$(".popup_hint").addClass("find");
+			var popup_time = '';
+			popup_time = setTimeout(function() {
+				$(".popup_hint").removeClass("find");
+				clearTimeout(popup_time)
+			}, 3000)
+		})
+		$(".popup .cancel_btn").click(function() {
+			$(this).parents(".popup").removeClass("find");
+		})
+		$(".popup .affirm_btn").click(function() {
+			$(this).parents(".popup").removeClass("find");
+		})
+		$(".js_transmit").click(function() {
+			$(".popup_hint").addClass("find");
+			var popup_time = '';
+			popup_time = setTimeout(function() {
+				$(".popup_hint").removeClass("find");
+				clearTimeout(popup_time)
+			}, 3000)
+		})
+	</script>
+</body>
+
+</html>

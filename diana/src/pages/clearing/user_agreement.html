@@ -1,0 +1,49 @@
+<template src="head.html" title="录入业绩" clearing></template>
+
+<body>
+	<div class="container management management" id="class_management">
+		<div class="callimg_box">
+			<img src="./../static/images/demoimg/class1.png" alt="">
+			<div class="mine-share ">
+				<!-- 有详细数据用 a 标签，不作详细数据用 div 标签 -->
+				<div class="item_box_p split-line ">
+					<div class="item_p">
+						<p class="p_property">产品名称</p>
+						<p class="p_details">《幸福生活》</p>
+					</div>
+					<div class="item_p">
+						<p class="p_property">产品金额</p>
+						<p class="p_details">3980 元</p>
+					</div>
+					<div class="item_p">
+						<p class="p_property">付款时间</p>
+						<p class="p_details">2019 / 05 / 30</p>
+					</div>
+				</div>
+				<button class="btn_submit affirm_btn show_agree">签订协议</button>
+			</div>
+		</div>
+	</div>
+	<template src="modal.html" agree></template>
+	<script>
+		$(function() {
+			$(".weui-select").change(function() {
+				$(this).removeClass("hint");
+				console.log($(this).val())
+			})
+
+			$(".show_agree").click(function() {
+				$(".popup_session").addClass("find");
+				$(".popup .cancel_btn").click(function() {
+					$(this).parents(".popup").removeClass("find");
+				})
+				$(".popup .affirm_btn").click(function() {
+					$(this).parents(".popup").removeClass("find");
+					window.location.href = "clearing_state.html"
+				})
+			})
+		})
+	</script>
+</body>
+
+</html>

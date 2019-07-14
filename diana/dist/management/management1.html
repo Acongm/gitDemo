@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/management.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body class="management_bg">
+	<div class="container has-tabNav management " id="">
+		<div class="list_box">
+			<input type="tel" class="text_input js_input" placeholder="请输入参课码">
+			<button class="btn_submit">确认</button>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".js_input").keyup(function() {
+				console.log($(this).val())
+				if ($(this).val() != '') {
+					$(this).next("button").addClass("active")
+				} else {
+					$(this).next("button").removeClass("active")
+				}
+			})
+		})
+	</script>
+</body>
+
+</html>

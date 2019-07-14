@@ -1,0 +1,161 @@
+.container,
+.weui-tabbar {
+  width: 7.5rem;
+}
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66666667px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333333px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+body {
+  font-family: Microsoft YaHei, -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+#__bs_notify__ {
+  font-size: 10px !important;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+body,
+.container {
+  font-size: 16px;
+}
+body,
+.container {
+  font-size: 16px;
+  margin: 0 auto;
+}
+ul,
+li {
+  list-style: none;
+}
+.home-banner {
+  height: 3.85rem;
+}
+.home-banner .swiper-slide {
+  position: relative;
+}
+.home-banner .swiper-slide img {
+  width: 100%;
+  float: left;
+  height: 3.85rem;
+}
+.home-banner .swiper-slide .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 0.64rem;
+  width: 100%;
+  background-color: rgba(67, 67, 67, 0.5);
+  font-size: 0.24rem;
+}
+.home-banner .swiper-slide p {
+  line-height: 0.64rem;
+  color: #fff;
+  text-indent: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 4rem;
+}
+.home-banner .swiper-pagination {
+  text-align: right;
+  padding-right: 0.2rem;
+  font-size: 0.22rem;
+  line-height: 1;
+  bottom: 0.2rem;
+  width: 97.22222222%;
+}
+.home-banner .swiper-pagination span {
+  line-height: 1;
+}
+.home-banner .swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background: #fff;
+}
+.home-banner .swiper-pagination .swiper-pagination-bullet-active {
+  background: #6a1c68;
+}
+.home-banner .defaultimg {
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+}
+.weui-nav {
+  padding: 0.2rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 0.2rem;
+  height: 1.1rem;
+}
+.weui-nav .weui-tabbar__icon {
+  font-size: 0.5rem;
+  line-height: 0.6rem;
+  width: 0.6rem;
+  height: 0.5rem;
+}
+.weui-nav i.iconfont {
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  color: #6a1c68;
+}
+.weui-nav i.icon-shouyeshouye1 {
+  font-size: 0.4rem;
+}
+.weui-nav .weui-tabbar__label {
+  font-size: 0.24rem;
+  line-height: 0.45rem;
+  color: #000;
+}
+.weui-nav .icon {
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  margin: 0;
+  -webkit-transition: font-size 0.25s ease-out 0s;
+  -moz-transition: font-size 0.25s ease-out 0s;
+  transition: font-size 0.25s ease-out 0s;
+  float: left;
+}

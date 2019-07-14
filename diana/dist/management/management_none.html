@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/management.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body>
+	<div class="container has-tabNav management" id="class_management">
+		<div class="weui-cells m-t-n state_box after_none">
+			<div class="item_box movement_bg dis_flex_cen">
+				<div class="white_color">
+					<i class="myicon micon-movement"></i>
+					<span>扫描参课码</span>
+				</div>
+			</div>
+
+			<div class="item_box saomiaoerweima_bg dis_flex_cen">
+				<div class="white_color">
+					<i class="myicon micon-saomiaoerweima"></i>
+					<span>输入参课码</span>
+				</div>
+			</div>
+		</div>
+		<div class="page__bd clearing-details">
+			<div class="list_none">
+				<h4>暂无参课记录</h4>
+				<p>您可扫描或输入参课码录入信息</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".picker-box .picker").click(function() {
+				var _ind = $(this).index();
+				if ($(this).hasClass("active")) {
+					$(this).removeClass("active");
+					$(this).parents(".pickers").find(".picker_").removeClass("active");
+					$(this).parents(".pickers-box").removeClass("active")
+				} else {
+					$(this).parents(".pickers-box").addClass("active")
+					$(this).addClass("active").siblings().removeClass("active");
+					$(this).parents(".pickers").find(".picker_").eq(_ind).addClass("active").siblings().removeClass("active");
+				}
+			})
+			$(".pickers .picker_ p").click(function() {
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+		})
+	</script>
+</body>
+
+</html>

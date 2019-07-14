@@ -1,0 +1,27 @@
+// 设置720 rem尺寸页面
+@psW: 720;
+.media(@w) {
+  @media screen and (min-width: @w) {
+    html {
+      font-size: @w/@psW*@remF;
+    }
+  }
+}
+
+.container,
+.weui-tabbar {
+  width: 7.5rem;
+}
+
+html {
+  font-size: 50px;
+}
+
+.media(320px);
+.media(360px);
+.media(375px);
+.media(384px);
+.media(412px);
+.media(414px);
+// .media(600px);
+// .media(800px);

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>戴妃学院</title>
+	<!-- 引入 WeUI -->
+
+	<link rel="stylesheet" href="../static/css/weui.min.css">
+	<!-- <link rel="stylesheet" href="../static/lib/font-iconfont/iconfont.css"> -->
+	<link rel="stylesheet" href="../static/css/main.css">
+	<script src="../static/lib/font-iconfont/iconfont.js" async></script>
+	<!-- <link rel="stylesheet" href="../static/css/mall.css"> -->
+
+	<!-- <link rel="stylesheet" href="../static/css/agency.css"> -->
+
+	<script src="../static/js/zepto.min.js"></script>
+
+	<script src="../static/js/common.js"></script>
+
+</head>
+
+<body>
+	<div class="container agency">
+		<div class="page">
+			<div class="mine-box-ag clearfix">
+				<div class="mine-img">
+					<img src="../static/images/demoimg/img001.png" alt="">
+				</div>
+				<div class="mine-info-ag">
+					<h2>直接邀请</h2>
+					<!-- <div class="agency-name"><span>代理身份:</span><em><i class="fa fa-diamond zuanshi"></i>钻石代理</em></div> -->
+					<p class="time">有效期至：2017-06-07</p>
+				</div>
+			</div>
+			<div class="tage clearfix">
+				<div class="sum-earnings">
+					<h4>10000</h4>
+					<p>累计收益</p>
+				</div>
+				<div class="sum-order agency-btn"><a href="mine_sumpeople.html">
+						<h4>100</h4>
+						<p>累计客户</p>
+					</a></div>
+			</div>
+
+			<div class="user-list">
+				<div class="direct-list">
+					<h3 class="">
+						<span class="">2017年7月</span>
+						<span class=""><i class="iconfont icon-my-rili"><input type="month" /></i><span>¥2953.00</span></span>
+					</h3>
+					<ul>
+						<li>
+							<div class="img-box ">
+								<img src="../static/images/demoimg/img001.png" alt="">
+							</div>
+							<div class="item ">
+								<p class="name">季成</p>
+								<p class="product">购买【传统企业互联网转型的56个关键问题】</p>
+								<p class="time">2017-06-29</p>
+							</div>
+							<div class="addmoney ">
+								<p>+ ¥ 0.22</p>
+							</div>
+						</li>
+						<li>
+							<div class="img-box ">
+								<img src="../static/images/demoimg/img001.png" alt="">
+							</div>
+							<div class="item ">
+								<p class="name">季成</p>
+								<p class="product">购买【传统企业互联网转型的5】</p>
+								<p class="time">2017-06-29</p>
+							</div>
+							<div class="addmoney ">
+								<p>+ ¥ 0.22</p>
+							</div>
+						</li>
+						<li>
+							<div class="img-box ">
+								<img src="../static/images/demoimg/img001.png" alt="">
+							</div>
+							<div class="item ">
+								<p class="name">季成</p>
+								<p class="product">购买【传统企业互联网转企业互联网转企业互联网转企业互联网转企业互联网转企业互联网转型的5】</p>
+								<p class="time">2017-06-29</p>
+							</div>
+							<div class="addmoney ">
+								<p>+ ¥ 0.22</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="direct-list">
+					<h3 class="clearfix">
+						<span class="">2017年6月</span>
+						<span class="">
+							¥2953.00</span>
+					</h3>
+					<ul>
+						<li>
+							<div class="img-box ">
+								<img src="../static/images/demoimg/img001.png" alt="">
+							</div>
+							<div class="item ">
+								<p class="name">季成</p>
+								<p class="product">购买【传统企业互联网转型的56个关键问题】</p>
+								<p class="time">2017-06-29</p>
+							</div>
+							<div class="addmoney ">
+								<p>+ ¥ 0.22</p>
+							</div>
+						</li>
+						<li>
+							<div class="img-box ">
+								<img src="../static/images/demoimg/img001.png" alt="">
+							</div>
+							<div class="item ">
+								<p class="name">季成</p>
+								<p class="product">购买【传统企业互联网转型的5】</p>
+								<p class="time">2017-06-29</p>
+							</div>
+							<div class="addmoney ">
+								<p>+ ¥ 0.22</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".sou-box .active").live('click', function() {
+				// if()
+				console.log($(this).hasClass('fa-angle-down'))
+				console.log($(this).hasClass('fa-angle-up'))
+				if ($(this).hasClass('fa-angle-up')) {
+					$(".search-wrap").hide();
+					$(this).removeClass("active");
+					$(".fa-angle-down").addClass("active");
+				} else {
+					$(".search-wrap").show();
+					$(this).removeClass("active");
+					$(".fa-angle-up").addClass("active");
+				}
+			})
+		})
+	</script>
+</body>
+
+</html>

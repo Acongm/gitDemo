@@ -1,0 +1,87 @@
+<template src="head.html" title="戴妃学院" link="mine"></template>
+<body>
+    <canvas id="result_canvas" class="result_canvas" style="display: none;"></canvas>
+	<div class="container canvas-img" id="container">
+		<img src="" alt="" class="myqr">
+	</div>
+    <input type="text" id="inp" value="1" style="position: fixed;left: 0;top: 50%;width: 100vw;height:6vh;z-index: 9999;border-top: 1px solid #333;border-bottom: 1px solid #333;">
+    <input type="text" id="inp1" value="1" style="position: fixed;left: 0;top: 60%;width: 100vw;height:6vh;z-index: 9999;border-top: 1px solid #333;border-bottom: 1px solid #333;">
+	<template src="back.html" home top></template>
+	<script src="../static/js/json.js"></script>
+	<script src="../static/js/canvas.js"></script>
+	<script>
+        $(function() {
+            // 防抖
+            function debounce(fn) {
+              let timeout = null; // 创建一个标记用来存放定时器的返回值
+              return function () {
+                clearTimeout(timeout); // 每当用户输入的时候把前一个 setTimeout clear 掉
+                timeout = setTimeout(() => { // 然后又创建一个新的 setTimeout, 这样就能保证输入字符后的 interval 间隔内如果还有字符输入的话，就不会执行 fn 函数
+                  console.info(this)
+                  console.info(arguments)
+                  fn.apply(this, arguments);
+                }, 500);
+              };
+            }
+            function sayHi() {
+              console.log('防抖成功');
+            }
+            var inp = document.getElementById('inp');
+            inp.addEventListener('input', debounce(sayHi)); // 防抖
+
+            // 节流
+            function throttle(fn) {
+                let canRun = true; // 通过闭包保存一个标记
+                return function () {
+                    if (!canRun) return; // 在函数开头判断标记是否为true，不为true则return
+                    canRun = false; // 立即设置为false
+                    setTimeout(() => { // 将外部传入的函数的执行放在setTimeout中
+                      fn.apply(this, arguments);
+                      // 最后在setTimeout执行完毕后再把标记设置为true(关键)表示可以执行下一次循环了。当定时器没有执行的时候标记永远是false，在开头被return掉
+                      canRun = true;
+                    }, 500);
+                };
+            }
+            function sayHi1(e) {
+              console.log('节流成功');
+              // console.log(e.target.innerWidth, e.target.innerHeight);
+            }
+            var inp1 = document.getElementById('inp1');
+            inp1.addEventListener('input', throttle(sayHi1)); // 节流
+            // window.addEventListener('resize', throttle(sayHi));
+
+            var arr = [1, 1, 12, 3];
+            let setArr = new Set(arr);
+            console.log(...setArr)
+
+
+            /* 绘制 */
+            var c = document.getElementById("result_canvas");
+            $(".result_canvas").css({
+                "width":$(window).width(),
+                "height":$(window).height()
+            })
+            var Canx = new Canvas({
+                w: 750,
+                h: 1208
+            });
+            var data_list2 = [{url:"/postermodel/2019/07/02/jpg/201907021217184.jpg",l:0,t:0,w:750,bar: 1,h:468,size:'cover',full:'full',type:'img'},{url:"/userPhoto/2019/05/31/jpg/2019053118293242.jpg",l:1221,t:121,w:12,h:12,type:'img'},{text:"末那大叔",l:211,t:121,w:121,h:"2DED43,2DED43,2DED43",type:'text'},{url:"/userPhoto/2019/05/31/jpg/2019053118293242.jpg",l:1212,t:121,w:12,h:12,type:'img'}];
+            String.prototype.append = function(content){
+                return this+content;
+            }
+            var str = '1';
+            str.append("22");
+            str.append("00");
+            data_list = data_list.map((item)=>{
+                // item.url ? item.url = `http://file.qiniu.dianacollege.com${item.url}` : item;
+                return item;
+            })
+            // 绘制数据， 画板id， 主要图位于数据位置， 模板参数， 可添加函数
+            Canx.start(data_list, c);
+            // Canx.auto_wh(data_list, c, 2, user_img);
+        // 打印
+        })
+    </script>
+</body>
+
+</html>

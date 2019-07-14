@@ -1,0 +1,47 @@
+<template src="head.html" title="戴妃学院" management></template>
+<body>
+	<div class="container has-tabNav management" id="class_management">
+		<div class="weui-cells m-t-n state_box after_none">
+			<div class="item_box movement_bg dis_flex_cen">
+				<div class="white_color">
+					<i class="myicon micon-movement"></i>
+					<span>扫描参课码</span>
+				</div>
+			</div>
+
+			<div class="item_box saomiaoerweima_bg dis_flex_cen">
+				<div class="white_color">
+					<i class="myicon micon-saomiaoerweima"></i>
+					<span>输入参课码</span>
+				</div>
+			</div>
+		</div>
+		<div class="page__bd clearing-details">
+			<div class="list_none">
+				<h4>暂无参课记录</h4>
+				<p>您可扫描或输入参课码录入信息</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".picker-box .picker").click(function() {
+				var _ind = $(this).index();
+				if ($(this).hasClass("active")) {
+					$(this).removeClass("active");
+					$(this).parents(".pickers").find(".picker_").removeClass("active");
+					$(this).parents(".pickers-box").removeClass("active")
+				} else {
+					$(this).parents(".pickers-box").addClass("active")
+					$(this).addClass("active").siblings().removeClass("active");
+					$(this).parents(".pickers").find(".picker_").eq(_ind).addClass("active").siblings().removeClass("active");
+				}
+			})
+			$(".pickers .picker_ p").click(function() {
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+		})
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+// 提现表单结构（通用）
+.table-box(){
+  .table-title(){
+    p{
+      padding: 0 .2rem;
+      display: flex;
+      line-height: .89rem;
+      span{
+        width: 100%/3;
+        flex-grow: 1;
+        text-align: center;
+        font-size: @f_m;
+        &:first-child{
+          text-align: center;
+        }
+        &:last-child{
+          text-align: right;
+          .iconfont{
+            color: @c-l-g-s;
+          }
+        }
+      }
+    }
+  }
+  .table(){
+    font-size: @f_s;
+    ul{
+      width: 100%;
+    }
+    li{
+      width: 100%;
+      .border-bottom(@c-l-g-s);
+      a{
+        color: @c-d-g;
+      }
+      span{
+        color: @c-d-g;
+      }
+      .table-title();
+    }
+  }
+  .center-list{
+    background-color: @white;
+    .title{
+      .border-bottom(@c-l-g-s);
+        .table-title();
+    }
+    .table();
+  }
+}
+.table-box();

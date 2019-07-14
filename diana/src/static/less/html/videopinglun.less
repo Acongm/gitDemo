@@ -1,0 +1,65 @@
+// 视屏评论通用
+.videopinglun() {
+  .weui-media-box_appmsg {
+    align-items: flex-start;
+    padding: 15px;
+    .border-bottom(#ccc);
+  }
+  .weui-media-box__hd {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: .12rem;
+  }
+  .weui-cell_link {
+    font-size: .28rem;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .14rem;
+
+    span:first-of-type {
+      flex: 1;
+      .text-overflow(4rem);
+    }
+
+    .zan {
+      float: right;
+    }
+  }
+  .time {
+    font-size: .2rem;
+    color: #999;
+  }
+  .weui-media-box__desc {
+    line-height: 1.5em;
+    margin: .16rem 0 .2rem;
+    font-size: .24rem;
+    color: #595959;
+  }
+  .review-reply {
+    padding-top: .3rem;
+    .border-top(#ccc);
+
+    .weui-cell_link {
+      padding-left: .1rem;
+      .height(.36rem);
+      border-left: .06rem solid @bcolor;
+    }
+  }
+  .more {
+    display: block;
+    text-align: center;
+    color: #595959;
+    font-size: .24rem;
+    .height(.8rem)
+  }
+}
+.discuss {
+  background-color: #fff;
+}
+
+.videopinglun {
+  background-color: #fff;
+  .videopinglun()
+}

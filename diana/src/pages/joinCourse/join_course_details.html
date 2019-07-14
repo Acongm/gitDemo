@@ -1,0 +1,81 @@
+<template src="head.html" title="戴妃学院" joincourse></template>
+<body class="page_bg">
+	<div class="container join_course_details">
+		<div class="callimg_box">
+			<div class="mine-share">
+				<!-- 有详细数据用 a 标签，不作详细数据用 div 标签 -->
+				<div class="item_box_p split-line ">
+					<div class="qr_box">
+						<img src="./../static/images/code.png" alt="">
+					</div>
+					<div class="item_p">
+						<p class="p_property">课程名称</p>
+						<p class="p_details">悦动爱能量</p>
+					</div>
+					<div class="item_p">
+						<p class="p_property">参课码</p>
+						<p class="p_details">7191 5267 3218 5419</p>
+					</div>
+				</div>
+				<button class="btn_submit cancel_btn">转发</button>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup_session popup_join_course_details">
+		<div class="popup-bg"></div>
+		<div class="popup-box session">
+			<div class="popup-title">填写票券接收人的手机号</div>
+			<div class="popup-center">
+				<div class="session_lists">
+					<input type="tel" class="text_input js_input" placeholder="请输入11位手机号">
+					<p class="hint">找不到收券人，请确认收券人已绑定该号码</p>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<button class="btn_submit cancel_btn">取消</button>
+				<button class="btn_submit">确认</button>
+			</div>
+
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".session_lists .session_list").click(function() {
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+			$(".mine-share .btn_submit").click(function() {
+				$(".popup_session").addClass("find");
+			})
+			$(".popup .cancel_btn").click(function() {
+				$(this).parents(".popup").removeClass("find");
+			})
+			$(".popup").on("click", ".affirm_btn", function() {
+				// $(this).parents(".popup").removeClass("find");
+				window.location.href = "join_course_details1.html"
+			})
+			$(".js_input").keyup(function() {
+				console.log($(this).val())
+				if ($(this).val() != '' && isRealNum($(this).val()) && $(this).val().length === 11) {
+					$(this).parents(".popup").find(".btn_submit").eq(1).addClass("affirm_btn")
+					$(this).next(".hint").hide();
+				} else {
+					$(this).parents(".popup").find(".btn_submit").eq(1).removeClass("affirm_btn")
+				}
+			})
+
+			function isRealNum(val) {
+				// isNaN()函数 把空串 空格 以及NUll 按照0来处理 所以先去除
+				if (val === "" || val == null) {
+					return false;
+				}
+				if (!isNaN(val)) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+		})
+	</script>
+</body>
+
+</html>
